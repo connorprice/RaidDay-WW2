@@ -1,0 +1,17 @@
+<unit type="pku" slot="1">
+    <object file="units/vanilla/pickups/pku_gold_tile/pku_gold_tile" />
+    <network sync="spawn"/>
+	<extensions>
+        <extension class="ScriptUnitData" name="unit_data" />
+		<extension name="damage" class="UnitDamage" />
+		
+		<extension name="base" class="SmallLootBase">
+			<var name="small_loot" value="vault_loot_gold" />
+		</extension>
+		
+		<extension name="interaction" class="SmallLootInteractionExt">
+			<var name="tweak_data" value="safe_loot_pickup" />
+			<var name="_interact_object" value="interaction"/>
+		</extension>
+	</extensions>
+</unit>

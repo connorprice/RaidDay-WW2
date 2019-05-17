@@ -1,0 +1,102 @@
+<table>
+	<unit>
+		<!--VARIABLES-->
+		<variables>
+			<var_loot value="5"/>
+		</variables>
+		
+		<!--FILTERS-->
+		<filter name="'filter_has_loot'">
+			<check value="vars.var_loot > 0"/>
+		</filter>
+		<filter name="'filter_no_loot'">
+			<check value="vars.var_loot == 0"/>
+		</filter>
+		
+		<!--SEQUENCES-->
+		<sequence editable_state="true" name="'chest_open_empty'" triggable="true">
+			<function extension="'interaction'" function="'set_tweak_data'" param1="'take_gold_cache'"/>
+			
+			<graphic_group name="'chest_open'" visibility="true"/>
+			<graphic_group name="'loot_full'" visibility="false"/>
+			<graphic_group name="'gold_full'" visibility="false"/>
+			<graphic_group name="'gold_half_full'" visibility="false"/>
+			<graphic_group name="'chest_closed'" visibility="false"/>
+			<graphic_group name="'lockpick_icon'" visibility="false"/>
+			<object enabled="true" name="'s_shadow_open'"/>
+			<body enabled="true" name="'open'"/>
+			<body enabled="false" name="'half'"/>
+			<body enabled="false" name="'closed'"/>
+			<decal_mesh enabled="true" name="'dm_metal_open'"/>
+			<decal_mesh enabled="true" name="'dm_wood_open'"/>
+			<decal_mesh enabled="false" name="'dm_metal_closed'"/>
+			<decal_mesh enabled="false" name="'dm_wood_closed'"/>
+			<decal_mesh enabled="false" name="'dm_metal_half'"/>
+		</sequence>
+		<sequence editable_state="true" name="'chest_open_full'" triggable="true">
+			<function extension="'interaction'" function="'set_tweak_data'" param1="'take_gold_cache'"/>
+			
+			<graphic_group name="'chest_open'" visibility="true"/>
+			<graphic_group name="'loot_full'" visibility="true"/>
+			<graphic_group name="'gold_full'" visibility="true"/>
+			<graphic_group name="'gold_half_full'" visibility="false"/>
+			<graphic_group name="'chest_closed'" visibility="false"/>
+			<graphic_group name="'lockpick_icon'" visibility="false"/>
+			<object enabled="true" name="'s_shadow_open'"/>
+			<body enabled="true" name="'open'"/>
+			<body enabled="false" name="'half'"/>
+			<body enabled="false" name="'closed'"/>
+			<decal_mesh enabled="true" name="'dm_metal_open'"/>
+			<decal_mesh enabled="true" name="'dm_wood_open'"/>
+			<decal_mesh enabled="false" name="'dm_metal_closed'"/>
+			<decal_mesh enabled="false" name="'dm_wood_closed'"/>
+			<decal_mesh enabled="false" name="'dm_metal_half'"/>
+		</sequence>
+		<sequence editable_state="true" name="'chest_open_half_full'" triggable="true">
+			<function extension="'interaction'" function="'set_tweak_data'" param1="'take_gold_cache'"/>
+			
+			<graphic_group name="'chest_open'" visibility="true"/>
+			<graphic_group name="'gold_half_full'" visibility="true"/>
+			<graphic_group name="'loot_full'" visibility="false"/>
+			<graphic_group name="'gold_full'" visibility="false"/>
+			<graphic_group name="'chest_closed'" visibility="false"/>
+			<graphic_group name="'lockpick_icon'" visibility="false"/>
+			<object enabled="true" name="'s_shadow_open'"/>
+			<body enabled="true" name="'open'"/>
+			<body enabled="true" name="'half'"/>
+			<body enabled="false" name="'closed'"/>
+			<decal_mesh enabled="true" name="'dm_metal_open'"/>
+			<decal_mesh enabled="true" name="'dm_wood_open'"/>
+			<decal_mesh enabled="false" name="'dm_metal_closed'"/>
+			<decal_mesh enabled="false" name="'dm_wood_closed'"/>
+			<decal_mesh enabled="true" name="'dm_metal_half'"/>
+		</sequence>
+		<sequence editable_state="true" name="'chest_closed'" triggable="true">
+			<graphic_group name="'chest_open'" visibility="false"/>
+			<graphic_group name="'gold_half_full'" visibility="false"/>
+			<graphic_group name="'loot_full'" visibility="false"/>
+			<graphic_group name="'gold_full'" visibility="false"/>
+			<graphic_group name="'chest_closed'" visibility="true"/>
+			<graphic_group name="'lockpick_icon'" visibility="true"/>
+			<object enabled="false" name="'s_shadow_open'"/>
+			<body enabled="false" name="'open'"/>
+			<body enabled="false" name="'half'"/>
+			<body enabled="true" name="'closed'"/>
+			<decal_mesh enabled="false" name="'dm_metal_open'"/>
+			<decal_mesh enabled="false" name="'dm_wood_open'"/>
+			<decal_mesh enabled="true" name="'dm_metal_closed'"/>
+			<decal_mesh enabled="true" name="'dm_wood_closed'"/>
+			<decal_mesh enabled="false" name="'dm_metal_half'"/>
+		</sequence>
+		<sequence editable_state="true" name="'enable_interaction'" triggable="true">
+			<interaction enabled="true"/>
+		</sequence>
+		<sequence editable_state="true" name="'disable_interaction'" triggable="true">
+			<interaction enabled="false"/>
+		</sequence>
+		<sequence editable_state="true" name="'interact'" triggable="true">
+			<interaction filter="'filter_has_loot'" enabled="true"/>
+			<run_sequence filter="'filter_no_loot'" name="'chest_open_empty'"/>
+		</sequence>
+	</unit>
+</table>

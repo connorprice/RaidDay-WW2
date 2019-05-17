@@ -1,0 +1,59 @@
+<dynamic_object>
+	<diesel materials="units/vanilla/occluders/occluder_plane" orientation_object="rp_occluder_castle_01" />
+	<graphics>
+		<object name="g_plane_01" enabled="true" />
+		<object name="g_plane_02" enabled="true" />
+		<object name="g_plane_03" enabled="true" />
+		<object name="g_plane_04" enabled="true" />
+		<object name="g_plane_05" enabled="true" />
+		<object name="g_plane_06" enabled="true" />
+		<object name="g_plane_07" enabled="true" />
+		<object name="g_plane_09" enabled="true" />
+		<object name="g_plane_010" enabled="true" />
+		<object name="g_plane_011" enabled="true" />
+		<object name="g_plane_012" enabled="true" />
+		<object name="g_plane_013" enabled="true" />
+		<object name="g_plane_014" enabled="true" />
+		<object name="g_plane_015" enabled="true" />
+		<object name="g_plane_017" enabled="true" />
+		<object name="g_plane_018" enabled="true" />
+		<object name="g_plane_019" enabled="true" />
+		<object name="g_plane_08" enabled="true" />
+		<object name="g_plane_016" enabled="true" />
+		<object name="g_plane_022" enabled="true" />
+		<object name="g_plane_023" enabled="true" />
+		<object name="g_plane_024" enabled="true" />
+		<object name="g_plane_025" enabled="true" />
+		<object name="g_plane_026" enabled="true" />
+		<object name="g_plane_027" enabled="true" />
+		<object name="g_plane_028" enabled="true" />
+	</graphics>
+	<occluders>
+		<occluder name="oc_plane_01" />
+		<occluder name="oc_plane_02" />
+		<occluder name="oc_plane_03" />
+		<occluder name="oc_plane_04" />
+		<occluder name="oc_plane_05" />
+		<occluder name="oc_plane_06" />
+		<occluder name="oc_plane_07" />
+		<occluder name="oc_plane_09" />
+		<occluder name="oc_plane_010" />
+		<occluder name="oc_plane_011" />
+		<occluder name="oc_plane_012" />
+		<occluder name="oc_plane_013" />
+		<occluder name="oc_plane_014" />
+		<occluder name="oc_plane_015" />
+		<occluder name="oc_plane_017" />
+		<occluder name="oc_plane_018" />
+		<occluder name="oc_plane_019" />
+		<occluder name="oc_plane_08" />
+		<occluder name="oc_plane_016" />
+		<occluder name="oc_plane_022" />
+		<occluder name="oc_plane_023" />
+		<occluder name="oc_plane_024" />
+		<occluder name="oc_plane_025" />
+		<occluder name="oc_plane_026" />
+		<occluder name="oc_plane_027" />
+		<occluder name="oc_plane_028" />
+	</occluders>
+</dynamic_object>

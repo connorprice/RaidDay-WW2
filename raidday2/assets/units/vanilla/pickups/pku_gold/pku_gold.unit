@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<unit type="pku" slot="1">
+	<network sync="spawn" />
+	<object file="units/vanilla/pickups/pku_gold/pku_gold" />
+	
+	<!-- PAYDAY2 EXTENSIONS -->
+	<extensions>
+		<extension name="unit_data" class="ScriptUnitData" />
+		<extension name="damage" class="UnitDamage" />
+		<extension name="interaction" class="CarryInteractionExt">
+			<var name="tweak_data" value="take_gold_crate" />
+			<var name="_remove_on_interact" value="true" />
+			<var name="_global_event" value="pku_gold" />
+			<var name="_ray_object_names" type="table" >
+				<var value="ray_1"/>
+				<var value="ray_2"/>
+			</var>
+		</extension>
+		<extension name="carry_data" class="CarryData">
+			<var name="_carry_id" value="gold_crate" />
+		</extension>
+	</extensions>
+</unit>

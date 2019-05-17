@@ -1,0 +1,21 @@
+<dynamic_object>
+	<diesel materials="units/vanilla/occluders/occluder_plane" orientation_object="rp_occluder_german_camp_01" />
+	<graphics>
+		<object name="g_occluder_plane_01" enabled="true"/>
+		<object name="g_occluder_plane_02" enabled="true"/>
+		<object name="g_occluder_plane_03" enabled="true"/>
+		<object name="g_occluder_plane_04" enabled="true"/>
+		<object name="g_occluder_plane_05" enabled="true"/>
+		<object name="g_occluder_plane_06" enabled="true"/>
+		<object name="g_occluder_plane_07" enabled="true"/>
+	</graphics>
+	<occluders>
+		<occluder name="oc_plane_01" />
+		<occluder name="oc_plane_02" />
+		<occluder name="oc_plane_03" />
+		<occluder name="oc_plane_04" />
+		<occluder name="oc_plane_05" />
+		<occluder name="oc_plane_06" />
+		<occluder name="oc_plane_07" />
+	</occluders>
+</dynamic_object>

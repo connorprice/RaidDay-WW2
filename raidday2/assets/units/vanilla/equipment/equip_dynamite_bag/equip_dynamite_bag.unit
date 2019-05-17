@@ -1,0 +1,13 @@
+<unit type="equip" slot="1">
+    <object file="units/vanilla/equipment/equip_dynamite_bag/equip_dynamite_bag" />
+    <network sync="spawn"/>
+    <extensions>
+        <extension class="ScriptUnitData" name="unit_data" />
+        <extension name="damage" class="UnitDamage" />
+        <extension name="interaction" class="SpecialEquipmentInteractionExt" >
+			<var name="_special_equipment" value="dynamite_bag" />
+			<var name="tweak_data" value="take_dynamite_bag" />
+			<var name="_remove_on_interact" value="true" />
+		</extension>
+    </extensions>
+</unit>

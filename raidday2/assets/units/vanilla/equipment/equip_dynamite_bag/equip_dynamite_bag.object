@@ -1,0 +1,19 @@
+<dynamic_object>
+    <diesel orientation_object="rp_equip_dynamite_bag" materials="units/vanilla/equipment/equip_dynamite_bag/equip_dynamite_bag" />
+    <sequence_manager file="units/vanilla/equipment/equip_dynamite_bag/equip_dynamite_bag" />
+    <bodies>
+        <body enabled="true" template="static" name="static_body">
+            <object name="rp_equip_dynamite_bag" />
+            <object name="c_box_01" collision_type="box" padding="-2.5" />
+        </body>
+    </bodies>
+    <decal_surfaces />
+    <graphics>
+        <object name="g_bag" enabled="true" />
+        <object name="g_fuse" enabled="false
+        " />
+        <object name="g_dynamite" enabled="true" />
+        <object name="g_outline" enabled="false" />
+        <object name="s_s" enabled="true" shadow_caster="true" />
+    </graphics>
+</dynamic_object>

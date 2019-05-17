@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<unit type="item" slot="1">
+	<object file="units/vanilla/pickups/pku_gold_bar_bag/pku_gold_bar_bag" />
+	<network sync="bodies" remote_unit=""/>
+
+	<extensions>
+		<extension name="unit_data" class="ScriptUnitData" />
+		<extension name="damage" class="UnitDamage" />
+	</extensions>
+	<sounds>
+		<default_soundsource source="interact"/>
+		<soundsource name="snd" source="interact" />
+	</sounds>
+</unit>

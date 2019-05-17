@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<unit type="pku" slot="1">
+	<object file="units/vanilla/pickups/pku_gold_bar/pku_gold_bar" />
+	<network sync="spawn" />
+	<extensions>
+		<extension name="unit_data" class="ScriptUnitData" />
+		<extension name="damage" class="UnitDamage" />
+		<extension name="interaction" class="CarryInteractionExt">
+			<var name="tweak_data" value="take_gold_bar" />
+			<var name="_remove_on_interact" value="true" />
+			<var name="_global_event" value="pku_gold_bar" />
+		</extension>
+		<extension name="carry_data" class="CarryData">
+			<var name="_carry_id" value="gold_bar" />
+			<var name="_disable_update" value="true" />
+		</extension>
+	</extensions>
+	<sounds>
+		<default_soundsource source="interaction"/>
+		<soundsource name="snd" source="interaction" />
+	</sounds>
+</unit>

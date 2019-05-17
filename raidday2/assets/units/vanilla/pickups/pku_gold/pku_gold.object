@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<dynamic_object>
+	<diesel materials="units/vanilla/pickups/pku_gold/pku_gold" orientation_object="rp_pku_gold_crate_bag" />
+	<sequence_manager file="units/vanilla/pickups/pku_gold/pku_gold" />
+
+	<bodies>
+		<body name="gold_bar" enabled="false" template="static">
+			<object name="rp_pku_gold_crate_bag"/>
+			<object name="c_box" collision_type="box" padding="-2.5" mass="100" />
+		</body>	
+		<body name="gold_bar_animated" enabled="false" template="animated" >
+			<object name="rp_pku_gold_crate_bag" />
+			<object name="c_box" collision_type="box" padding="-2.5" mass="100" />
+		</body>
+	</bodies>
+
+	<decal_surfaces default_material="wood" static="true">
+		<decal_mesh name="dm_wood" enabled="true" material="wood"/>
+		<decal_mesh name="dm_glass" enabled="true" material="metal"/>
+	</decal_surfaces>
+
+	<graphics>
+		<object name="g_box" enabled="false" />
+	</graphics>
+
+</dynamic_object>

@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<unit type="pku" slot="1">
+	<object file="units/vanilla/pickups/pku_gold_bars/pku_gold_bars" />
+	<network sync="spawn" />
+	<extensions>
+        <extension class="ScriptUnitData" name="unit_data" />
+		<extension name="damage" class="UnitDamage" />
+		
+		<extension name="base" class="SmallLootBase">
+			<var name="small_loot" value="vault_loot_gold" />
+		</extension>
+		
+		<extension name="interaction" class="SmallLootInteractionExt">
+			<var name="tweak_data" value="safe_loot_pickup" />
+			<var name="_interact_object" value="interaction"/>
+		</extension>
+	</extensions>
+	<sounds>
+		<default_soundsource source="interact"/>
+		<soundsource name="snd" source="interact" />
+	</sounds>
+</unit>

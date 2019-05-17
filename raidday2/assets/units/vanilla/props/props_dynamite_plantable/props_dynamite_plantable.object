@@ -1,0 +1,18 @@
+<dynamic_object>
+    <diesel orientation_object="rp_dynamite" materials="units/vanilla/props/props_dynamite_plantable/props_dynamite_plantable" />
+    <sequence_manager file="units/vanilla/props/props_dynamite_plantable/props_dynamite_plantable" />
+    <bodies>
+    	<body name="static_body" enabled="true" template="editor">
+    		<object name="rp_dynamite" />
+    		<object name="c_box" collision_type="box" />
+    	</body>
+    </bodies>
+    <graphics>
+        <object name="g_dynamite" enabled="false" />
+        <object name="g_outline" enabled="true" />
+        <object name="s_s" enabled="true" shadow_caster="false" />
+    </graphics>
+    <effects>
+        <effect_spawner name="explode" enabled="false" object="rp_dynamite" effect="effects/vanilla/explosions/exp_c4_001" />
+    </effects>
+</dynamic_object>

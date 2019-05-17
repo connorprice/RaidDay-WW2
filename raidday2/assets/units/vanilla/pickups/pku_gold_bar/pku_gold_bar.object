@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<dynamic_object>
+	<diesel materials="units/vanilla/pickups/pku_gold_bar/pku_gold_bar" orientation_object="rp_pku_gold_bar" />
+	<sequence_manager file="units/vanilla/pickups/pku_gold_bar/pku_gold_bar" />
+
+	<bodies>
+		<body name="body_gold" enabled="true" template="static">
+			<object name="rp_pku_gold_bar"/>
+			<object name="c_box_01" collision_type="box" />
+		</body>	
+	</bodies>
+
+	<decal_surfaces default_material="steel" static="true">
+		<decal_mesh name="dm_thin_layer" enabled="true" material="steel"/>
+	</decal_surfaces>
+
+	<graphics>
+		<object name="g_g" enabled="true" shadow_caster="true" />
+		<object name="g_effect" enabled="true" shadow_caster="true" />
+	</graphics>
+
+</dynamic_object>

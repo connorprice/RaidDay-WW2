@@ -1,0 +1,19 @@
+<table>
+	<unit>
+		<sequence editable_state="false" name="'spawn_gold'" triggable="true">
+			<object enabled="false" name="'g_g'"/>
+			<spawn_unit name="'units/vanilla/pickups/pku_gold_tile/pku_gold_tile'" position="object_pos('spawn_locator_01')" rotation="object_rot('spawn_locator_01')"/>
+			<spawn_unit name="'units/vanilla/pickups/pku_gold_tile/pku_gold_tile'" position="object_pos('spawn_locator_02')" rotation="object_rot('spawn_locator_02')"/>
+			<spawn_unit name="'units/vanilla/pickups/pku_gold_tile/pku_gold_tile'" position="object_pos('spawn_locator_03')" rotation="object_rot('spawn_locator_03')"/>
+			<spawn_unit name="'units/vanilla/pickups/pku_gold_tile/pku_gold_tile'" position="object_pos('spawn_locator_04')" rotation="object_rot('spawn_locator_04')"/>
+			<spawn_unit name="'units/vanilla/pickups/pku_gold_tile/pku_gold_tile'" position="object_pos('spawn_locator_05')" rotation="object_rot('spawn_locator_05')"/>
+			<spawn_unit name="'units/vanilla/pickups/pku_gold_tile/pku_gold_tile'" position="object_pos('spawn_locator_06')" rotation="object_rot('spawn_locator_06')"/>
+		</sequence>
+		<sequence editable_state="true" name="'show'" triggable="true">
+			<object enabled="true" name="'g_g'"/>
+		</sequence>
+		<sequence editable_state="true" name="'hide'" triggable="true">
+			<object enabled="false" name="'g_g'"/>
+		</sequence>
+	</unit>
+</table>

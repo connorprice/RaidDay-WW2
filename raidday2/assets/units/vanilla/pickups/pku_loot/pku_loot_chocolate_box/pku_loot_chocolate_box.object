@@ -1,0 +1,20 @@
+<dynamic_object>
+	<diesel materials="units/vanilla/pickups/pku_loot/pku_loot_chocolate_box/pku_loot_chocolate_box" orientation_object="rp_pku_loot_chocolate_box" />
+	<sequence_manager file="units/vanilla/pickups/pku_loot/pku_loot_chocolate_box/pku_loot_chocolate_box" />
+	<bodies>
+		<body name="body_static" enabled="true" template="static">
+			<object name="rp_pku_loot_chocolate_box" />
+			<object name="c_box_01" collision_type="box" padding="-2.5" />
+		</body>
+	</bodies>
+	<decal_surfaces default_material="cloth">
+		<decal_mesh name="dm_cloth" enabled="true" material="cloth" />
+		<decal_mesh name="dm_wood" enabled="true" material="wood" />
+	</decal_surfaces>
+	<graphics>
+		<object name="g_box" 		enabled="true" />
+		<object name="g_chocolate" 	enabled="true" />
+		<object name="g_effect" 	enabled="true" />
+		<object name="s_s" 			enabled="true" shadow_caster="true" />
+	</graphics>
+</dynamic_object>

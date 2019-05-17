@@ -1,0 +1,13 @@
+<unit type="props" slot="1">
+    <object file="units/vanilla/props/props_treasure_chest/props_treasure_chest" />
+	<network sync="spawn"/>
+    <extensions>
+        <extension class="ScriptUnitData" name="unit_data" />
+        <extension name="damage" class="UnitDamage" />
+        <extension name="interaction" class="GreedCacheItemInteractionExt">
+            <var name="tweak_data" value="unlock_gold_cache" />
+            <var name="_interact_object" value="interaction"/>
+            <var name="_remove_on_interact" value="false" />
+        </extension>
+    </extensions>
+</unit>

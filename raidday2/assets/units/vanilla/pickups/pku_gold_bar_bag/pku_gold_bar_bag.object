@@ -1,0 +1,33 @@
+<dynamic_object>
+    <diesel orientation_object="rp_pku_gold_bar_bag" materials="units/vanilla/pickups/pku_gold_bar_bag/pku_gold_bar_bag" />
+    <sequence_manager file="units/vanilla/pickups/pku_gold_bar_bag/pku_gold_bar_bag" />
+
+    <bodies>
+<!--         <body enabled="true" template="static" name="static_body">
+            <object name="rp_pku_gold_bar_bag" />
+            <object name="c_box_01" collision_type="box" padding="-2.5" />
+        </body> -->
+        <body name="body_gold_bar" enabled="true" template="small_prop" friction="0.5" lin_damping="0.4" ang_damping="20" restitution="0" collision_class="bag" pushed_by_mover="false" sweep="true" tag="bag"  collision_script_tag="small" >
+			<object name="rp_pku_gold_bar_bag" />
+			<object name="c_box_01" collision_type="box" padding="-2.5" mass="25" />
+		</body>
+		<body name="body_gold_bar_animated" enabled="false" template="animated" friction="0.5" lin_damping="0.4" ang_damping="20" restitution="0" collision_class="bag" pushed_by_mover="false" sweep="true" tag="bag"  collision_script_tag="small" >
+			<object name="rp_pku_gold_bar_bag" />
+			<object name="c_box_01" collision_type="box" padding="-2.5" mass="100" />
+		</body>
+		<body name="body_gold_bar_vehicle" enabled="false" template="vehicle" collision_script_filter="1" collision_script_quiet_time="0.5" collision_script_tag="vehicle_collision" give_standing_velocity="false">
+			<object name="rp_pku_gold_bar_bag" />
+			<object name="c_box_01" collision_type="box" padding="-2.5" mass="100" />
+		</body>
+    </bodies>
+
+    <decal_surfaces>
+        <decal_mesh name="dm_steel" enabled="true" material="steel" />
+    </decal_surfaces>
+
+    <graphics>
+        <object name="g_g" enabled="true" />
+        <object name="g_effect_02" enabled="true" />
+    </graphics>
+
+</dynamic_object>

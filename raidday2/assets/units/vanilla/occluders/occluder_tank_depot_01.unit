@@ -1,0 +1,8 @@
+<unit type="Ger_A" slot="1">
+	<object file="units/vanilla/occluders/occluder_tank_depot_01" />
+	<extensions>
+        <extension name="unit_data" class="ScriptUnitData">
+            <var name="only_visible_in_editor" value="true" />
+        </extension>
+    </extensions>
+</unit>

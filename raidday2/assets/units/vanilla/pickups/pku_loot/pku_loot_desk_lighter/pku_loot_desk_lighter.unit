@@ -1,0 +1,21 @@
+<unit type="pku" slot="1">
+    <object file="units/vanilla/pickups/pku_loot/pku_loot_desk_lighter/pku_loot_desk_lighter" />
+        <network sync="spawn" />
+	<extensions>
+        <extension name="unit_data" class="ScriptUnitData" />
+		<extension name="damage" class="UnitDamage" />
+		<extension name="interaction" class="GreedItemInteractionExt">
+			<var name="tweak_data" value="hold_take_loot" />
+			<var name="_interact_object" value="interaction"/>
+			<var name="_remove_on_interact" value="true" />
+			<var name="_global_event" value="pku_dogtags" />
+			<var name="_ray_object_names" type="table" >
+                <var value="a_ray_01"/>
+                <var value="a_ray_02"/>
+            </var>
+		</extension>
+		<extension name="greed" class="GreedItem">
+			<var name="_tweak_table" value="lighter"/>
+		</extension>
+    </extensions>
+</unit>

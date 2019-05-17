@@ -1,0 +1,28 @@
+<dynamic_object>
+	<diesel orientation_object="rp_pku_gold_crate_bag" materials="units/vanilla/pickups/pku_gold_crate_bag/pku_gold_crate_bag" />
+	<sequence_manager file="units/vanilla/pickups/pku_gold_crate_bag/pku_gold_crate_bag" />
+
+	<bodies>
+		<body name="body_gold_crate" enabled="true" template="small_prop" friction="0.5" lin_damping="0.4" ang_damping="20" restitution="0" collision_class="bag" pushed_by_mover="false" sweep="true" tag="bag"  collision_script_tag="small" >
+			<object name="rp_pku_gold_crate_bag" />
+			<object name="c_box" collision_type="box" padding="-2.5" mass="100" />
+		</body>
+		<body name="body_gold_crate_animated" enabled="false" template="animated" friction="0.5" lin_damping="0.4" ang_damping="20" restitution="0" collision_class="bag" pushed_by_mover="false" sweep="true" tag="bag"  collision_script_tag="small" >
+			<object name="rp_pku_gold_crate_bag" />
+			<object name="c_box" collision_type="box" padding="-2.5" mass="100" />
+		</body>
+		<body name="body_gold_crate_vehicle" enabled="false" template="vehicle" collision_script_filter="1" collision_script_quiet_time="0.5" collision_script_tag="vehicle_collision" give_standing_velocity="false">
+			<object name="rp_pku_gold_crate_bag" />
+			<object name="c_box" collision_type="box" padding="-2.5" mass="100" />
+		</body>
+	</bodies>
+	<decal_surfaces default_material="wood">
+		<decal_mesh name="dm_wood" enabled="true" material="wood" />
+		<decal_mesh name="dm_glass" enabled="true" material="metal" />
+	</decal_surfaces>
+	<graphics>
+		<graphic_group name="grp_crate" enabled="true" >
+			<object name="g_box" enabled="true" />
+		</graphic_group>
+	</graphics>
+</dynamic_object>

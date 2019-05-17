@@ -1,0 +1,76 @@
+<materials version="3">
+    <material render_template="generic:CONTOUR:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP" name="mat_chest" version="2">
+        <diffuse_texture file="units/vanilla/props/props_treasure_chest/textures/treasure_chest_df"/>
+        <bump_normal_texture file="units/vanilla/props/props_treasure_chest/textures/treasure_chest_nm"/>
+        <material_texture file="units/vanilla/props/props_treasure_chest/textures/treasure_chest_gsma"/>
+    </material>
+    <material render_template="generic:ALPHA_MASKED:DIFFUSE_TEXTURE:EXTERNAL_ALPHA_REF:NORMALMAP:OPACITY_TEXTURE" name="mat_opacity" version="2">
+        <diffuse_texture file="units/vanilla/props/props_treasure_chest/textures/treasure_chest_df"/>
+        <bump_normal_texture file="units/vanilla/props/props_treasure_chest/textures/treasure_chest_nm"/>
+        <material_texture file="units/vanilla/props/props_treasure_chest/textures/treasure_chest_gsma"/>
+        <opacity_texture file="units/vanilla/props/props_treasure_chest/textures/treasure_chest_op"/>
+        <variable type="scalar" name="alpha_ref" value="0.5"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP" name="mat_iron" version="2">
+        <diffuse_texture file="units/vanilla/arhitecture/generic_texture/metal/industrial_steel_df"/>
+        <bump_normal_texture file="units/vanilla/arhitecture/generic_texture/metal/industrial_steel_nm"/>
+        <material_texture file="units/vanilla/arhitecture/generic_texture/metal/industrial_steel_gsm"/>
+    </material>
+    <material render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP" name="mat_goldbar" version="2">
+        <diffuse_texture file="units/vanilla/props/props_goldbar/goldbar_censored_df"/>
+        <bump_normal_texture file="units/vanilla/props/props_goldbar/goldbar_censored_nm"/>
+        <material_texture file="units/vanilla/props/props_goldbar/goldbar_censored_gsm"/>
+        <diffuse_texture file="units/vanilla/props/props_goldbar/goldbar_df"/>
+        <bump_normal_texture file="units/vanilla/props/props_goldbar/goldbar_nm"/>
+        <material_texture file="units/vanilla/props/props_goldbar/goldbar_gsm"/>
+        <reflection_texture file="environments/cubemaps/cubemap_gold" type="cubemap"/>
+    </material>
+    <material render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP" name="mat_globe" version="2">
+        <diffuse_texture file="units/vanilla/pickups/pku_loot/pku_loot_globe/textures/globe_df"/>
+        <bump_normal_texture file="units/vanilla/pickups/pku_loot/pku_loot_globe/textures/globe_nm"/>
+        <material_texture file="units/vanilla/pickups/pku_loot/pku_loot_globe/textures/globe_gsm"/>
+        <reflection_texture file="environments/cubemaps/cubemap_gold" type="cubemap"/>
+    </material>
+    <material render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP" name="mat_eagle" version="2">
+        <diffuse_texture file="units/vanilla/pickups/pku_loot/pku_loot_desk_eagle_statue/textures/eagle_statue_df"/>
+        <material_texture file="units/vanilla/pickups/pku_loot/pku_loot_desk_eagle_statue/textures/eagle_statue_gsm"/>
+        <bump_normal_texture file="units/vanilla/pickups/pku_loot/pku_loot_desk_eagle_statue/textures/eagle_statue_nm"/>
+        <reflection_texture file="environments/cubemaps/cubemap_gold" type="cubemap"/>
+    </material>
+  <material render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP" name="mat_scope" version="2">
+        <diffuse_texture file="units/vanilla/pickups/pku_loot/pku_loot_kaleidoscope/textures/kaleidoscope_df"/>
+        <bump_normal_texture file="units/vanilla/pickups/pku_loot/pku_loot_kaleidoscope/textures/kaleidoscope_nm"/>
+        <material_texture file="units/vanilla/pickups/pku_loot/pku_loot_kaleidoscope/textures/kaleidoscope_gsm"/>
+        <reflection_texture file="environments/cubemaps/cubemap_gold" type="cubemap"/>
+    </material>
+    <material render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP" name="mat_vase" version="2">
+        <diffuse_texture file="units/vanilla/pickups/pku_loot/pku_loot_desk_vase/textures/vase_df"/>
+        <bump_normal_texture file="units/vanilla/pickups/pku_loot/pku_loot_desk_vase/textures/vase_nm"/>
+        <material_texture file="units/vanilla/pickups/pku_loot/pku_loot_desk_vase/textures/vase_gsm"/>
+        <reflection_texture file="environments/cubemaps/cubemap_gold" type="cubemap"/>
+    </material>
+    <material render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP" name="mat_inkwell" version="2">
+        <diffuse_texture file="units/vanilla/pickups/pku_loot/pku_loot_desk_golden_inkwell/textures/gold_inkwell_df"/>
+        <material_texture file="units/vanilla/pickups/pku_loot/pku_loot_desk_golden_inkwell/textures/gold_inkwell_gsm"/>
+        <bump_normal_texture file="units/vanilla/pickups/pku_loot/pku_loot_desk_golden_inkwell/textures/gold_inkwell_nm"/>
+        <reflection_texture file="environments/cubemaps/cubemap_gold" type="cubemap"/>
+    </material>
+        <material render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP" name="letter_opener" version="2">
+        <diffuse_texture file="units/vanilla/pickups/pku_loot/pku_loot_desk_letter_opener/textures/letter_opener_df"/>
+        <bump_normal_texture file="units/vanilla/pickups/pku_loot/pku_loot_desk_letter_opener/textures/letter_opener_nm"/>
+        <material_texture file="units/vanilla/pickups/pku_loot/pku_loot_desk_letter_opener/textures/letter_opener_gsm"/>
+        <reflection_texture file="environments/cubemaps/cubemap_gold" type="cubemap"/>
+    </material>
+        <material render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP" name="mat_desk_book" version="2">
+        <diffuse_texture file="units/vanilla/pickups/pku_loot/pku_loot_desk_book/textures/desk_book_df"/>
+        <bump_normal_texture file="units/vanilla/pickups/pku_loot/pku_loot_desk_book/textures/desk_book_nm"/>
+        <material_texture file="units/vanilla/pickups/pku_loot/pku_loot_desk_book/textures/desk_book_gsm"/>
+        <reflection_texture file="environments/cubemaps/cubemap_gold" type="cubemap"/>
+    </material>
+    <material name="mat_icon" render_template="effect:DIFFUSE0_TEXTURE:VIEW_ANGLE_FALLOFF_OP" version="2">
+        <diffuse_texture file="ui/interactions/lockpick_indicator_df"/>
+        <variable value="identity" type="scalar" name="intensity"/>
+        <variable value="1" type="scalar" name="falloff_exp"/>
+    </material>
+    <material name="shadow_caster" render_template="shadow_caster_only" version="2"/>
+</materials>

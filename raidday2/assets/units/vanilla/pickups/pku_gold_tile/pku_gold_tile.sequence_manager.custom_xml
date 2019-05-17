@@ -1,0 +1,29 @@
+<table>
+	<unit>
+		<sequence name="'money_wrap_1'">
+			<run_sequence name="'hide'"/>
+		</sequence>
+		<sequence editable_state="true" name="'enable_interaction'" triggable="true">
+			<interaction enabled="true"/>
+		</sequence>
+		<sequence editable_state="true" name="'disable_interaction'" triggable="true">
+			<interaction enabled="false"/>
+		</sequence>
+		<sequence editable_state="true" name="'show'" triggable="true">
+			<object enabled="true" name="'g_gold_brick'"/>
+			<object enabled="true" name="'s_gold_brick_02'"/>
+			<interaction enabled="true"/>
+		</sequence>
+		<sequence editable_state="true" name="'hide'" triggable="true">
+			<object enabled="false" name="'g_gold_brick'"/>
+			<object enabled="false" name="'s_gold_brick_02'"/>
+			<interaction enabled="false"/>
+		</sequence>
+		<sequence editable_state="false" name="'interact'" triggable="false">
+			<object enabled="false" name="'g_gold_brick'"/>
+			<object enabled="false" name="'s_gold_brick_02'"/>
+			<interaction enabled="false"/>
+			<slot slot="0"/>
+		</sequence>
+	</unit>
+</table>

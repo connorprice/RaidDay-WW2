@@ -1,0 +1,20 @@
+<dynamic_object>
+    <diesel orientation_object="rp_dynamite_x4" materials="units/vanilla/equipment/equip_dynamite_x4/equip_dynamite_x4" />
+    <sequence_manager file="units/vanilla/equipment/equip_dynamite_x4/equip_dynamite_x4" />
+    <bodies>
+    	<body name="static_body" enabled="true" template="editor">
+    		<object name="rp_dynamite_x4" />
+            <object name="c_box_01" collision_type="box" />
+            <object name="c_box_02" collision_type="box" />
+            <object name="c_box_03" collision_type="box" />
+    		<object name="c_box_04" collision_type="box" />
+    	</body>
+    </bodies>
+    <graphics>
+        <graphic_group name="grp_dynamite" enabled="true" >
+            <object name="g_dynamite" enabled="true" />
+            <object name="g_outline" enabled="false" />
+            <object name="s_s" enabled="true" shadow_caster="true" />
+        </graphic_group>
+    </graphics>
+</dynamic_object>

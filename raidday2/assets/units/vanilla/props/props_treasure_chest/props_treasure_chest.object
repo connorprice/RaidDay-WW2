@@ -1,0 +1,77 @@
+<dynamic_object>
+    <diesel orientation_object="rp_props_treasure_chest" materials="units/vanilla/props/props_treasure_chest/props_treasure_chest" />
+    <sequence_manager file="units/vanilla/props/props_treasure_chest/props_treasure_chest" />
+    <bodies>
+        <body enabled="true" template="static" name="closed">
+            <object name="rp_props_treasure_chest" />
+            <object name="c_box_01" collision_type="box" padding="-2.5" />
+        </body>
+        <body enabled="false" template="static" name="open">
+            <object name="rp_props_treasure_chest" />
+            <object name="c_box_02" collision_type="box" padding="-2.5" />
+            <object name="c_box_05" collision_type="box" padding="-2.5" />
+            <object name="c_box_06" collision_type="box" padding="-2.5" />
+            <object name="c_box_07" collision_type="box" padding="-2.5" />
+            <object name="c_box_08" collision_type="box" padding="-2.5" />
+        </body>
+        <body enabled="false" template="static" name="half">
+            <object name="rp_props_treasure_chest" />
+            <object name="c_box_04" collision_type="box" padding="-2.5" />
+        </body>
+    </bodies>
+    <decal_surfaces>
+        <decal_mesh name="dm_metal_open" enabled="false" material="metal" />
+        <decal_mesh name="dm_wood_open" enabled="false" material="wood" />
+        <decal_mesh name="dm_metal_closed" enabled="true" material="metal" />
+        <decal_mesh name="dm_metal_half" enabled="true" material="metal" />
+        <decal_mesh name="dm_wood_closed" enabled="true" material="wood" />
+    </decal_surfaces>
+    
+    <graphics>
+	    <graphic_group name="chest_closed" enabled="true">
+			 <lod_object name="lod_closed_grp">
+	            <object name="g_chest_closed_lod0" enabled="true"  max_distance="3000" />
+	            <object name="g_chest_closed_lod1" enabled="true" />
+	        </lod_object>
+	        <object name="s_shadow_closed" enabled="true" shadow_caster="true" />
+	    </graphic_group>
+
+	    <graphic_group name="chest_open" enabled="false">
+			 <lod_object name="lod_open_grp">
+	            <object name="g_chest_open_lod0" enabled="true"  max_distance="3000" />
+	            <object name="g_chest_open_lod1" enabled="true" />
+	        </lod_object>
+        </graphic_group>
+	   
+        <graphic_group name="loot_full" enabled="false">
+            <lod_object name="lod_open_loot">
+                <object name="g_loot_full_lod0" enabled="true"  max_distance="3000" />
+                <object name="g_loot_full_lod1" enabled="true" />
+            </lod_object>
+        </graphic_group>
+        
+        <graphic_group name="gold_full" enabled="false">
+            <lod_object name="lod_open_gold">
+                <object name="g_goldbars_full_lod0" enabled="true"  max_distance="3000" />
+                <object name="g_goldbars_full_lod1" enabled="true" />
+            </lod_object>
+        </graphic_group>
+
+        <graphic_group name="gold_half_full" enabled="false">
+            <lod_object name="lod_half_gold">
+                <object name="g_goldbars_half_lod0" enabled="true"  max_distance="3000" />
+                <object name="g_goldbars_half_lod1" enabled="true" />
+            </lod_object>
+        </graphic_group>
+
+         <graphic_group name="lockpick_icon" enabled="false">
+            <lod_object name="lod_lock_pick">
+                <object name="g_icon" enabled="true"  max_distance="450" />
+                <object name="g_icon_lod" enabled="true" />
+            </lod_object>
+        </graphic_group>
+        
+        <object name="s_shadow_open" enabled="false" shadow_caster="true" />
+    </graphics>
+
+</dynamic_object>

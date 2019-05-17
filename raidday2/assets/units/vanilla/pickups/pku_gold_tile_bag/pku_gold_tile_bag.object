@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<dynamic_object>
+	<diesel materials="units/vanilla/pickups/pku_gold_tile_bag/pku_gold_tile_bag" orientation_object="rp_pku_gold_tile_bag" />
+	<sequence_manager file="units/vanilla/pickups/pku_gold_tile_bag/pku_gold_tile_bag" />
+
+	<bodies>
+		<body name="body_gold" enabled="true" template="small_prop" collision_class="bag" pushed_by_mover="false" friction="0.5" sweep="true" keyframed="false" tag="bag" collision_script_quiet_time="0.5" collision_script_tag="small" ray="block" lin_damping="0.4" ang_damping="20" restitution="0">
+			<object name="c_box_01" collision_type="box" material="gold" />
+		</body>	
+	</bodies>
+
+	<decal_surfaces default_material="steel" static="true">
+		<decal_mesh name="g_g" enabled="true" material="steel"/>
+	</decal_surfaces>
+
+	<graphics>
+		<object name="g_g" enabled="true" />
+	</graphics>
+
+</dynamic_object>

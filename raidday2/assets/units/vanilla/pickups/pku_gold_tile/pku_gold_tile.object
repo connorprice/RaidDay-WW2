@@ -1,0 +1,17 @@
+<dynamic_object>
+    <diesel orientation_object="rp_pku_gold_tile" materials="units/vanilla/pickups/pku_gold_tile/pku_gold_tile" />
+    <sequence_manager file="units/vanilla/pickups/pku_gold_tile/pku_gold_tile" />
+    <bodies>
+        <body enabled="true" template="editor" name="static_body">
+            <object name="rp_pku_gold_tile" />
+            <object name="c_box" collision_type="box" padding="-2.5" />
+        </body>
+    </bodies>
+    <decal_surfaces>
+        <decal_mesh name="dm_metal" enabled="true" material="metal" />
+    </decal_surfaces>
+    <graphics>
+        <object name="g_gold_brick" enabled="true" />
+        <object name="s_gold_brick_2" enabled="true" shadow_caster="true" />
+    </graphics>
+</dynamic_object>

@@ -1,0 +1,25 @@
+<dynamic_object>
+	<diesel materials="units/vanilla/occluders/occluder_plane" orientation_object="rp_occluder_bank_01" />
+	<bodies>
+        <body name="static_body" template="editor" enabled="true" >
+            <object name="rp_occluder_bank_01"/>
+            <object collision_type="mesh_mopp" enabled="true" name="g_occluder_plane_04"/>
+        </body>
+    </bodies>
+	<graphics>
+		<object name="g_occluder_plane_01" enabled="true" />
+		<object name="g_occluder_plane_02" enabled="true" />
+		<object name="g_occluder_plane_03" enabled="true" />
+		<object name="g_occluder_plane_04" enabled="true" />
+		<object name="g_occluder_plane_05" enabled="true" />
+		<object name="g_occluder_plane_06" enabled="true" />
+	</graphics>
+	<occluders>
+		<occluder name="oc_plane_01" />
+		<occluder name="oc_plane_02" />
+		<occluder name="oc_plane_03" />
+		<occluder name="oc_plane_04" />
+		<occluder name="oc_plane_05" />
+		<occluder name="oc_plane_06" />
+	</occluders>
+</dynamic_object>

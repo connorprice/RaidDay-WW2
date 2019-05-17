@@ -1,0 +1,11 @@
+<materials version="3">
+    <material version="2" unique="true" render_template="generic:CONTOUR:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP" name="dynamit">
+        <diffuse_texture file="units/vanilla/equipment/equip_dynamite/dynamite_stick_df"/>
+        <bump_normal_texture file="units/vanilla/equipment/equip_dynamite/dynamite_stick_nm"/>
+        <material_texture file="units/vanilla/equipment/equip_dynamite/dynamite_stick_gsm"/>
+        <variable value="1 1 1" type="vector3" name="contour_color"/>
+        <variable value="0" type="scalar" name="contour_opacity"/>
+        <variable value="1000" type="scalar" name="contour_distance"/>
+    </material>
+    <material name="shadow_caster" render_template="shadow_caster_only" version="2"/>
+</materials>

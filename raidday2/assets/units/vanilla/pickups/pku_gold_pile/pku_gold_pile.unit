@@ -1,0 +1,11 @@
+<unit type="pku" slot="1">
+    <object file="units/vanilla/pickups/pku_gold_pile/pku_gold_pile" />
+    <network sync="spawn"/>
+    <dependencies>
+    	<depends_on unit="units/vanilla/pickups/pku_gold_tile/pku_gold_tile" />
+  	</dependencies>
+  	<extensions>
+    	<extension name="unit_data" class="ScriptUnitData" />
+    	<extension name="damage" class="UnitDamage" />
+  	</extensions>
+</unit>

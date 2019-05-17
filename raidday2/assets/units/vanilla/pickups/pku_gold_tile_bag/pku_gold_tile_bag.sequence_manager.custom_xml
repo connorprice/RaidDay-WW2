@@ -1,0 +1,20 @@
+<table>
+	<unit>
+		<sequence editable_state="false" name="'freeze'" triggable="false">
+			<body enabled="false" name="'body_gold'"/>
+		</sequence>
+		<sequence editable_state="false" name="'non_usable'" triggable="false">
+			<interaction enabled="false"/>
+		</sequence>
+		<sequence editable_state="false" name="'secured'" triggable="false">
+			<interaction enabled="false"/>
+			<function extension="'carry_data'" function="'sequence_clbk_secured'"/>
+		</sequence>
+		<sequence editable_state="false" name="'interact'" triggable="false">
+			<interaction enabled="false"/>
+			<body enabled="false" name="'body_gold'"/>
+			<object enabled="false" name="'g_g'"/>
+			<decal_mesh enabled="false" name="'g_g'"/>
+		</sequence>
+	</unit>
+</table>

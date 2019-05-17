@@ -1,0 +1,18 @@
+<dynamic_object>
+	<diesel materials="units/vanilla/occluders/occluder_plane" orientation_object="rp_hex_occluder_02" />
+    <bodies>
+        <body name="static_body" template="editor" enabled="true" >
+            <object name="rp_hex_occluder_02"/>
+            <object collision_type="box" enabled="true" name="g_occluder_plane_01"/>
+            <object collision_type="box" enabled="true" name="g_occluder_plane_02"/>
+        </body>
+    </bodies>
+	<graphics>
+		<object name="g_occluder_plane_01" enabled="true" />
+		<object name="g_occluder_plane_02" enabled="true" />
+	</graphics>
+	<occluders>
+		<occluder name="oc_plane_01" />
+		<occluder name="oc_plane_02" />
+	</occluders>
+</dynamic_object>

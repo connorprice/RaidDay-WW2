@@ -1,0 +1,15 @@
+<materials version="3">
+    <material render_template="generic:ALPHA_MASKED:DIFFUSE_TEXTURE:EXTERNAL_ALPHA_REF:GSMA_TEXTURE:NORMALMAP:OPACITY_TEXTURE" name="Default" version="2">
+        <diffuse_texture file="units/vanilla/pickups/pku_loot/pku_loot_desk_watch/textures/watch_df"/>
+        <bump_normal_texture file="units/vanilla/pickups/pku_loot/pku_loot_desk_watch/textures/watch_nm"/>
+        <material_texture file="units/vanilla/pickups/pku_loot/pku_loot_desk_watch/textures/watch_gsm"/>
+        <opacity_texture file="units/vanilla/pickups/pku_loot/pku_loot_desk_watch/textures/watch_op"/>
+        <variable type="scalar" name="alpha_ref" value="0.6270000297809"/>
+    </material>
+    <material render_template="shadow_caster_only" name="shadow_caster" version="2"/>
+    <material unique="true" render_template="effect:BLEND_ADD:DIFFUSE0_TEXTURE:DIFFUSE0_UVANIM" version="2" name="mat_effect">
+        <variable type="scalar" name="intensity" value="candle"/>
+        <diffuse_texture file="units/vanilla/pickups/pku_mission_doc/mat_effect_yellow_df"/>
+        <variable type="vector3" name="uv0_speed" value="0 0.32499998807907 0"/>
+    </material>
+</materials>

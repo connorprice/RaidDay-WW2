@@ -1,0 +1,19 @@
+<unit type="equip" slot="1">
+    <object file="units/vanilla/equipment/equip_dynamite_x4/equip_dynamite_x4" />
+    <network sync="spawn"/>
+    <extensions>
+        <extension class="ScriptUnitData" name="unit_data" />
+        <extension name="damage" class="UnitDamage" />
+        <extension name="interaction" class="SpecialEquipmentInteractionExt" >
+			<var name="_special_equipment" value="dynamite_4x" />
+			<var name="tweak_data" value="dynamite_4x" />
+			<var name="_remove_on_interact" value="true" />
+			<var name="_ray_object_names" type="table" >
+				<var value="ray_01"/>
+				<var value="ray_02"/>
+			</var>
+		</extension>
+    </extensions>
+</unit>
+
+

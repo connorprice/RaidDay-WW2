@@ -1,0 +1,9 @@
+<unit type="Ger_A" slot="1">
+	<object file="units/vanilla/occluders/hex_occluder_04" />
+	<extensions>
+        <extension name="unit_data" class="ScriptUnitData">
+			<var name="only_visible_in_editor" value="true" />
+			<var name="helper_type" value="occluder" />
+		</extension>
+    </extensions>
+</unit>
