@@ -1,0 +1,162 @@
+<dynamic_object>
+    <diesel orientation_object="rp_turret_flakvierling" materials="units/vanilla/turrets/turret_flakvierling/turret_flakvierling" />
+    <sequence_manager file="units/vanilla/turrets/turret_flakvierling/turret_flakvierling" />
+    <animations>
+        <animation_group name="ag_barrel_fire_1" enabled="false">
+            <object name="anim_barrel_fire_1" />
+        </animation_group>
+        <animation_group name="ag_barrel_fire_2" enabled="false">
+            <object name="anim_barrel_fire_2" />
+        </animation_group>
+        <animation_group name="ag_barrel_fire_3" enabled="false">
+            <object name="anim_barrel_fire_3" />
+        </animation_group>
+        <animation_group name="ag_barrel_fire_4" enabled="false">
+            <object name="anim_barrel_fire_4" />
+        </animation_group>
+        <animation_group name="anim_arm" enabled="false">
+    		<object name="anim_arm_01" />
+    		<object name="anim_arm_02" />
+    		<object name="anim_arm_01" />
+        </animation_group>
+        <animation_group name="anim_pitch" enabled="false">
+    		<object name="anim_pitch" />
+        </animation_group>
+    </animations>
+    <bodies>
+        <body name="static_body" enabled="true" template="static" >
+            <object name="rp_turret_flakvierling" />
+            <object name="c_convex_base_01" collision_type="box" />
+            <object name="c_convex_base_02" collision_type="box" />
+            <object name="c_convex_base_03" collision_type="box" />
+            <object name="c_convex_base_04" collision_type="box" />
+        </body>
+        <body name="heading_body" enabled="true" template="animated">
+        	<object name="anim_heading" />
+            <object name="c_box_heading_010" collision_type="box" padding="-2.5"/>
+            <object name="c_box_heading_01" collision_type="box" padding="-2.5"/>
+            <object name="c_box_heading_02" collision_type="box" padding="-2.5"/>
+            <object name="c_box_heading_03" collision_type="box" padding="-2.5"/>
+            <object name="c_box_heading_04" collision_type="box" padding="-2.5"/>
+            <object name="c_box_heading_05" collision_type="box" padding="-2.5"/>
+            <object name="c_box_heading_06" collision_type="box" padding="-2.5"/>
+            <object name="c_box_heading_07" collision_type="box" padding="-2.5"/>
+            <object name="c_box_heading_08" collision_type="box" padding="-2.5"/>
+            <object name="c_box_heading_09" collision_type="box" padding="-2.5"/>
+            <object name="c_box_heading_10" collision_type="box" padding="-2.5"/>
+            <object name="c_box_heading_11" collision_type="box" padding="-2.5"/>
+            <object name="c_box_heading_12" collision_type="box" padding="-2.5"/>
+            <object name="c_box_heading_13" collision_type="box" padding="-2.5"/>
+            <object name="c_box_heading_14" collision_type="box" padding="-2.5"/>
+            <object name="c_box_heading_15" collision_type="box" padding="-2.5"/>
+            <object name="c_box_heading_16" collision_type="box" padding="-2.5"/>
+            <object name="c_box_heading_17" collision_type="box" padding="-2.5"/>
+            <object name="c_box_heading_18" collision_type="box" padding="-2.5"/>
+            <object name="c_box_heading_19" collision_type="box" padding="-2.5"/>
+            <object name="c_box_heading_20" collision_type="box" padding="-2.5"/>
+            <object name="c_box_heading_21" collision_type="box" padding="-2.5"/>
+            <object name="c_box_heading_22" collision_type="box" padding="-2.5"/>
+            <object name="c_box_heading_23" collision_type="box" padding="-2.5"/>
+            <object name="c_box_heading_24" collision_type="box" padding="-2.5"/>
+            <object name="c_box_heading_25" collision_type="box" padding="-2.5"/>
+            <object name="c_box_heading_26" collision_type="box" padding="-2.5"/>
+            <object name="c_box_heading_27" collision_type="box" padding="-2.5"/>
+            <object name="c_box_heading_28" collision_type="box" padding="-2.5"/>
+            <object name="c_box_heading_29" collision_type="box" padding="-2.5"/>
+            <object name="c_box_heading_30" collision_type="box" padding="-2.5"/>
+            <object name="c_box_heading_31" collision_type="box" padding="-2.5"/>
+            <object name="c_box_heading_32" collision_type="box" padding="-2.5"/>
+            <object name="c_box_heading_33" collision_type="box" padding="-2.5"/>
+            <object name="c_box_heading_34" collision_type="box" padding="-2.5"/>
+            <object name="c_box_heading_35" collision_type="box" padding="-2.5"/>
+            <object name="c_box_heading_36" collision_type="box" padding="-2.5"/>
+            <object name="c_box_heading_37" collision_type="box" padding="-2.5"/>
+            <object name="c_box_heading_38" collision_type="box" padding="-2.5"/>
+
+            <object name="c_convex_heading_01" collision_type="convex" padding="-2.5"/>
+            <object name="c_convex_heading_02" collision_type="convex" padding="-2.5"/>
+            <object name="c_convex_heading_03" collision_type="convex" padding="-2.5"/>
+            <object name="c_convex_heading_04" collision_type="convex" padding="-2.5"/>
+            <object name="c_convex_heading_05" collision_type="convex" padding="-2.5"/>
+            <object name="c_convex_heading_06" collision_type="convex" padding="-2.5"/>
+            <object name="c_convex_heading_07" collision_type="convex" padding="-2.5"/>
+            <object name="c_convex_heading_08" collision_type="convex" padding="-2.5"/>
+            <object name="c_convex_heading_09" collision_type="convex" padding="-2.5"/>
+            <object name="c_convex_heading_10" collision_type="convex" padding="-2.5"/>
+            <object name="c_convex_heading_11" collision_type="convex" padding="-2.5"/>
+            <object name="c_convex_heading_12" collision_type="convex" padding="-2.5"/>
+            <object name="c_convex_heading_13" collision_type="convex" padding="-2.5"/>
+            <object name="c_convex_heading_14" collision_type="convex" padding="-2.5"/>
+            <object name="c_convex_heading_15" collision_type="convex" padding="-2.5"/>
+            <object name="c_convex_heading_16" collision_type="convex" padding="-2.5"/>
+        </body>
+        <body name="arm_body" enabled="true" template="animated">
+        	<object name="anim_arm_01" />
+        	<object name="c_box_arm_01" collision_type="box" />
+        	<object name="c_box_arm_02" collision_type="box" />
+        </body>
+        <body name="pitch_body" enabled="true" template="animated">
+        	<object name="anim_pitch" />
+            <object name="c_box_pitch_01" collision_type="box" padding="-2.5"/>
+            <object name="c_box_pitch_02" collision_type="box" padding="-2.5"/>
+            <object name="c_box_pitch_03" collision_type="box" padding="-2.5"/>
+            <object name="c_box_pitch_04" collision_type="box" padding="-2.5"/>
+            <object name="c_convex_pitch_01" collision_type="convex" padding="-2.5"/>
+            <object name="c_convex_pitch_02" collision_type="convex" padding="-2.5"/>
+            <object name="c_convex_pitch_03" collision_type="convex" padding="-2.5"/>
+            <object name="c_convex_pitch_04" collision_type="convex" padding="-2.5"/>
+            <object name="c_convex_pitch_05" collision_type="convex" padding="-2.5"/>
+            <object name="c_convex_pitch_06" collision_type="convex" padding="-2.5"/>
+            <object name="c_convex_pitch_07" collision_type="convex" padding="-2.5"/>
+            <object name="c_convex_pitch_10" collision_type="convex" padding="-2.5"/>
+            <object name="c_convex_pitch_11" collision_type="convex" padding="-2.5"/>
+            <object name="c_convex_pitch_12" collision_type="convex" padding="-2.5"/>
+            <object name="c_convex_pitch_13" collision_type="convex" padding="-2.5"/>
+            <object name="c_convex_pitch_14" collision_type="convex" padding="-2.5"/>
+            <object name="c_convex_pitch_15" collision_type="convex" padding="-2.5"/>
+            <object name="c_convex_pitch_16" collision_type="convex" padding="-2.5"/>
+            <object name="c_convex_pitch_17" collision_type="convex" padding="-2.5"/>
+            <object name="c_convex_pitch_18" collision_type="convex" padding="-2.5"/>
+            <object name="c_convex_pitch_19" collision_type="convex" padding="-2.5"/>
+            <object name="c_convex_pitch_20" collision_type="convex" padding="-2.5"/>
+            <object name="c_convex_pitch_21" collision_type="convex" padding="-2.5"/>
+            <object name="c_convex_pitch_24" collision_type="convex" padding="-2.5"/>
+            <object name="c_convex_pitch_25" collision_type="convex" padding="-2.5"/>
+            <object name="c_convex_pitch_26" collision_type="convex" padding="-2.5"/>
+            <object name="c_convex_pitch_27" collision_type="convex" padding="-2.5"/>
+            <object name="c_convex_pitch_28" collision_type="convex" padding="-2.5"/>
+        </body>
+        <body name="player_protection_body" enabled="true" template="animated" collides_with_mover="false" pushed_by_mover="false">
+        	<object name="anim_pitch" />
+        	<object name="c_box_protective_01" collision_type="box" />
+        	<object name="c_box_protective_02" collision_type="box" />
+        	<object name="c_box_protective_03" collision_type="box" />
+        </body>
+    </bodies>
+    <decal_surfaces default_material="no_decal">
+    	<decal_mesh name="dm_metal_base" enabled="true" material="metal" />
+    	<decal_mesh name="dm_metal_heading" enabled="true" material="metal" />
+    	<decal_mesh name="dm_metal_sides" enabled="true" material="metal" />
+    </decal_surfaces>
+    <graphics>
+        <graphic_group name="gfx_grp" enabled="true" culling_object="bounding_box">
+        	<lod_object name="lod_grp">
+        		<object name="g_turret_lod0" enabled="true"  max_distance="1000"/>
+        		<object name="g_turret_lod1" enabled="true"  max_distance="2300"/>
+        		<object name="g_turret_lod2" enabled="true" />
+        	</lod_object>
+			
+			
+			
+        	<object name="g_heat_1" enabled="true" />
+        	<object name="g_heat_2" enabled="true" />
+        	<object name="g_heat_3" enabled="true" />
+        	<object name="g_heat_4" enabled="true" />
+			
+			<object name="s_base" shadow_caster="true" enabled="true" />
+        	<object name="s_heading" shadow_caster="true" enabled="true" />
+        	<object name="s_arm" shadow_caster="true" enabled="true" />
+        	<object name="s_sides" shadow_caster="true" enabled="true" />
+        </graphic_group>
+    </graphics>
+</dynamic_object>

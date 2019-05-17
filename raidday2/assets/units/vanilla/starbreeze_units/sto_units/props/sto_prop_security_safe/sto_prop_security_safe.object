@@ -1,0 +1,28 @@
+<dynamic_object>
+    <diesel orientation_object="rp_sto_prop_security_safe" materials="units/vanilla/starbreeze_units/sto_units/props/sto_prop_security_safe/sto_prop_security_safe" />
+	<sequence_manager file="units/vanilla/starbreeze_units/sto_units/props/sto_prop_security_safe/sto_prop_security_safe" />
+	<animations>
+		<animation_group name="door_anim" >
+			<object name="a_door" />
+		</animation_group>
+	</animations>
+	<bodies>
+		<body name="static_body" enabled="true" template="static">
+			<object name="c_safe" collision_type="mesh_mopp" />
+		</body>
+		<body name="animated_door" enabled="true" template="animated">
+			<object name="c_door" collision_type="mesh_mopp" />
+	<!-- 		<object name="c_analog" collision_type="mesh_mopp" /> -->
+		</body>
+	</bodies>
+	<decal_surfaces default_material="metal" >
+		<decal_mesh name="g_door" enabled="true" material="metal" />
+		<decal_mesh name="g_safe" enabled="true" material="metal" />
+		<decal_mesh name="g_analog" enabled="true" material="metal" />
+	</decal_surfaces>
+    <graphics>
+        <object name="g_door" enabled="true" />
+        <object name="g_safe" enabled="true" />
+        <object name="g_analog" enabled="true" />
+    </graphics>
+</dynamic_object>

@@ -1,0 +1,41 @@
+<materials version="3">
+	<material name="mat_alpha" render_template="generic:ALPHA_MASKED:DIFFUSE_TEXTURE:DOUBLE_SIDED:EXTERNAL_ALPHA_REF:GSMA_TEXTURE:NORMALMAP:OPACITY_TEXTURE" version="2">
+		<diffuse_texture file="units/vanilla/props/prop_barbedwire_set/prop_barbedwire_df" />
+		<bump_normal_texture file="units/vanilla/props/prop_barbedwire_set/prop_barbedwire_nm" />
+		<material_texture file="units/vanilla/props/prop_barbedwire_set/prop_barbedwire_gsma" />
+		<opacity_texture file="units/vanilla/props/prop_barbedwire_set/prop_barbedwire_op" />
+		<variable name="alpha_ref" type="scalar" value="0.50900000333786" />
+	</material>
+	<material name="mat_alpha_lod" render_template="generic:ALPHA_MASKED:DIFFUSE_TEXTURE:DOUBLE_SIDED:EXTERNAL_ALPHA_REF:GSMA_TEXTURE:NORMALMAP:OPACITY_TEXTURE" version="2">
+		<diffuse_texture file="units/vanilla/props/prop_barbedwire_set/prop_barbedwire_df" mip="4" />
+		<bump_normal_texture file="units/vanilla/props/prop_barbedwire_set/prop_barbedwire_nm" mip="4" />
+		<material_texture file="units/vanilla/props/prop_barbedwire_set/prop_barbedwire_gsma" mip="4" />
+		<opacity_texture file="units/vanilla/props/prop_barbedwire_set/prop_barbedwire_op" mip="4" />
+		<variable name="alpha_ref" type="scalar" value="0.50900000333786" />
+	</material>
+	<material name="mat_barbedwire" render_template="generic:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP" version="2">
+		<diffuse_texture file="units/vanilla/props/prop_barbedwire_set/prop_barbedwire_set_df" />
+		<bump_normal_texture file="units/vanilla/props/prop_barbedwire_set/prop_barbedwire_set_nm" />
+		<material_texture file="units/vanilla/props/prop_barbedwire_set/prop_barbedwire_set_gsma" />
+	</material>
+	<material name="mat_barbedwire_lod" render_template="generic:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP" version="2">
+		<diffuse_texture file="units/vanilla/props/prop_barbedwire_set/prop_barbedwire_set_df" mip="4" />
+		<bump_normal_texture file="units/vanilla/props/prop_barbedwire_set/prop_barbedwire_set_nm" mip="4" />
+		<material_texture file="units/vanilla/props/prop_barbedwire_set/prop_barbedwire_set_gsma" mip="4" />
+	</material>
+	<material name="shadow_caster" render_template="shadow_caster_only" version="2" />
+	<material name="mat_fence_alpha" render_template="generic:ALPHA_MASKED:DIFFUSE_TEXTURE:DOUBLE_SIDED:EXTERNAL_ALPHA_REF:GSMA_TEXTURE:NORMALMAP:OPACITY_TEXTURE" version="2">
+		<diffuse_texture file="units/vanilla/props/prop_barbedwire_set/prop_barbedwire_set_alpha_df" />
+		<bump_normal_texture file="units/vanilla/props/prop_barbedwire_set/prop_barbedwire_set_alpha_nm" />
+		<material_texture file="units/vanilla/props/prop_barbedwire_set/prop_barbedwire_set_alpha_gsma" />
+		<opacity_texture file="units/vanilla/props/prop_barbedwire_set/prop_barbedwire_set_alpha_op" />
+		<variable name="alpha_ref" type="scalar" value="0.50900000333786" />
+	</material>
+	<material name="mat_fence_alpha_lod" render_template="generic:ALPHA_MASKED:DIFFUSE_TEXTURE:DOUBLE_SIDED:EXTERNAL_ALPHA_REF:GSMA_TEXTURE:NORMALMAP:OPACITY_TEXTURE" version="2">
+		<diffuse_texture file="units/vanilla/props/prop_barbedwire_set/prop_barbedwire_set_alpha_df" mip="4" />
+		<bump_normal_texture file="units/vanilla/props/prop_barbedwire_set/prop_barbedwire_set_alpha_nm" mip="4" />
+		<material_texture file="units/vanilla/props/prop_barbedwire_set/prop_barbedwire_set_alpha_gsma" mip="4" />
+		<opacity_texture file="units/vanilla/props/prop_barbedwire_set/prop_barbedwire_set_alpha_op" mip="4" />
+		<variable name="alpha_ref" type="scalar" value="0.50900000333786" />
+	</material>
+</materials>

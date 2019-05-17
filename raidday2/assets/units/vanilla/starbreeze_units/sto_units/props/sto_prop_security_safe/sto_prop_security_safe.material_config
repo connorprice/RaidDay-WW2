@@ -1,0 +1,13 @@
+<materials version="3">
+    <material render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP" name="mtr_safe" version="2">
+        <diffuse_texture file="units/vanilla/starbreeze_units/sto_units/props/sto_prop_security_safe/sto_prop_security_safe_df"/>
+        <bump_normal_texture file="units/vanilla/starbreeze_units/sto_units/props/sto_prop_security_safe/sto_prop_security_safe_nm"/>
+        <material_texture file="units/vanilla/starbreeze_units/sto_units/props/sto_prop_security_safe/sto_prop_security_safe_gsma"/>
+        <reflection_texture file="environments/cubemaps/cubemap_cabinets" type="cubemap"/>
+    </material>
+    <material render_template="generic:ALPHA_MASKED:DIFFUSE_TEXTURE:EXTERNAL_ALPHA_REF:NORMALMAP" name="mat_decal" version="2">
+        <diffuse_texture file="units/vanilla/starbreeze_units/sto_units/props/sto_prop_security_safe/sto_prop_security_safe_gold_detail_df"/>
+        <bump_normal_texture file="units/vanilla/starbreeze_units/sto_units/props/sto_prop_security_safe/sto_prop_security_safe_gold_detail_nm"/>
+        <variable type="scalar" name="alpha_ref" value="0.53900002560113"/>
+    </material>
+</materials>

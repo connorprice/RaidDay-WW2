@@ -1,0 +1,35 @@
+<dynamic_object>
+	<diesel materials="units/vanilla/turrets/turret_m2/turret_m2" orientation_object="rp_props_fps_machinegun" />
+	<sequence_manager file="units/vanilla/turrets/turret_m2/turret_m2" />
+	<bodies>
+		<body name="body_collision_01" enabled="true" collision_class="ragdoll" template="animated">
+			<object name="anim_pitch" />
+			<object name="c_convex_01" collision_type="convex" padding="-2.5" />
+			<object name="c_convex_02" collision_type="convex" padding="-2.5" />
+			<object name="c_convex_03" collision_type="convex" padding="-2.5" />
+			<object name="c_convex_04" collision_type="convex" padding="-2.5" />
+			<object name="c_box_01" collision_type="box" padding="-2.5" />
+			<object name="c_box_02" collision_type="box" padding="-2.5" />
+		</body>
+	</bodies>
+	<graphics>
+		<graphic_group name="gfx_grp" enabled="true" culling_object="bounding_box">
+			<lod_object name="mount_lod">
+				<object name="g_mount" enabled="true"  max_distance="750" />
+				<object name="g_mount_lod1" enabled="true" />
+			</lod_object>
+			<lod_object name="gun_lod">
+				<object name="g_gun" enabled="true"  max_distance="750" />
+				<object name="g_gun_lod1" enabled="true" />
+			</lod_object>
+			<lod_object name="gun_lod2">
+				<object name="g_gun_pipe" enabled="true"  max_distance="750" />
+				<object name="g_gun_pipe_lod1" enabled="true" />
+			</lod_object>
+		</graphic_group>
+		
+<!-- 		<object name="g_gun_pipe" enabled="true" /> -->
+		<object name="g_gun_rotate" enabled="true" />
+		<object name="g_heat" enabled="true" />
+	</graphics>
+</dynamic_object>

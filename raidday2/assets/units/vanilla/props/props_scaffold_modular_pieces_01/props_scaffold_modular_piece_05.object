@@ -1,0 +1,18 @@
+<dynamic_object>
+    <diesel orientation_object="rp_props_scaffold_modular_piece_05" materials="units/vanilla/props/props_scaffold_modular_pieces_01/props_scaffold_modular_piece_01" />
+    <bodies>
+        <body enabled="true" template="static" name="static_body">
+            <object name="rp_props_scaffold_modular_piece_05" />
+            <object name="c_box_00" collision_type="box" padding="-2.5" />
+        </body>
+    </bodies>
+    <decal_surfaces>
+        <decal_mesh name="dm_wood" enabled="true" material="wood" />
+    </decal_surfaces>
+    <graphics>
+		<lod_object name="lod_scaffold_grp">
+            <object name="g_props_scaffold_unit_01h" enabled="true"  max_distance="500" />
+            <object name="g_props_scaffold_unit_01h_lod" enabled="true" />
+        </lod_object>
+    </graphics>
+</dynamic_object>

@@ -1,0 +1,20 @@
+<table>
+	<unit>
+		<sequence name="'safe_open_door'" triggable="true">
+			<animation_group enabled="true" name="'door_anim'"/>
+			<sound action="'play'" event="'sto_open_safe_finish'" source="'snd'"/>
+		</sequence>
+		<sequence editable_state="true" name="'interact'" triggable="true">
+			<run_sequence name="'safe_open_door'"/>
+		</sequence>
+		<sequence editable_state="true" name="'enable_interaction'" triggable="true">
+			<interaction enabled="true"/>
+		</sequence>
+		<sequence editable_state="true" name="'disable_interaction'" triggable="true">
+			<interaction enabled="false"/>
+		</sequence>
+		<sequence editable_state="true" name="'change_interaction_KEYCHAIN'" triggable="true">
+			<function extension="'interaction'" function="'set_tweak_data'" param1="'unlock_the_safe_keychain'"/>
+		</sequence>
+	</unit>
+</table>

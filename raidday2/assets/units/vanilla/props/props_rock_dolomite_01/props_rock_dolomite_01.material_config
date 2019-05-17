@@ -1,0 +1,9 @@
+<materials version="3">
+    <material name="default" render_template="generic" version="2"/>
+    <material name="rock" render_template="generic:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP" version="2">
+        <material_texture file="units/vanilla/props/props_rock_dolomite_01/dolomite_rock_001_gsm"/>
+        <diffuse_texture file="units/vanilla/props/props_rock_dolomite_01/dolomite_rock_001_df"/>
+        <bump_normal_texture file="units/vanilla/props/props_rock_dolomite_01/dolomite_rock_001_nm"/>
+    </material>
+    <material name="shadow_caster" render_template="shadow_caster_only" version="2"/>
+</materials>

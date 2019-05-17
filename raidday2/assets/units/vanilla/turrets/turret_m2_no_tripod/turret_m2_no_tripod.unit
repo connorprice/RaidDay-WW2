@@ -1,0 +1,76 @@
+<unit type="props" slot="1">
+	<object file="units/vanilla/turrets/turret_m2_no_tripod/turret_m2_no_tripod" />
+	<network sync="spawn"/>
+
+	<dependencies>
+		<depends_on effect="effects/vanilla/weapons/mg_34_3dp" />
+		<depends_on effect="effects/vanilla/weapons/muzzleflash_maingun" />
+		<depends_on effect="effects/vanilla/weapons/shells/shell_556"  />
+		<depends_on effect="effects/vanilla/smoke/smoke_turret_heated_001"  />			
+		<depends_on bnk="soundbanks/weapon_mg42" />
+	</dependencies>
+
+	<extensions>
+		<extension name="unit_data" class="ScriptUnitData" />
+		<!--REX: I marked all this off so I can load it in the level without script errors...-->
+<!-- 
+		<extension name="interaction" class="TurretInteractionExt">
+			<var name="tweak_data" value="turret_m2" />
+			<var name="_interact_object" value="int_location"/>
+			<var name="_ray_object_names" type="table" >
+				<var value="ray_1"/>
+				<var value="ray_2"/>
+			</var>
+		</extension>
+
+		<extension name="base" class="SentryGunBase" >
+			<var name="sentry_gun" value="true" />
+			<var name="_tweak_table_id" value="turret_m2" />
+			<var name="_difficulty_sequences" value="normal_difficulty;normal_difficulty;normal_difficulty;normal_difficulty;hard_difficulty;hard_difficulty" />
+			<var name="_skip_authentication" value="true" />
+		</extension>
+
+		<extension name="network" class="NetworkBaseExtension" />
+
+		<extension name="brain" class="SentryGunBrain" />
+
+		<extension name="movement" class="SentryGunMovement" >
+			<var name="_spin_obj_name" value="anim_heading" />
+			<var name="_pitch_obj_name" value="anim_pitch" />
+			<var name="_activation_anim_group_name" value="anim_turret" />
+			<var name="_pitch_min" value="-25" />
+			<var name="_pitch_max" value="25" />
+
+			<var name="_spin_min" value="-30" />
+			<var name="_spin_max" value="30" />
+
+			<var name="_lights_on_sequence_name" value="state_light_on" />
+			<var name="_spin_start_snd_event" value="swatturret_spin_start" />
+			<var name="_spin_stop_snd_event" value="swatturret_spin_stop" />
+			<var name="_attention_acquired_snd_event" value="swatturret_alert" />
+			<var name="_rearm_snd_event" value="swatturret_reload" />
+			<var name="_rearm_complete_snd_event" value="swatturret_reload_end" />
+			<var name="_hacked_start_snd_event" value="swatturret_disarmed_loop" />
+			<var name="_hacked_stop_snd_event" value="swatturret_disarmed_stop" />
+		</extension>
+
+		<extension name="weapon" class="TurretWeapon" >
+			<var name="name_id" value="turret_m2" />
+		</extension>
+		
+		<extension name="damage" class="UnitDamage" />
+
+		<extension name="character_damage" class="SentryGunDamage" >
+			<var name="_invulnerable_body_names" value="" />
+		</extension> 	 -->
+	</extensions>
+
+	<sounds>
+		<default_soundsource source="fire_1"/>
+	</sounds>
+
+</unit>
+
+
+
+

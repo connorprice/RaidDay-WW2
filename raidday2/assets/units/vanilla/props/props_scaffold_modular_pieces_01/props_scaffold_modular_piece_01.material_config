@@ -1,0 +1,9 @@
+<materials version="3">
+    <material name="c_capsule" render_template="generic" version="2"/>
+    <material name="mat_scaffold" render_template="generic:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP" version="2">
+        <diffuse_texture file="units/vanilla/props/props_scaffold_modular_pieces_01/props_scaffold_unit_modular_pieces_df"/>
+        <bump_normal_texture file="units/vanilla/props/props_scaffold_modular_pieces_01/props_scaffold_unit_modular_pieces_nm"/>
+        <material_texture file="units/vanilla/props/props_scaffold_modular_pieces_01/props_scaffold_unit_modular_pieces_gsm"/>
+    </material>
+    <material name="shadow_caster" render_template="shadow_caster_only" version="2"/>
+</materials>

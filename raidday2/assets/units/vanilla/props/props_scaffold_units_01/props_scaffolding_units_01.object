@@ -1,0 +1,131 @@
+<dynamic_object>
+    <diesel orientation_object="rp_props_scaffolding_units_01" materials="units/vanilla/props/props_scaffold_units_01/props_scaffolding_units_01" />
+    <sequence_manager file="units/vanilla/props/props_scaffold_units_01/props_scaffolding_units_01" />
+    <bodies>
+        <body enabled="true" template="static" name="static_body">
+            <object name="rp_props_scaffolding_units_01" />
+            <object name="c_box_01" collision_type="box" padding="-2.5" />
+            <object name="c_box_02" collision_type="box" padding="-2.5" />
+            <object name="c_box_03" collision_type="box" padding="-2.5" />
+            <object name="c_box_04" collision_type="box" padding="-2.5" />
+            <object name="c_box_05" collision_type="box" padding="-2.5" />
+            <object name="c_box_06" collision_type="box" padding="-2.5" />
+            <object name="c_box_07" collision_type="box" padding="-2.5" />
+            <object name="c_box_08" collision_type="box" padding="-2.5" />
+            <object name="c_box_09" collision_type="box" padding="-2.5" />
+            <object name="c_box_10" collision_type="box" padding="-2.5" />
+            <object name="c_box_11" collision_type="box" padding="-2.5" />
+            <object name="c_box_12" collision_type="box" padding="-2.5" />
+            <object name="c_capsule_01" collision_type="capsule" padding="-2.5" />
+            <object name="c_capsule_02" collision_type="capsule" padding="-2.5" />
+            <object name="c_capsule_03" collision_type="capsule" padding="-2.5" />
+            <object name="c_capsule_04" collision_type="capsule" padding="-2.5" />
+            <object name="c_capsule_05" collision_type="capsule" padding="-2.5" />
+            <object name="c_capsule_06" collision_type="capsule" padding="-2.5" />
+            <object name="c_capsule_07" collision_type="capsule" padding="-2.5" />
+            <object name="c_capsule_08" collision_type="capsule" padding="-2.5" />
+            <object name="c_capsule_09" collision_type="capsule" padding="-2.5" />
+            <object name="c_capsule_10" collision_type="capsule" padding="-2.5" />
+            <object name="c_capsule_11" collision_type="capsule" padding="-2.5" />
+            <object name="c_capsule_12" collision_type="capsule" padding="-2.5" />
+            <object name="c_capsule_13" collision_type="capsule" padding="-2.5" />
+            <object name="c_capsule_14" collision_type="capsule" padding="-2.5" />
+            <object name="c_capsule_15" collision_type="capsule" padding="-2.5" />
+            <object name="c_capsule_16" collision_type="capsule" padding="-2.5" />
+            <object name="c_capsule_17" collision_type="capsule" padding="-2.5" />
+            <object name="c_capsule_18" collision_type="capsule" padding="-2.5" />
+            <object name="c_capsule_19" collision_type="capsule" padding="-2.5" />
+            <object name="c_capsule_20" collision_type="capsule" padding="-2.5" />
+            <object name="c_capsule_21" collision_type="capsule" padding="-2.5" />
+            <object name="c_capsule_22" collision_type="capsule" padding="-2.5" />
+            <object name="c_capsule_23" collision_type="capsule" padding="-2.5" />
+            <object name="c_capsule_24" collision_type="capsule" padding="-2.5" />
+            <object name="c_capsule_25" collision_type="capsule" padding="-2.5" />
+            <object name="c_capsule_26" collision_type="capsule" padding="-2.5" />
+            <object name="c_capsule_27" collision_type="capsule" padding="-2.5" />
+            <object name="c_capsule_28" collision_type="capsule" padding="-2.5" />
+            <object name="c_capsule_29" collision_type="capsule" padding="-2.5" />
+            <object name="c_capsule_30" collision_type="capsule" padding="-2.5" />
+            <object name="c_capsule_31" collision_type="capsule" padding="-2.5" />
+            <object name="c_capsule_32" collision_type="capsule" padding="-2.5" />
+            <object name="c_capsule_33" collision_type="capsule" padding="-2.5" />
+            <object name="c_capsule_34" collision_type="capsule" padding="-2.5" />
+            <object name="c_capsule_35" collision_type="capsule" padding="-2.5" />
+            <object name="c_capsule_36" collision_type="capsule" padding="-2.5" />
+            <object name="c_capsule_37" collision_type="capsule" padding="-2.5" />
+            <object name="c_capsule_38" collision_type="capsule" padding="-2.5" />
+            <object name="c_capsule_39" collision_type="capsule" padding="-2.5" />
+            <object name="c_capsule_40" collision_type="capsule" padding="-2.5" />
+            <object name="c_capsule_41" collision_type="capsule" padding="-2.5" />
+            <object name="c_capsule_42" collision_type="capsule" padding="-2.5" />
+            <object name="c_capsule_43" collision_type="capsule" padding="-2.5" />
+            <object name="c_capsule_44" collision_type="capsule" padding="-2.5" />
+            <object name="c_capsule_45" collision_type="capsule" padding="-2.5" />
+            <object name="c_capsule_46" collision_type="capsule" padding="-2.5" />
+            <object name="c_capsule_47" collision_type="capsule" padding="-2.5" />
+            <object name="c_capsule_48" collision_type="capsule" padding="-2.5" />
+            <object name="c_capsule_49" collision_type="capsule" padding="-2.5" />
+            <object name="c_capsule_50" collision_type="capsule" padding="-2.5" />
+            <object name="c_capsule_51" collision_type="capsule" padding="-2.5" />
+            <object name="c_capsule_52" collision_type="capsule" padding="-2.5" />
+            <object name="c_capsule_53" collision_type="capsule" padding="-2.5" />
+            <object name="c_capsule_54" collision_type="capsule" padding="-2.5" />
+            <object name="c_capsule_55" collision_type="capsule" padding="-2.5" />
+            <object name="c_capsule_56" collision_type="capsule" padding="-2.5" />
+            <object name="c_capsule_57" collision_type="capsule" padding="-2.5" />
+            <object name="c_capsule_58" collision_type="capsule" padding="-2.5" />
+            <object name="c_capsule_59" collision_type="capsule" padding="-2.5" />
+            <object name="c_capsule_60" collision_type="capsule" padding="-2.5" />
+            <object name="c_capsule_61" collision_type="capsule" padding="-2.5" />
+            <object name="c_capsule_62" collision_type="capsule" padding="-2.5" />
+            <object name="c_capsule_63" collision_type="capsule" padding="-2.5" />
+            <object name="c_capsule_64" collision_type="capsule" padding="-2.5" />
+            <object name="c_capsule_65" collision_type="capsule" padding="-2.5" />
+            <object name="c_capsule_66" collision_type="capsule" padding="-2.5" />
+            <object name="c_capsule_67" collision_type="capsule" padding="-2.5" />
+        </body>
+    	<body name="ladder_body" enabled="true" template="static">
+    		<object name="rp_props_scaffolding_units_01" />
+    		<object name="c_capsule_ladder_01" collision_type="capsule" padding="-2.5" />
+            <object name="c_capsule_ladder_02" collision_type="capsule" padding="-2.5" />
+            <object name="c_capsule_ladder_03" collision_type="capsule" padding="-2.5" />
+            <object name="c_capsule_ladder_04" collision_type="capsule" padding="-2.5" />
+            <object name="c_capsule_ladder_05" collision_type="capsule" padding="-2.5" />
+            <object name="c_capsule_ladder_06" collision_type="capsule" padding="-2.5" />
+            <object name="c_capsule_ladder_07" collision_type="capsule" padding="-2.5" />
+            <object name="c_capsule_ladder_08" collision_type="capsule" padding="-2.5" />
+            <object name="c_capsule_ladder_09" collision_type="capsule" padding="-2.5" />
+            <object name="c_capsule_ladder_10" collision_type="capsule" padding="-2.5" />
+            <object name="c_capsule_ladder_11" collision_type="capsule" padding="-2.5" />
+            <object name="c_capsule_ladder_12" collision_type="capsule" padding="-2.5" />
+            <object name="c_capsule_ladder_13" collision_type="capsule" padding="-2.5" />
+            <object name="c_capsule_ladder_14" collision_type="capsule" padding="-2.5" />
+            <object name="c_capsule_ladder_15" collision_type="capsule" padding="-2.5" />
+            <object name="c_capsule_ladder_16" collision_type="capsule" padding="-2.5" />
+            <object name="c_capsule_ladder_17" collision_type="capsule" padding="-2.5" />
+            <object name="c_capsule_ladder_18" collision_type="capsule" padding="-2.5" />
+            <object name="c_capsule_ladder_19" collision_type="capsule" padding="-2.5" />
+            <object name="c_convex_ladder" collision_type="convex" padding="-2.5" />
+    	</body>
+    </bodies>
+    <decal_surfaces>
+        <decal_mesh name="dm_metal" enabled="true" material="metal" />
+        <decal_mesh name="dm_metal_ladders" enabled="true" material="metal" />
+        <decal_mesh name="dm_wood" enabled="true" material="wood" />
+        <decal_mesh name="dm_wood_plank" enabled="true" material="wood" />
+    </decal_surfaces>
+    <graphics>
+    	<graphic_group name="ladder_grp" enabled="true">
+    		<lod_object name="ladder_lod">
+    			<object name="g_plank_ladder_lod0" enabled="true"  max_distance="2000" />
+    			<object name="g_plank_ladder_lod1" enabled="true"/>
+    		</lod_object>
+    	</graphic_group>
+    	<graphic_group name="scaffolding_grp" enabled="true">
+    		<lod_object name="scaffolding_lod">
+    			<object name="g_props_scaffolding_units_01" enabled="true"  max_distance="2000" />
+    			<object name="g_props_scaffolding_units_01_lod" enabled="true"/>
+    		</lod_object>
+    	</graphic_group>
+    </graphics>
+</dynamic_object>

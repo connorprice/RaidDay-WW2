@@ -1,0 +1,29 @@
+<dynamic_object>
+    <diesel orientation_object="rp_prop_barbed_wire_01" materials="units/vanilla/props/prop_barbed_wire_01/prop_barbed_wire_01" />
+    <bodies>
+        <body enabled="true" template="static" name="static_body">
+            <object name="rp_prop_barbed_wire_01" />
+            <object name="c_box" collision_type="box" padding="-2.5" />
+            <object name="c_box_2" collision_type="box" padding="-2.5" />
+            <object name="c_box_3" collision_type="box" padding="-2.5" />
+            <object name="c_box_4" collision_type="box" padding="-2.5" />
+            <object name="c_box_5" collision_type="box" padding="-2.5" />
+        </body>
+        
+
+        <body name="static_body" enabled="true" add_ray_type="ai_vision" remove_ray_type="mover walk" template="nav_walk" editable="true" collides_with_mover="false">
+            <object name="c_box_6" collision_type="box" padding="-2.5" />
+        </body>
+
+    </bodies>
+    <decal_surfaces>
+        <decal_mesh name="dm_wood" enabled="true" material="wood" />
+    </decal_surfaces>
+    <graphics>
+        <lod_object name="lod_bared_wire_01">
+            <object name="g_props_bared_wire_01" enabled="true"  max_distance="2000" />
+            <object name="g_bared_wire_01_LOD" enabled="true" />
+        </lod_object>
+        <object name="s_s_2" enabled="true" shadow_caster="true" />
+    </graphics>
+</dynamic_object>

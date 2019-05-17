@@ -1,0 +1,6 @@
+<unit type="props" slot="1">
+	<object file="units/vanilla/props/prop_crate_b/prop_crate_b_01" />
+	<extensions>
+		<extension name="unit_data" class="ScriptUnitData" />
+	</extensions>
+</unit>

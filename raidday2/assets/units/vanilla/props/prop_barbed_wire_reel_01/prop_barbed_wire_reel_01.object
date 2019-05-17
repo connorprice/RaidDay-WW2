@@ -1,0 +1,27 @@
+<dynamic_object>
+    <diesel orientation_object="rp_prop_barbed_wire_reel_01" materials="units/vanilla/props/prop_barbed_wire_reel_01/prop_barbed_wire_reel_01" />
+    <bodies>
+        <body enabled="true" template="static" name="static_body">
+            <object name="rp_prop_barbed_wire_reel_01" />
+            <object name="c_box_01" collision_type="box" padding="-2.5" />
+            <object name="c_box_02" collision_type="box" padding="-2.5" />
+            <object name="c_box_03" collision_type="box" padding="-2.5" />
+            <object name="c_box_04" collision_type="box" padding="-2.5" />
+            <object name="c_box_05" collision_type="box" padding="-2.5" />
+            <object name="c_box_06" collision_type="box" padding="-2.5" />
+            <object name="c_box_07" collision_type="box" padding="-2.5" />
+            <object name="c_box_08" collision_type="box" padding="-2.5" />
+            <object name="c_mesh_mopp" collision_type="mesh_mopp" padding="-2.5" />
+        </body>
+    </bodies>
+    <decal_surfaces>
+        <decal_mesh name="dm_metal" enabled="true" material="metal" />
+    </decal_surfaces>
+    <graphics>
+        <lod_object name="lod_grp_barded_wire_reel">
+            <object name="g_barded_wire_reel_01" enabled="true"  max_distance="2000" />
+            <object name="g_barded_wire_reel_01_LOD" enabled="true" />
+        </lod_object>
+        <object name="s_s" enabled="true" shadow_caster="true" />
+    </graphics>
+</dynamic_object>

@@ -1,0 +1,785 @@
+<table directory="assets">
+	<add path="units/test/jocke/oneplanetorulethemall" type="unit">
+		<unit force="true" path="units/test/jocke/oneplanetorulethemall" unload="true"/>
+		<object force="true" path="units/test/jocke/oneplanetorulethemall" unload="true"/>
+		<material_config force="true" path="units/test/jocke/simple_temp" unload="true"/>
+	</add>
+	
+	<!--UI-->
+	<texture	path="ui/atlas/raid_atlas_hud" unload="true"/>
+		
+		
+		
+	<!--Flak Turret-->
+	<add path="units/vanilla/turrets/turret_flakvierling/turret_flakvierling" type="unit">
+		<unit				path="units/vanilla/turrets/turret_flakvierling/turret_flakvierling" unload="true"/>
+		<object				path="units/vanilla/turrets/turret_flakvierling/turret_flakvierling" unload="true"/>
+		<model				path="units/vanilla/turrets/turret_flakvierling/turret_flakvierling" unload="true"/>
+		<cooked_physics		path="units/vanilla/turrets/turret_flakvierling/turret_flakvierling" unload="true"/>
+		<material_config	path="units/vanilla/turrets/turret_flakvierling/turret_flakvierling" unload="true"/>
+		<sequence_manager	path="units/vanilla/turrets/turret_flakvierling/turret_flakvierling" unload="true"/>
+		
+		<texture			path="units/vanilla/turrets/turret_flakvierling/turret_base_df" unload="true"/>
+		<texture			path="units/vanilla/turrets/turret_flakvierling/turret_base_nm" unload="true"/>
+		<texture			path="units/vanilla/turrets/turret_flakvierling/turret_base_gsm" unload="true"/>
+		<texture			path="units/vanilla/turrets/turret_flakvierling/turret_flakvierling_barrel_il" unload="true"/>
+		<texture			path="units/vanilla/turrets/turret_flakvierling/turret_sides_df" unload="true"/>
+		<texture			path="units/vanilla/turrets/turret_flakvierling/turret_sides_nm" unload="true"/>
+		<texture			path="units/vanilla/turrets/turret_flakvierling/turret_sides_gsm" unload="true"/>
+		<texture			path="units/vanilla/arhitecture/generic_texture/metal/industrial_steel_df" unload="true"/>
+		<texture			path="units/vanilla/arhitecture/generic_texture/metal/industrial_steel_nm" unload="true"/>
+		<texture			path="units/vanilla/arhitecture/generic_texture/metal/industrial_steel_gsm" unload="true"/>
+		
+		<effect				path="effects/vanilla/weapons/muzzleflash_maingun" unload="true"/>
+		<texture			path="effects/vanilla/textures/add_atlas_df" unload="true"/>
+		
+		<effect				path="effects/vanilla/weapons/mg_34_3dp" unload="true"/>
+		
+		<effect				path="effects/vanilla/weapons/shells/shell_556" unload="true"/>
+		<texture			path="effects/vanilla/weapons/shells/shell_556" unload="true"/>
+		
+		<effect				path="effects/vanilla/smoke/smoke_turret_heated_001" unload="true"/>
+	</add>
+	
+	<!--MG Turret-->
+	<add path="units/vanilla/turrets/turret_m2/turret_m2" type="unit">
+		<!-- Tripod Version-->
+		<unit				path="units/vanilla/turrets/turret_m2/turret_m2" unload="true"/>
+		<object				path="units/vanilla/turrets/turret_m2/turret_m2" unload="true"/>
+		<model				path="units/vanilla/turrets/turret_m2/turret_m2" unload="true"/>
+		<cooked_physics		path="units/vanilla/turrets/turret_m2/turret_m2" unload="true"/>
+		<material_config	path="units/vanilla/turrets/turret_m2/turret_m2" unload="true"/>
+		<sequence_manager	path="units/vanilla/turrets/turret_m2/turret_m2" unload="true"/>
+		
+		<!--No Tripod Version-->
+		<unit				path="units/vanilla/turrets/turret_m2_no_tripod/turret_m2_no_tripod" unload="true"/>
+		<object				path="units/vanilla/turrets/turret_m2_no_tripod/turret_m2_no_tripod" unload="true"/>
+		<model				path="units/vanilla/turrets/turret_m2_no_tripod/turret_m2_no_tripod" unload="true"/>
+		<cooked_physics		path="units/vanilla/turrets/turret_m2_no_tripod/turret_m2_no_tripod" unload="true"/>
+		<material_config	path="units/vanilla/turrets/turret_m2_no_tripod/turret_m2_no_tripod" unload="true"/>
+		<sequence_manager	path="units/vanilla/turrets/turret_m2_no_tripod/turret_m2_no_tripod" unload="true"/>
+		
+		<!--Weapon Textures-->
+		<texture			path="units/vanilla/turrets/turret_m2/textures/weapon_mg34_machinegun_01_df" unload="true"/>
+		<texture			path="units/vanilla/turrets/turret_m2/textures/weapon_mg34_machinegun_01_nm" unload="true"/>
+		<texture			path="units/vanilla/turrets/turret_m2/textures/weapon_mg34_machinegun_01_gsm" unload="true"/>
+		<texture			path="units/vanilla/turrets/turret_m2/textures/weapon_mg34_machinegun_barrel_il" unload="true"/>
+		
+		<texture			path="units/vanilla/weapons/wpn_fps_lmg_mg42_pts/textures/wpn_fps_lmg_mg42_receiver_df" unload="true"/>
+		<texture			path="units/vanilla/weapons/wpn_fps_lmg_mg42_pts/textures/wpn_fps_lmg_mg42_receiver_nm" unload="true"/>
+		<texture			path="units/vanilla/weapons/wpn_fps_lmg_mg42_pts/textures/wpn_fps_lmg_mg42_receiver_gsm" unload="true"/>
+		<texture			path="units/vanilla/weapons/wpn_fps_lmg_mg42_pts/textures/wpn_fps_lmg_mg42_b_mg42_df" unload="true"/>
+		<texture			path="units/vanilla/weapons/wpn_fps_lmg_mg42_pts/textures/wpn_fps_lmg_mg42_b_mg42_nm" unload="true"/>
+		<texture			path="units/vanilla/weapons/wpn_fps_lmg_mg42_pts/textures/wpn_fps_lmg_mg42_b_mg42_gsm" unload="true"/>
+		<texture			path="units/vanilla/weapons/wpn_third_lmg_mg42_pts/textures/wpn_third_lmg_mg42_b_mg42_df" unload="true"/>
+		<texture			path="units/vanilla/weapons/wpn_third_lmg_mg42_pts/textures/wpn_third_lmg_mg42_b_mg42_nm" unload="true"/>
+		<texture			path="units/vanilla/weapons/wpn_third_lmg_mg42_pts/textures/wpn_third_lmg_mg42_b_mg42_gsm" unload="true"/>
+		<texture			path="units/vanilla/weapons/wpn_third_lmg_mg42_pts/textures/wpn_third_lmg_mg42_receiver_df" unload="true"/>
+		<texture			path="units/vanilla/weapons/wpn_third_lmg_mg42_pts/textures/wpn_third_lmg_mg42_receiver_nm" unload="true"/>
+		<texture			path="units/vanilla/weapons/wpn_third_lmg_mg42_pts/textures/wpn_third_lmg_mg42_receiver_gsm" unload="true"/>
+		
+		<!--Effects (+Effect Textures)-->
+		<effect				path="effects/vanilla/weapons/muzzleflash_maingun" unload="true"/>
+		<texture			path="effects/vanilla/textures/add_atlas_df" unload="true"/>
+		
+		<effect				path="effects/vanilla/weapons/mg_34_3dp" unload="true"/>
+		
+		<effect				path="effects/vanilla/weapons/shells/shell_556" unload="true"/>
+		<texture			path="effects/vanilla/weapons/shells/shell_556" unload="true"/>
+		
+		<effect				path="effects/vanilla/smoke/smoke_turret_heated_001" unload="true"/>
+	</add>
+	
+	<!--'sto' (Art Gallery) Safe-->
+	<add path="units/vanilla/starbreeze_units/sto_units/props/sto_prop_security_safe/sto_prop_security_safe" type="unit">
+		<unit				path="units/vanilla/starbreeze_units/sto_units/props/sto_prop_security_safe/sto_prop_security_safe" unload="true"/>
+		<object				path="units/vanilla/starbreeze_units/sto_units/props/sto_prop_security_safe/sto_prop_security_safe" unload="true"/>
+		<model				path="units/vanilla/starbreeze_units/sto_units/props/sto_prop_security_safe/sto_prop_security_safe" unload="true"/>
+		<cooked_physics		path="units/vanilla/starbreeze_units/sto_units/props/sto_prop_security_safe/sto_prop_security_safe" unload="true"/>
+		<material_config	path="units/vanilla/starbreeze_units/sto_units/props/sto_prop_security_safe/sto_prop_security_safe" unload="true"/>
+		<sequence_manager	path="units/vanilla/starbreeze_units/sto_units/props/sto_prop_security_safe/sto_prop_security_safe" unload="true"/>
+		
+		<!--Textures-->
+		<texture			path="units/vanilla/starbreeze_units/sto_units/props/sto_prop_security_safe/sto_prop_security_safe_df" unload="true"/>
+		<texture			path="units/vanilla/starbreeze_units/sto_units/props/sto_prop_security_safe/sto_prop_security_safe_nm" unload="true"/>
+		<texture			path="units/vanilla/starbreeze_units/sto_units/props/sto_prop_security_safe/sto_prop_security_safe_gsma" unload="true"/>
+		
+		<texture			path="units/vanilla/starbreeze_units/sto_units/props/sto_prop_security_safe/sto_prop_security_safe_gold_detail_df" unload="true"/>
+		<texture			path="units/vanilla/starbreeze_units/sto_units/props/sto_prop_security_safe/sto_prop_security_safe_gold_detail_nm" unload="true"/>
+		
+		<texture			path="environments/cubemaps/cubemap_cabinets" unload="true"/>
+	</add>
+	
+	<!--pku Gold-->
+	<add path="units/vanilla/pickups/pku_gold/pku_gold" type="unit">
+		<!--Static-->
+		<unit				path="units/vanilla/pickups/pku_gold/pku_gold" unload="true"/>
+		<object				path="units/vanilla/pickups/pku_gold/pku_gold" unload="true"/>
+		<model				path="units/vanilla/pickups/pku_gold/pku_gold" unload="true"/>
+		<cooked_physics		path="units/vanilla/pickups/pku_gold/pku_gold" unload="true"/>
+		<material_config	path="units/vanilla/pickups/pku_gold/pku_gold" unload="true"/>
+		<sequence_manager	path="units/vanilla/pickups/pku_gold/pku_gold" unload="true"/>
+		
+		<!--Thrown-->
+		<unit				path="units/vanilla/pickups/pku_gold_crate_bag/pku_gold_crate_bag" unload="true"/>
+		<object				path="units/vanilla/pickups/pku_gold_crate_bag/pku_gold_crate_bag" unload="true"/>
+		<model				path="units/vanilla/pickups/pku_gold_crate_bag/pku_gold_crate_bag" unload="true"/>
+		<cooked_physics		path="units/vanilla/pickups/pku_gold_crate_bag/pku_gold_crate_bag" unload="true"/>
+		<material_config	path="units/vanilla/pickups/pku_gold_crate_bag/pku_gold_crate_bag" unload="true"/>
+		<sequence_manager	path="units/vanilla/pickups/pku_gold_crate_bag/pku_gold_crate_bag" unload="true"/>
+		
+		<!--Textures-->
+		<texture			path="units/vanilla/props/props_goldbars_box_01/props_gold_bars_box_01_df" unload="true"/>
+		<texture			path="units/vanilla/props/props_goldbars_box_01/props_gold_bars_box_01_nm" unload="true"/>
+		<texture			path="units/vanilla/props/props_goldbars_box_01/props_gold_bars_box_01_gsm" unload="true"/>
+		<texture			path="units/vanilla/textures/generic/small/gold_df" unload="true"/>
+		<texture			path="units/vanilla/textures/generic/small/blank_nm" unload="true"/>
+		<texture			path="environments/cubemaps/cubemap_gold" unload="true"/>
+	</add>
+	
+	<!--pku Gold Bar-->
+	<add path="units/vanilla/pickups/pku_gold_bar/pku_gold_bar" type="unit">
+		<!--Static-->
+		<unit				path="units/vanilla/pickups/pku_gold_bar/pku_gold_bar" unload="true"/>
+		<object				path="units/vanilla/pickups/pku_gold_bar/pku_gold_bar" unload="true"/>
+		<model				path="units/vanilla/pickups/pku_gold_bar/pku_gold_bar" unload="true"/>
+		<cooked_physics		path="units/vanilla/pickups/pku_gold_bar/pku_gold_bar" unload="true"/>
+		<material_config	path="units/vanilla/pickups/pku_gold_bar/pku_gold_bar" unload="true"/>
+		<sequence_manager	path="units/vanilla/pickups/pku_gold_bar/pku_gold_bar" unload="true"/>
+		
+		<!--Bag-->
+		<unit				path="units/vanilla/pickups/pku_gold_bar_bag/pku_gold_bar_bag" unload="true"/>
+		<unit				path="units/vanilla/pickups/pku_gold_bar_bag/pku_gold_bar_bag_static" unload="true"/>
+		<object				path="units/vanilla/pickups/pku_gold_bar_bag/pku_gold_bar_bag" unload="true"/>
+		<model				path="units/vanilla/pickups/pku_gold_bar_bag/pku_gold_bar_bag" unload="true"/>
+		<cooked_physics		path="units/vanilla/pickups/pku_gold_bar_bag/pku_gold_bar_bag" unload="true"/>
+		<material_config	path="units/vanilla/pickups/pku_gold_bar_bag/pku_gold_bar_bag" unload="true"/>
+		<sequence_manager	path="units/vanilla/pickups/pku_gold_bar_bag/pku_gold_bar_bag" unload="true"/>
+		
+		<!--Textures-->
+		<texture			path="units/vanilla/props/props_goldbars_box_01/props_gold_bars_box_01_df" unload="true"/>
+		<texture			path="units/vanilla/props/props_goldbars_box_01/props_gold_bars_box_01_nm" unload="true"/>
+		<texture			path="units/vanilla/props/props_goldbars_box_01/props_gold_bars_box_01_gsm" unload="true"/>
+		<texture			path="units/vanilla/pickups/pku_health_ammo_granade/textures/mat_effect_blue_df" unload="true"/>
+		<texture			path="environments/cubemaps/cubemap_gold" unload="true"/>
+	</add>
+	
+	<!--pku Gold Bar Bag-->
+	<add path="units/vanilla/pickups/pku_gold_bar_bag/pku_gold_bar_bag" type="unit">
+		
+		<!--Textures-->
+		<texture			path="units/vanilla/props/props_goldbars_box_01/props_gold_bars_box_01_df" unload="true"/>
+		<texture			path="units/vanilla/props/props_goldbars_box_01/props_gold_bars_box_01_nm" unload="true"/>
+		<texture			path="units/vanilla/props/props_goldbars_box_01/props_gold_bars_box_01_gsm" unload="true"/>
+		<texture			path="units/vanilla/pickups/pku_health_ammo_granade/textures/mat_effect_blue_df" unload="true"/>
+		<texture			path="environments/cubemaps/cubemap_gold" unload="true"/>
+	</add>
+	
+	<!--pku Gold Bars-->
+	<add path="units/vanilla/pickups/pku_gold_bars/pku_gold_bars" type="unit">
+		<unit				path="units/vanilla/pickups/pku_gold_bars/pku_gold_bars" unload="true"/>
+		<object				path="units/vanilla/pickups/pku_gold_bars/pku_gold_bars" unload="true"/>
+		<model				path="units/vanilla/pickups/pku_gold_bars/pku_gold_bars" unload="true"/>
+		<cooked_physics		path="units/vanilla/pickups/pku_gold_bars/pku_gold_bars" unload="true"/>
+		<material_config	path="units/vanilla/pickups/pku_gold_bars/pku_gold_bars" unload="true"/>
+		<sequence_manager	path="units/vanilla/pickups/pku_gold_bars/pku_gold_bars" unload="true"/>
+		
+		<!--Textures-->
+		<texture			path="units/vanilla/props/props_goldbars_box_01/props_gold_bars_box_01_df" unload="true"/>
+		<texture			path="units/vanilla/props/props_goldbars_box_01/props_gold_bars_box_01_nm" unload="true"/>
+		<texture			path="units/vanilla/props/props_goldbars_box_01/props_gold_bars_box_01_gsm" unload="true"/>
+		<texture			path="environments/cubemaps/cubemap_gold" unload="true"/>
+	</add>
+	
+	<!--Gold Pile-->
+	<add path="units/vanilla/pickups/pku_gold_pile/pku_gold_pile" type="unit">
+		<!--Static-->
+		<unit				path="units/vanilla/pickups/pku_gold_pile/pku_gold_pile" unload="true"/>
+		<object				path="units/vanilla/pickups/pku_gold_pile/pku_gold_pile" unload="true"/>
+		<model				path="units/vanilla/pickups/pku_gold_pile/pku_gold_pile" unload="true"/>
+		<cooked_physics		path="units/vanilla/pickups/pku_gold_pile/pku_gold_pile" unload="true"/>
+		<material_config	path="units/vanilla/pickups/pku_gold_pile/pku_gold_pile" unload="true"/>
+		<sequence_manager	path="units/vanilla/pickups/pku_gold_pile/pku_gold_pile" unload="true"/>
+		<!--Spawned-->
+		<unit				path="units/vanilla/pickups/pku_gold_tile/pku_gold_tile" unload="true"/>
+		<object				path="units/vanilla/pickups/pku_gold_tile/pku_gold_tile" unload="true"/>
+		<model				path="units/vanilla/pickups/pku_gold_tile/pku_gold_tile" unload="true"/>
+		<cooked_physics		path="units/vanilla/pickups/pku_gold_tile/pku_gold_tile" unload="true"/>
+		<material_config	path="units/vanilla/pickups/pku_gold_tile/pku_gold_tile" unload="true"/>
+		<sequence_manager	path="units/vanilla/pickups/pku_gold_tile/pku_gold_tile" unload="true"/>
+		
+		<!--Textures-->
+		<texture			path="units/vanilla/pickups/pku_gold_pile/textures/gold_brick_df" unload="true"/>
+		<texture			path="units/vanilla/pickups/pku_gold_pile/textures/gold_brick_nm" unload="true"/>
+		<texture			path="units/vanilla/pickups/pku_gold_pile/textures/gold_brick_gsm" unload="true"/>
+		<texture			path="environments/cubemaps/cubemap_gold" unload="true"/>
+	</add>
+	
+	<!--Gold Tile-->
+	<add path="units/vanilla/pickups/pku_gold_tile/pku_gold_tile" type="unit">
+		<!--Static-->
+		<unit				path="units/vanilla/pickups/pku_gold_tile/pku_gold_tile" unload="true"/>
+		<object				path="units/vanilla/pickups/pku_gold_tile/pku_gold_tile" unload="true"/>
+		<model				path="units/vanilla/pickups/pku_gold_tile/pku_gold_tile" unload="true"/>
+		<cooked_physics		path="units/vanilla/pickups/pku_gold_tile/pku_gold_tile" unload="true"/>
+		<material_config	path="units/vanilla/pickups/pku_gold_tile/pku_gold_tile" unload="true"/>
+		<sequence_manager	path="units/vanilla/pickups/pku_gold_tile/pku_gold_tile" unload="true"/>
+		
+		<!--Bag-->
+		<unit				path="units/vanilla/pickups/pku_gold_tile_bag/pku_gold_tile_bag" unload="true"/>
+		<object				path="units/vanilla/pickups/pku_gold_tile_bag/pku_gold_tile_bag" unload="true"/>
+		<model				path="units/vanilla/pickups/pku_gold_tile_bag/pku_gold_tile_bag" unload="true"/>
+		<cooked_physics		path="units/vanilla/pickups/pku_gold_tile_bag/pku_gold_tile_bag" unload="true"/>
+		<material_config	path="units/vanilla/pickups/pku_gold_tile_bag/pku_gold_tile_bag" unload="true"/>
+		<sequence_manager	path="units/vanilla/pickups/pku_gold_tile_bag/pku_gold_tile_bag" unload="true"/>
+		
+		<!--Textures-->
+		<texture			path="units/vanilla/pickups/pku_gold_pile/textures/gold_brick_df" unload="true"/>
+		<texture			path="units/vanilla/pickups/pku_gold_pile/textures/gold_brick_nm" unload="true"/>
+		<texture			path="units/vanilla/pickups/pku_gold_pile/textures/gold_brick_gsm" unload="true"/>
+		<texture			path="environments/cubemaps/cubemap_gold" unload="true"/>
+	</add>
+	
+	<!--Treasure Chest-->
+	<add path="units/vanilla/props/props_treasure_chest/props_treasure_chest" type="unit">
+		<!--Static-->
+		<unit				path="units/vanilla/props/props_treasure_chest/props_treasure_chest" unload="true"/>
+		<object				path="units/vanilla/props/props_treasure_chest/props_treasure_chest" unload="true"/>
+		<model				path="units/vanilla/props/props_treasure_chest/props_treasure_chest" unload="true"/>
+		<cooked_physics		path="units/vanilla/props/props_treasure_chest/props_treasure_chest" unload="true"/>
+		<material_config	path="units/vanilla/props/props_treasure_chest/props_treasure_chest" unload="true"/>
+		<sequence_manager	path="units/vanilla/props/props_treasure_chest/props_treasure_chest" unload="true"/>
+		<!--Spawned-->
+		<unit				path="units/vanilla/pickups/pku_gold_tile/pku_gold_tile" unload="true"/>
+		<object				path="units/vanilla/pickups/pku_gold_tile/pku_gold_tile" unload="true"/>
+		<model				path="units/vanilla/pickups/pku_gold_tile/pku_gold_tile" unload="true"/>
+		<cooked_physics		path="units/vanilla/pickups/pku_gold_tile/pku_gold_tile" unload="true"/>
+		<material_config	path="units/vanilla/pickups/pku_gold_tile/pku_gold_tile" unload="true"/>
+		<sequence_manager	path="units/vanilla/pickups/pku_gold_tile/pku_gold_tile" unload="true"/>
+		
+		<!--Textures-->
+		<texture			path="units/vanilla/props/props_treasure_chest/textures/treasure_chest_df" unload="true"/>
+		<texture			path="units/vanilla/props/props_treasure_chest/textures/treasure_chest_nm" unload="true"/>
+		<texture			path="units/vanilla/props/props_treasure_chest/textures/treasure_chest_gsma" unload="true"/>
+		<texture			path="units/vanilla/props/props_treasure_chest/textures/treasure_chest_op" unload="true"/>
+		<texture			path="units/vanilla/arhitecture/generic_texture/metal/industrial_steel_df" unload="true"/>
+		<texture			path="units/vanilla/arhitecture/generic_texture/metal/industrial_steel_nm" unload="true"/>
+		<texture			path="units/vanilla/arhitecture/generic_texture/metal/industrial_steel_gsm" unload="true"/>
+		<texture			path="units/vanilla/props/props_goldbar/goldbar_df" unload="true"/>
+		<texture			path="units/vanilla/props/props_goldbar/goldbar_nm" unload="true"/>
+		<texture			path="units/vanilla/props/props_goldbar/goldbar_gsm" unload="true"/>
+		<texture			path="units/vanilla/pickups/pku_loot/pku_loot_globe/textures/globe_df" unload="true"/>
+		<texture			path="units/vanilla/pickups/pku_loot/pku_loot_globe/textures/globe_nm" unload="true"/>
+		<texture			path="units/vanilla/pickups/pku_loot/pku_loot_globe/textures/globe_gsm" unload="true"/>
+		<texture			path="units/vanilla/pickups/pku_loot/pku_loot_desk_eagle_statue/textures/eagle_statue_df" unload="true"/>
+		<texture			path="units/vanilla/pickups/pku_loot/pku_loot_desk_eagle_statue/textures/eagle_statue_nm" unload="true"/>
+		<texture			path="units/vanilla/pickups/pku_loot/pku_loot_desk_eagle_statue/textures/eagle_statue_gsm" unload="true"/>
+		<texture			path="units/vanilla/pickups/pku_loot/pku_loot_kaleidoscope/textures/kaleidoscope_df" unload="true"/>
+		<texture			path="units/vanilla/pickups/pku_loot/pku_loot_kaleidoscope/textures/kaleidoscope_nm" unload="true"/>
+		<texture			path="units/vanilla/pickups/pku_loot/pku_loot_kaleidoscope/textures/kaleidoscope_gsm" unload="true"/>
+		<texture			path="units/vanilla/pickups/pku_loot/pku_loot_desk_vase/textures/vase_df" unload="true"/>
+		<texture			path="units/vanilla/pickups/pku_loot/pku_loot_desk_vase/textures/vase_nm" unload="true"/>
+		<texture			path="units/vanilla/pickups/pku_loot/pku_loot_desk_vase/textures/vase_gsm" unload="true"/>
+		<texture			path="units/vanilla/pickups/pku_loot/pku_loot_desk_golden_inkwell/textures/gold_inkwell_df" unload="true"/>
+		<texture			path="units/vanilla/pickups/pku_loot/pku_loot_desk_golden_inkwell/textures/gold_inkwell_nm" unload="true"/>
+		<texture			path="units/vanilla/pickups/pku_loot/pku_loot_desk_golden_inkwell/textures/gold_inkwell_gsm" unload="true"/>
+		<texture			path="units/vanilla/pickups/pku_loot/pku_loot_desk_letter_opener/textures/letter_opener_df" unload="true"/>
+		<texture			path="units/vanilla/pickups/pku_loot/pku_loot_desk_letter_opener/textures/letter_opener_nm" unload="true"/>
+		<texture			path="units/vanilla/pickups/pku_loot/pku_loot_desk_letter_opener/textures/letter_opener_gsm" unload="true"/>
+		<texture			path="units/vanilla/pickups/pku_loot/pku_loot_desk_book/textures/desk_book_df" unload="true"/>
+		<texture			path="units/vanilla/pickups/pku_loot/pku_loot_desk_book/textures/desk_book_nm" unload="true"/>
+		<texture			path="units/vanilla/pickups/pku_loot/pku_loot_desk_book/textures/desk_book_gsm" unload="true"/>
+		<texture			path="ui/interactions/lockpick_indicator_df" unload="true"/>
+		<texture			path="environments/cubemaps/cubemap_gold" unload="true"/>
+	</add>
+	
+	<!--Dynamite Take-->
+	<add path="units/vanilla/equipment/equip_dynamite/equip_dynamite" type="unit">
+		<!--1x-->
+		<unit				path="units/vanilla/equipment/equip_dynamite/equip_dynamite" unload="true"/>
+		<object				path="units/vanilla/equipment/equip_dynamite/equip_dynamite" unload="true"/>
+		<model				path="units/vanilla/equipment/equip_dynamite/equip_dynamite" unload="true"/>
+		<cooked_physics		path="units/vanilla/equipment/equip_dynamite/equip_dynamite" unload="true"/>
+		<material_config	path="units/vanilla/equipment/equip_dynamite/equip_dynamite" unload="true"/>
+		<sequence_manager	path="units/vanilla/equipment/equip_dynamite/equip_dynamite" unload="true"/>
+		<!--4x-->
+		<unit				path="units/vanilla/equipment/equip_dynamite_x4/equip_dynamite_x4" unload="true"/>
+		<object				path="units/vanilla/equipment/equip_dynamite_x4/equip_dynamite_x4" unload="true"/>
+		<model				path="units/vanilla/equipment/equip_dynamite_x4/equip_dynamite_x4" unload="true"/>
+		<cooked_physics		path="units/vanilla/equipment/equip_dynamite_x4/equip_dynamite_x4" unload="true"/>
+		<material_config	path="units/vanilla/equipment/equip_dynamite_x4/equip_dynamite_x4" unload="true"/>
+		<sequence_manager	path="units/vanilla/equipment/equip_dynamite_x4/equip_dynamite_x4" unload="true"/>
+		
+		<!--Textures-->
+		<texture			path="units/vanilla/equipment/equip_dynamite/dynamite_stick_df" unload="true"/>
+		<texture			path="units/vanilla/equipment/equip_dynamite/dynamite_stick_nm" unload="true"/>
+		<texture			path="units/vanilla/equipment/equip_dynamite/dynamite_stick_gsm" unload="true"/>
+	</add>
+	
+	<!--Dynamite Plant-->
+	<add path="units/vanilla/props/props_dynamite_plantable/props_dynamite_plantable" type="unit">
+		<!--1x-->
+		<unit				path="units/vanilla/props/props_dynamite_plantable/props_dynamite_plantable" unload="true"/>
+		<object				path="units/vanilla/props/props_dynamite_plantable/props_dynamite_plantable" unload="true"/>
+		<model				path="units/vanilla/props/props_dynamite_plantable/props_dynamite_plantable" unload="true"/>
+		<cooked_physics		path="units/vanilla/props/props_dynamite_plantable/props_dynamite_plantable" unload="true"/>
+		<material_config	path="units/vanilla/props/props_dynamite_plantable/props_dynamite_plantable" unload="true"/>
+		<sequence_manager	path="units/vanilla/props/props_dynamite_plantable/props_dynamite_plantable" unload="true"/>
+		
+		<!--Textures-->
+		<texture			path="units/vanilla/equipment/equip_dynamite/dynamite_stick_df" unload="true"/>
+		<texture			path="units/vanilla/equipment/equip_dynamite/dynamite_stick_nm" unload="true"/>
+		<texture			path="units/vanilla/equipment/equip_dynamite/dynamite_stick_gsm" unload="true"/>
+		<texture			path="units/vanilla/textures/generic/small/white_df" unload="true"/>
+		<texture			path="units/vanilla/textures/generic/small/transparent_op" unload="true"/>
+			
+		<!--Effects-->
+		<effect				path="effects/vanilla/explosions/exp_c4_001" unload="true"/>
+		<texture			path="effects/vanilla/textures/opacity_atlas_df" unload="true"/>
+		<texture			path="effects/vanilla/textures/add_atlas_df" unload="true"/>
+	</add>
+	
+	<!--Sandbags-->
+	<add path="units/vanilla/props/props_sandbag_01/props_sandbag_01" type="unit">
+		<!--Single Bags-->
+		<unit				path="units/vanilla/props/props_sandbag_01/props_sandbag_01" unload="true"/>
+		<object				path="units/vanilla/props/props_sandbag_01/props_sandbag_01" unload="true"/>
+		<model				path="units/vanilla/props/props_sandbag_01/props_sandbag_01" unload="true"/>
+		<cooked_physics		path="units/vanilla/props/props_sandbag_01/props_sandbag_01" unload="true"/>
+		
+		<unit				path="units/vanilla/props/props_sandbag_02/props_sandbag_02" unload="true"/>
+		<object				path="units/vanilla/props/props_sandbag_02/props_sandbag_02" unload="true"/>
+		<model				path="units/vanilla/props/props_sandbag_02/props_sandbag_02" unload="true"/>
+		<cooked_physics		path="units/vanilla/props/props_sandbag_02/props_sandbag_02" unload="true"/>
+		<material_config	path="units/vanilla/props/props_sandbag_02/props_sandbag_02" unload="true"/>
+		
+		<unit				path="units/vanilla/props/props_sandbag_03/props_sandbag_03" unload="true"/>
+		<object				path="units/vanilla/props/props_sandbag_03/props_sandbag_03" unload="true"/>
+		<model				path="units/vanilla/props/props_sandbag_03/props_sandbag_03" unload="true"/>
+		<cooked_physics		path="units/vanilla/props/props_sandbag_03/props_sandbag_03" unload="true"/>
+		<material_config	path="units/vanilla/props/props_sandbag_03/props_sandbag_03" unload="true"/>
+		
+		<unit				path="units/vanilla/props/props_sandbag_04/props_sandbag_04" unload="true"/>
+		<object				path="units/vanilla/props/props_sandbag_04/props_sandbag_04" unload="true"/>
+		<model				path="units/vanilla/props/props_sandbag_04/props_sandbag_04" unload="true"/>
+		<cooked_physics		path="units/vanilla/props/props_sandbag_04/props_sandbag_04" unload="true"/>
+		
+		<unit				path="units/vanilla/props/props_sandbag_05/props_sandbag_05" unload="true"/>
+		<object				path="units/vanilla/props/props_sandbag_05/props_sandbag_05" unload="true"/>
+		<model				path="units/vanilla/props/props_sandbag_05/props_sandbag_05" unload="true"/>
+		<cooked_physics		path="units/vanilla/props/props_sandbag_05/props_sandbag_05" unload="true"/>
+		
+		<unit				path="units/vanilla/props/props_sandbag_06/props_sandbag_06" unload="true"/>
+		<object				path="units/vanilla/props/props_sandbag_06/props_sandbag_06" unload="true"/>
+		<model				path="units/vanilla/props/props_sandbag_06/props_sandbag_06" unload="true"/>
+		<cooked_physics		path="units/vanilla/props/props_sandbag_06/props_sandbag_06" unload="true"/>
+		
+		<unit				path="units/vanilla/props/props_sandbag_06_v2/props_sandbag_06_v2" unload="true"/>
+		<object				path="units/vanilla/props/props_sandbag_06_v2/props_sandbag_06_v2" unload="true"/>
+		<model				path="units/vanilla/props/props_sandbag_06_v2/props_sandbag_06_v2" unload="true"/>
+		<cooked_physics		path="units/vanilla/props/props_sandbag_06_v2/props_sandbag_06_v2" unload="true"/>
+		
+		<unit				path="units/vanilla/props/props_sandbag_07/props_sandbag_07" unload="true"/>
+		<object				path="units/vanilla/props/props_sandbag_07/props_sandbag_07" unload="true"/>
+		<model				path="units/vanilla/props/props_sandbag_07/props_sandbag_07" unload="true"/>
+		<cooked_physics		path="units/vanilla/props/props_sandbag_07/props_sandbag_07" unload="true"/>
+		
+		<!--Stacked Bags-->
+		<unit				path="units/vanilla/props/props_sandbags_01/props_sandbags_01" unload="true"/>
+		<object				path="units/vanilla/props/props_sandbags_01/props_sandbags_01" unload="true"/>
+		<model				path="units/vanilla/props/props_sandbags_01/props_sandbags_01" unload="true"/>
+		<cooked_physics		path="units/vanilla/props/props_sandbags_01/props_sandbags_01" unload="true"/>
+		<material_config	path="units/vanilla/props/props_sandbags_01/props_sandbags_01" unload="true"/>
+		
+		<unit				path="units/vanilla/props/props_sandbags_02/props_sandbags_02" unload="true"/>
+		<object				path="units/vanilla/props/props_sandbags_02/props_sandbags_02" unload="true"/>
+		<model				path="units/vanilla/props/props_sandbags_02/props_sandbags_02" unload="true"/>
+		<cooked_physics		path="units/vanilla/props/props_sandbags_02/props_sandbags_02" unload="true"/>
+		<material_config	path="units/vanilla/props/props_sandbags_02/props_sandbags_02" unload="true"/>
+		
+			<!-- Animated Sandbags -->
+		<!-- <unit				path="units/vanilla/props/props_sandbags_03/props_sandbags_03" unload="true"/> -->
+		<!-- <object				path="units/vanilla/props/props_sandbags_03/props_sandbags_03" unload="true"/> -->
+		<!-- <model				path="units/vanilla/props/props_sandbags_03/props_sandbags_03" unload="true"/> -->
+		<!-- <cooked_physics		path="units/vanilla/props/props_sandbags_03/props_sandbags_03" unload="true"/> -->
+		<!-- <material_config	path="units/vanilla/props/props_sandbags_03/props_sandbags_03" unload="true"/> -->
+		<!-- <sequence_manager	path="units/vanilla/props/props_sandbags_03/props_sandbags_03" unload="true"/> -->
+		
+		<unit				path="units/vanilla/props/props_sandbags_03_v2/props_sandbags_03_v2" unload="true"/>
+		<object				path="units/vanilla/props/props_sandbags_03_v2/props_sandbags_03_v2" unload="true"/>
+		<model				path="units/vanilla/props/props_sandbags_03_v2/props_sandbags_03_v2" unload="true"/>
+		<cooked_physics		path="units/vanilla/props/props_sandbags_03_v2/props_sandbags_03_v2" unload="true"/>
+		<material_config	path="units/vanilla/props/props_sandbags_03_v2/props_sandbags_03_v2" unload="true"/>
+		
+		<unit				path="units/vanilla/props/props_sandbags_04/props_sandbags_o4" unload="true"/>
+		<object				path="units/vanilla/props/props_sandbags_04/props_sandbags_o4" unload="true"/>
+		<model				path="units/vanilla/props/props_sandbags_04/props_sandbags_o4" unload="true"/>
+		<cooked_physics		path="units/vanilla/props/props_sandbags_04/props_sandbags_o4" unload="true"/>
+		<material_config	path="units/vanilla/props/props_sandbags_04/props_sandbags_o4" unload="true"/>
+		
+		<unit				path="units/vanilla/props/props_sandbags_05/props_sandbags_05" unload="true"/>
+		<object				path="units/vanilla/props/props_sandbags_05/props_sandbags_05" unload="true"/>
+		<model				path="units/vanilla/props/props_sandbags_05/props_sandbags_05" unload="true"/>
+		<cooked_physics		path="units/vanilla/props/props_sandbags_05/props_sandbags_05" unload="true"/>
+		
+		<!--Textures-->
+		<texture			path="units/vanilla/props/props_sandbags_01/props_sandbag_single_01_df" unload="true"/>
+		<texture			path="units/vanilla/props/props_sandbags_01/props_sandbag_single_01_nm" unload="true"/>
+		<texture			path="units/vanilla/props/props_sandbags_01/props_sandbag_single_01_gsm" unload="true"/>
+		<texture			path="units/vanilla/props/props_sandbags_01/props_wooden_box_single_01_df" unload="true"/>
+		<texture			path="units/vanilla/props/props_sandbags_01/props_wooden_box_single_01_nm" unload="true"/>
+		<texture			path="units/vanilla/props/props_sandbags_01/props_wooden_box_single_01_gsm" unload="true"/>
+	</add>
+	
+	<!--Scaffolding-->
+	<add path="units/vanilla/props/props_scaffold_units_01/props_scaffolding_units_01" type="unit">
+		<!--Scaff Units-->
+		<unit				path="units/vanilla/props/props_scaffold_units_01/props_scaffolding_units_01" unload="true"/>
+		<object				path="units/vanilla/props/props_scaffold_units_01/props_scaffolding_units_01" unload="true"/>
+		<model				path="units/vanilla/props/props_scaffold_units_01/props_scaffolding_units_01" unload="true"/>
+		<cooked_physics		path="units/vanilla/props/props_scaffold_units_01/props_scaffolding_units_01" unload="true"/>
+		<material_config	path="units/vanilla/props/props_scaffold_units_01/props_scaffolding_units_01" unload="true"/>
+		<sequence_manager	path="units/vanilla/props/props_scaffold_units_01/props_scaffolding_units_01" unload="true"/>
+		
+		<!--Combined-->
+		<unit				path="units/vanilla/props/props_scaffold_combined_01/props_scaffold_combined_01" unload="true"/>
+		<object				path="units/vanilla/props/props_scaffold_combined_01/props_scaffold_combined_01" unload="true"/>
+		<model				path="units/vanilla/props/props_scaffold_combined_01/props_scaffold_combined_01" unload="true"/>
+		<cooked_physics		path="units/vanilla/props/props_scaffold_combined_01/props_scaffold_combined_01" unload="true"/>
+		
+		<!--Modular-->
+		<unit				path="units/vanilla/props/props_scaffold_modular_pieces_01/props_scaffold_modular_piece_01" unload="true"/>
+		<object				path="units/vanilla/props/props_scaffold_modular_pieces_01/props_scaffold_modular_piece_01" unload="true"/>
+		<model				path="units/vanilla/props/props_scaffold_modular_pieces_01/props_scaffold_modular_piece_01" unload="true"/>
+		<cooked_physics		path="units/vanilla/props/props_scaffold_modular_pieces_01/props_scaffold_modular_piece_01" unload="true"/>
+		<material_config	path="units/vanilla/props/props_scaffold_modular_pieces_01/props_scaffold_modular_piece_01" unload="true"/>
+		
+		<unit				path="units/vanilla/props/props_scaffold_modular_pieces_01/props_scaffold_modular_piece_02" unload="true"/>
+		<object				path="units/vanilla/props/props_scaffold_modular_pieces_01/props_scaffold_modular_piece_02" unload="true"/>
+		<model				path="units/vanilla/props/props_scaffold_modular_pieces_01/props_scaffold_modular_piece_02" unload="true"/>
+		<cooked_physics		path="units/vanilla/props/props_scaffold_modular_pieces_01/props_scaffold_modular_piece_02" unload="true"/>
+		<material_config	path="units/vanilla/props/props_scaffold_modular_pieces_01/props_scaffold_modular_piece_02" unload="true"/>
+		
+		<unit				path="units/vanilla/props/props_scaffold_modular_pieces_01/props_scaffold_modular_piece_03" unload="true"/>
+		<object				path="units/vanilla/props/props_scaffold_modular_pieces_01/props_scaffold_modular_piece_03" unload="true"/>
+		<model				path="units/vanilla/props/props_scaffold_modular_pieces_01/props_scaffold_modular_piece_03" unload="true"/>
+		<cooked_physics		path="units/vanilla/props/props_scaffold_modular_pieces_01/props_scaffold_modular_piece_03" unload="true"/>
+		
+		<unit				path="units/vanilla/props/props_scaffold_modular_pieces_01/props_scaffold_modular_piece_04" unload="true"/>
+		<object				path="units/vanilla/props/props_scaffold_modular_pieces_01/props_scaffold_modular_piece_04" unload="true"/>
+		<model				path="units/vanilla/props/props_scaffold_modular_pieces_01/props_scaffold_modular_piece_04" unload="true"/>
+		<cooked_physics		path="units/vanilla/props/props_scaffold_modular_pieces_01/props_scaffold_modular_piece_04" unload="true"/>
+		
+		<unit				path="units/vanilla/props/props_scaffold_modular_pieces_01/props_scaffold_modular_piece_05" unload="true"/>
+		<object				path="units/vanilla/props/props_scaffold_modular_pieces_01/props_scaffold_modular_piece_05" unload="true"/>
+		<model				path="units/vanilla/props/props_scaffold_modular_pieces_01/props_scaffold_modular_piece_05" unload="true"/>
+		<cooked_physics		path="units/vanilla/props/props_scaffold_modular_pieces_01/props_scaffold_modular_piece_05" unload="true"/>
+		
+		<unit				path="units/vanilla/props/props_scaffold_modular_pieces_01/props_scaffold_modular_piece_06" unload="true"/>
+		<object				path="units/vanilla/props/props_scaffold_modular_pieces_01/props_scaffold_modular_piece_06" unload="true"/>
+		<model				path="units/vanilla/props/props_scaffold_modular_pieces_01/props_scaffold_modular_piece_06" unload="true"/>
+		<cooked_physics		path="units/vanilla/props/props_scaffold_modular_pieces_01/props_scaffold_modular_piece_06" unload="true"/>
+		
+		<!--Textures-->
+		<texture			path="units/vanilla/props/props_scaffold_modular_pieces_01/props_scaffold_unit_modular_pieces_df" unload="true"/>
+		<texture			path="units/vanilla/props/props_scaffold_modular_pieces_01/props_scaffold_unit_modular_pieces_nm" unload="true"/>
+		<texture			path="units/vanilla/props/props_scaffold_modular_pieces_01/props_scaffold_unit_modular_pieces_gsm" unload="true"/>
+	</add>
+	
+	<!--A Well-->
+	<add path="units/vanilla/props/props_well_01/props_well_01" type="unit">
+		<unit				path="units/vanilla/props/props_well_01/props_well_01" unload="true"/>
+		<object				path="units/vanilla/props/props_well_01/props_well_01" unload="true"/>
+		<model				path="units/vanilla/props/props_well_01/props_well_01" unload="true"/>
+		<cooked_physics		path="units/vanilla/props/props_well_01/props_well_01" unload="true"/>
+		<material_config	path="units/vanilla/props/props_well_01/props_well_01" unload="true"/>
+		
+		<!--Textures-->
+		<texture			path="units/vanilla/props/props_well_01/props_well_01_df" unload="true"/>
+		<texture			path="units/vanilla/props/props_well_01/props_well_01_nm" unload="true"/>
+		<texture			path="units/vanilla/props/props_well_01/props_well_01_gsm" unload="true"/>
+	</add>
+	
+	<!--Jurrasic Rock 001-->
+	<add>
+		<unit				path="units/vanilla/props/props_rock_jurrasic_01/props_rock_jurrasic_01" unload="true"/>
+		<object				path="units/vanilla/props/props_rock_jurrasic_01/props_rock_jurrasic_01" unload="true"/>
+		<model				path="units/vanilla/props/props_rock_jurrasic_01/props_rock_jurrasic_01" unload="true"/>
+		<cooked_physics		path="units/vanilla/props/props_rock_jurrasic_01/props_rock_jurrasic_01" unload="true"/>
+		<material_config	path="units/vanilla/props/props_rock_jurrasic_01/props_rock_jurrasic_01" unload="true"/>
+		
+		<!--Textures-->
+		<texture			path="units/vanilla/props/props_rock_jurrasic_01/jurrasic_rock_001_df" unload="true"/>
+		<texture			path="units/vanilla/props/props_rock_jurrasic_01/jurrasic_rock_001_nm" unload="true"/>
+		<texture			path="units/vanilla/props/props_rock_jurrasic_01/jurrasic_rock_001_gsm" unload="true"/>
+	</add>
+	
+	<!--Jurrasic Rock 002-->
+	<add>
+		<unit				path="units/vanilla/props/props_rock_jurrasic_02/props_rock_jurrasic_02" unload="true"/>
+		<object				path="units/vanilla/props/props_rock_jurrasic_02/props_rock_jurrasic_02" unload="true"/>
+		<model				path="units/vanilla/props/props_rock_jurrasic_02/props_rock_jurrasic_02" unload="true"/>
+		<cooked_physics		path="units/vanilla/props/props_rock_jurrasic_02/props_rock_jurrasic_02" unload="true"/>
+		<material_config	path="units/vanilla/props/props_rock_jurrasic_02/props_rock_jurrasic_02" unload="true"/>
+		
+		<!--Textures-->
+		<texture			path="units/vanilla/props/props_rock_jurrasic_02/jurrasic_rock_002_df" unload="true"/>
+		<texture			path="units/vanilla/props/props_rock_jurrasic_02/jurrasic_rock_002_nm" unload="true"/>
+		<texture			path="units/vanilla/props/props_rock_jurrasic_02/jurrasic_rock_002_gsm" unload="true"/>
+	</add>
+	
+	<!--Jurrasic Rock 003-->
+	<add>
+		<unit				path="units/vanilla/props/props_rock_jurrasic_03/props_rock_jurrasic_03" unload="true"/>
+		<object				path="units/vanilla/props/props_rock_jurrasic_03/props_rock_jurrasic_03" unload="true"/>
+		<model				path="units/vanilla/props/props_rock_jurrasic_03/props_rock_jurrasic_03" unload="true"/>
+		<cooked_physics		path="units/vanilla/props/props_rock_jurrasic_03/props_rock_jurrasic_03" unload="true"/>
+		<material_config	path="units/vanilla/props/props_rock_jurrasic_03/props_rock_jurrasic_03" unload="true"/>
+		
+		<!--Textures-->
+		<texture			path="units/vanilla/props/props_rock_jurrasic_03/jurrasic_rock_003_df" unload="true"/>
+		<texture			path="units/vanilla/props/props_rock_jurrasic_03/jurrasic_rock_003_nm" unload="true"/>
+		<texture			path="units/vanilla/props/props_rock_jurrasic_03/jurrasic_rock_003_gsm" unload="true"/>
+	</add>
+	
+	<!--Jurrasic Rock 004-->
+	<add>
+		<unit				path="units/vanilla/props/props_rock_jurrasic_04/props_rock_jurrasic_04" unload="true"/>
+		<object				path="units/vanilla/props/props_rock_jurrasic_04/props_rock_jurrasic_04" unload="true"/>
+		<model				path="units/vanilla/props/props_rock_jurrasic_04/props_rock_jurrasic_04" unload="true"/>
+		<cooked_physics		path="units/vanilla/props/props_rock_jurrasic_04/props_rock_jurrasic_04" unload="true"/>
+		<material_config	path="units/vanilla/props/props_rock_jurrasic_04/props_rock_jurrasic_04" unload="true"/>
+		
+		<!--Textures-->
+		<texture			path="units/vanilla/props/props_rock_jurrasic_04/jurrasic_rock_004_df" unload="true"/>
+		<texture			path="units/vanilla/props/props_rock_jurrasic_04/jurrasic_rock_004_nm" unload="true"/>
+		<texture			path="units/vanilla/props/props_rock_jurrasic_04/jurrasic_rock_004_gsm" unload="true"/>
+	</add>
+	
+	<!--Dolomite Rock 001-->
+	<add>
+		<unit				path="units/vanilla/props/props_rock_dolomite_01/props_rock_dolomite_01" unload="true"/>
+		<object				path="units/vanilla/props/props_rock_dolomite_01/props_rock_dolomite_01" unload="true"/>
+		<model				path="units/vanilla/props/props_rock_dolomite_01/props_rock_dolomite_01" unload="true"/>
+		<cooked_physics		path="units/vanilla/props/props_rock_dolomite_01/props_rock_dolomite_01" unload="true"/>
+		<material_config	path="units/vanilla/props/props_rock_dolomite_01/props_rock_dolomite_01" unload="true"/>
+		
+		<!--Textures-->
+		<texture			path="units/vanilla/props/props_rock_dolomite_01/dolomite_rock_001_df" unload="true"/>
+		<texture			path="units/vanilla/props/props_rock_dolomite_01/dolomite_rock_001_nm" unload="true"/>
+		<texture			path="units/vanilla/props/props_rock_dolomite_01/dolomite_rock_001_gsm" unload="true"/>
+	</add>
+	
+	<!--Grass Fence-->
+	<add>
+		<unit				path="units/vanilla/props/props_road_grass_fence_01/props_road_grass_fence_01" unload="true"/>
+		<object				path="units/vanilla/props/props_road_grass_fence_01/props_road_grass_fence_01" unload="true"/>
+		<model				path="units/vanilla/props/props_road_grass_fence_01/props_road_grass_fence_01" unload="true"/>
+		<cooked_physics		path="units/vanilla/props/props_road_grass_fence_01/props_road_grass_fence_01" unload="true"/>
+		<material_config	path="units/vanilla/props/props_road_grass_fence_01/props_road_grass_fence_01" unload="true"/>
+		
+		<!--Textures-->
+		<texture			path="units/vanilla/props/props_road_grass_fence_01/textures/props_road_grass_fence_01_df" unload="true"/>
+		<texture			path="units/vanilla/props/props_road_grass_fence_01/textures/props_road_grass_fence_01_nm" unload="true"/>
+		<texture			path="units/vanilla/props/props_road_grass_fence_01/textures/props_road_grass_fence_01_gsm" unload="true"/>
+		<texture			path="units/vanilla/arhitecture/generic_texture/paving/paving_03_df" unload="true"/>
+		<texture			path="units/vanilla/arhitecture/generic_texture/paving/paving_03_nm" unload="true"/>
+		<texture			path="units/vanilla/arhitecture/generic_texture/paving/paving_03_gsm" unload="true"/>
+		<texture			path="units/vanilla/nature/ground/textures/ground_grass_stones/ground_grass_stones_df" unload="true"/>
+		<texture			path="units/vanilla/nature/ground/textures/ground_grass_stones/ground_grass_stones_nm" unload="true"/>
+		<texture			path="units/vanilla/nature/ground/textures/ground_grass_stones/ground_grass_stones_gsm" unload="true"/>
+	</add>
+	
+	<!--Barbed Wire 01-->
+	<!--NOTICE: MISSING COMPATABLE RENDERER TEMPLATE!-->
+	<add>
+		<unit				path="units/vanilla/props/prop_barbed_wire_01/prop_barbed_wire_01" unload="true"/>
+		<object				path="units/vanilla/props/prop_barbed_wire_01/prop_barbed_wire_01" unload="true"/>
+		<model				path="units/vanilla/props/prop_barbed_wire_01/prop_barbed_wire_01" unload="true"/>
+		<cooked_physics		path="units/vanilla/props/prop_barbed_wire_01/prop_barbed_wire_01" unload="true"/>
+		<material_config	path="units/vanilla/props/prop_barbed_wire_01/prop_barbed_wire_01" unload="true"/>
+		
+		<!--Textures-->
+		<texture			path="units/vanilla/props/prop_barbed_wire_01/barbed_wire1_df" unload="true"/>
+		<texture			path="units/vanilla/props/prop_barbed_wire_01/barbed_wire1_nm" unload="true"/>
+		<texture			path="units/vanilla/props/prop_barbed_wire_01/barbed_wire1_gsm" unload="true"/>
+		<texture			path="units/vanilla/props/prop_barbed_wire_01/barbed_wire1_op" unload="true"/>
+	</add>
+	
+	<!--Barbed Wire Reel-->
+	<add>
+		<unit				path="units/vanilla/props/prop_barbed_wire_reel_01/prop_barbed_wire_reel_01" unload="true"/>
+		<object				path="units/vanilla/props/prop_barbed_wire_reel_01/prop_barbed_wire_reel_01" unload="true"/>
+		<model				path="units/vanilla/props/prop_barbed_wire_reel_01/prop_barbed_wire_reel_01" unload="true"/>
+		<cooked_physics		path="units/vanilla/props/prop_barbed_wire_reel_01/prop_barbed_wire_reel_01" unload="true"/>
+		<material_config	path="units/vanilla/props/prop_barbed_wire_reel_01/prop_barbed_wire_reel_01" unload="true"/>
+		
+		<!--Textures-->
+		<texture			path="units/vanilla/props/prop_barbed_wire_reel_01/props_barbed_wire_reel_01_df" unload="true"/>
+		<texture			path="units/vanilla/props/prop_barbed_wire_reel_01/props_barbed_wire_reel_01_nm" unload="true"/>
+		<texture			path="units/vanilla/props/prop_barbed_wire_reel_01/props_barbed_wire_reel_01_gsm" unload="true"/>
+	</add>
+	
+	<!--Barbed Wire A&B-->
+	<!--NOTICE: MISSING COMPATABLE RENDERER TEMPLATE!-->
+	<add>
+		<unit				path="units/vanilla/props/prop_barbedwire/prop_barbedwire_a" unload="true"/>
+		<object				path="units/vanilla/props/prop_barbedwire/prop_barbedwire_a" unload="true"/>
+		<model				path="units/vanilla/props/prop_barbedwire/prop_barbedwire_a" unload="true"/>
+		<cooked_physics		path="units/vanilla/props/prop_barbedwire/prop_barbedwire_a" unload="true"/>
+		<material_config	path="units/vanilla/props/prop_barbedwire/prop_barbedwire_a" unload="true"/>
+		
+		<unit				path="units/vanilla/props/prop_barbedwire/prop_barbedwire_b" unload="true"/>
+		<object				path="units/vanilla/props/prop_barbedwire/prop_barbedwire_b" unload="true"/>
+		<model				path="units/vanilla/props/prop_barbedwire/prop_barbedwire_b" unload="true"/>
+		<cooked_physics		path="units/vanilla/props/prop_barbedwire/prop_barbedwire_b" unload="true"/>
+		
+		<!--Textures-->
+		<texture			path="units/vanilla/props/prop_barbedwire/prop_barbedwire_df" unload="true"/>
+		<texture			path="units/vanilla/props/prop_barbedwire/prop_barbedwire_nm" unload="true"/>
+		<texture			path="units/vanilla/props/prop_barbedwire/prop_barbedwire_gsma" unload="true"/>
+		<texture			path="units/vanilla/props/prop_barbedwire/prop_barbedwire_op" unload="true"/>
+	</add>
+	
+	<!--Barbed Wire Set-->
+	<!--NOTICE: MISSING COMPATABLE RENDERER TEMPLATE!-->
+	<add>
+		<unit				path="units/vanilla/props/prop_barbedwire_set/prop_barbedwire_a_long" unload="true"/>
+		<object				path="units/vanilla/props/prop_barbedwire_set/prop_barbedwire_a_long" unload="true"/>
+		<model				path="units/vanilla/props/prop_barbedwire_set/prop_barbedwire_a_long" unload="true"/>
+		<cooked_physics		path="units/vanilla/props/prop_barbedwire_set/prop_barbedwire_a_long" unload="true"/>
+		<material_config	path="units/vanilla/props/prop_barbedwire_set/prop_barbedwire_a_long" unload="true"/>
+		
+		<unit				path="units/vanilla/props/prop_barbedwire_set/prop_barbedwire_a_med" unload="true"/>
+		<object				path="units/vanilla/props/prop_barbedwire_set/prop_barbedwire_a_med" unload="true"/>
+		<model				path="units/vanilla/props/prop_barbedwire_set/prop_barbedwire_a_med" unload="true"/>
+		<cooked_physics		path="units/vanilla/props/prop_barbedwire_set/prop_barbedwire_a_med" unload="true"/>
+		
+		<unit				path="units/vanilla/props/prop_barbedwire_set/prop_barbedwire_a_single" unload="true"/>
+		<object				path="units/vanilla/props/prop_barbedwire_set/prop_barbedwire_a_single" unload="true"/>
+		<model				path="units/vanilla/props/prop_barbedwire_set/prop_barbedwire_a_single" unload="true"/>
+		<cooked_physics		path="units/vanilla/props/prop_barbedwire_set/prop_barbedwire_a_single" unload="true"/>
+		
+		<unit				path="units/vanilla/props/prop_barbedwire_set/prop_barbedwire_c_long" unload="true"/>
+		<object				path="units/vanilla/props/prop_barbedwire_set/prop_barbedwire_c_long" unload="true"/>
+		<model				path="units/vanilla/props/prop_barbedwire_set/prop_barbedwire_c_long" unload="true"/>
+		<cooked_physics		path="units/vanilla/props/prop_barbedwire_set/prop_barbedwire_c_long" unload="true"/>
+		
+		<unit				path="units/vanilla/props/prop_barbedwire_set/prop_barbedwire_c_med" unload="true"/>
+		<object				path="units/vanilla/props/prop_barbedwire_set/prop_barbedwire_c_med" unload="true"/>
+		<model				path="units/vanilla/props/prop_barbedwire_set/prop_barbedwire_c_med" unload="true"/>
+		<cooked_physics		path="units/vanilla/props/prop_barbedwire_set/prop_barbedwire_c_med" unload="true"/>
+		
+		<unit				path="units/vanilla/props/prop_barbedwire_set/prop_barbedwire_c_small" unload="true"/>
+		<object				path="units/vanilla/props/prop_barbedwire_set/prop_barbedwire_c_small" unload="true"/>
+		<model				path="units/vanilla/props/prop_barbedwire_set/prop_barbedwire_c_small" unload="true"/>
+		<cooked_physics		path="units/vanilla/props/prop_barbedwire_set/prop_barbedwire_c_small" unload="true"/>
+		
+		<unit				path="units/vanilla/props/prop_barbedwire_set/prop_barbedwire_d_long" unload="true"/>
+		<object				path="units/vanilla/props/prop_barbedwire_set/prop_barbedwire_d_long" unload="true"/>
+		<model				path="units/vanilla/props/prop_barbedwire_set/prop_barbedwire_d_long" unload="true"/>
+		<cooked_physics		path="units/vanilla/props/prop_barbedwire_set/prop_barbedwire_d_long" unload="true"/>
+		
+		<unit				path="units/vanilla/props/prop_barbedwire_set/prop_barbedwire_d_med" unload="true"/>
+		<object				path="units/vanilla/props/prop_barbedwire_set/prop_barbedwire_d_med" unload="true"/>
+		<model				path="units/vanilla/props/prop_barbedwire_set/prop_barbedwire_d_med" unload="true"/>
+		<cooked_physics		path="units/vanilla/props/prop_barbedwire_set/prop_barbedwire_d_med" unload="true"/>
+		
+		<!--Textures-->
+		<texture			path="units/vanilla/props/prop_barbedwire_set/prop_barbedwire_df" unload="true"/>
+		<texture			path="units/vanilla/props/prop_barbedwire_set/prop_barbedwire_nm" unload="true"/>
+		<texture			path="units/vanilla/props/prop_barbedwire_set/prop_barbedwire_gsma" unload="true"/>
+		<texture			path="units/vanilla/props/prop_barbedwire_set/prop_barbedwire_op" unload="true"/>
+		<texture			path="units/vanilla/props/prop_barbedwire_set/prop_barbedwire_set_alpha_df" unload="true"/>
+		<texture			path="units/vanilla/props/prop_barbedwire_set/prop_barbedwire_set_alpha_nm" unload="true"/>
+		<texture			path="units/vanilla/props/prop_barbedwire_set/prop_barbedwire_set_alpha_gsma" unload="true"/>
+		<texture			path="units/vanilla/props/prop_barbedwire_set/prop_barbedwire_set_alpha_op" unload="true"/>
+		<texture			path="units/vanilla/props/prop_barbedwire_set/prop_barbedwire_set_df" unload="true"/>
+		<texture			path="units/vanilla/props/prop_barbedwire_set/prop_barbedwire_set_nm" unload="true"/>
+		<texture			path="units/vanilla/props/prop_barbedwire_set/prop_barbedwire_set_gsma" unload="true"/>
+	</add>
+	
+	<!--Crate A 01-->
+	<add>
+		<unit				path="units/vanilla/props/prop_crate_a/prop_crate_a_01" unload="true"/>
+		<object				path="units/vanilla/props/prop_crate_a/prop_crate_a_01" unload="true"/>
+		<model				path="units/vanilla/props/prop_crate_a/prop_crate_a_01" unload="true"/>
+		<cooked_physics		path="units/vanilla/props/prop_crate_a/prop_crate_a_01" unload="true"/>
+		<material_config	path="units/vanilla/props/prop_crate_a/prop_crate_a_01" unload="true"/>
+		<sequence_manager	path="units/vanilla/props/prop_crate_a/prop_crate_a_01" unload="true"/>
+		
+		<unit				path="units/vanilla/props/prop_crate_a/prop_crate_open_a_01" unload="true"/>
+		<object				path="units/vanilla/props/prop_crate_a/prop_crate_open_a_01" unload="true"/>
+		<model				path="units/vanilla/props/prop_crate_a/prop_crate_open_a_01" unload="true"/>
+		<cooked_physics		path="units/vanilla/props/prop_crate_a/prop_crate_open_a_01" unload="true"/>
+		<material_config	path="units/vanilla/props/prop_crate_a/prop_crate_open_a_01" unload="true"/>
+		
+		<!--Textures-->
+		<texture			path="units/vanilla/props/prop_crate_a/prop_crate_a_df" unload="true"/>
+		<texture			path="units/vanilla/props/prop_crate_a/prop_crate_a_censored_df" unload="true"/>
+		<texture			path="units/vanilla/props/prop_crate_a/prop_crate_a_nm" unload="true"/>
+		<texture			path="units/vanilla/props/prop_crate_a/prop_crate_a_gsma" unload="true"/>
+	</add>
+	
+	<!--Crate B 01-->
+	<add>
+		<unit				path="units/vanilla/props/prop_crate_b/prop_crate_b_01" unload="true"/>
+		<object				path="units/vanilla/props/prop_crate_b/prop_crate_b_01" unload="true"/>
+		<model				path="units/vanilla/props/prop_crate_b/prop_crate_b_01" unload="true"/>
+		<cooked_physics		path="units/vanilla/props/prop_crate_b/prop_crate_b_01" unload="true"/>
+		<material_config	path="units/vanilla/props/prop_crate_b/prop_crate_b_01" unload="true"/>
+		
+		<!--Textures-->
+		<texture			path="units/vanilla/props/prop_crate_b/prop_crate_b_df" unload="true"/>
+		<texture			path="units/vanilla/props/prop_crate_b/prop_crate_b_nm" unload="true"/>
+		<texture			path="units/vanilla/props/prop_crate_b/prop_crate_b_gsma" unload="true"/>
+	</add>
+	
+	<!--Crate C 01-->
+	<add>
+		<unit				path="units/vanilla/props/prop_crate_c/prop_crate_c_01" unload="true"/>
+		<object				path="units/vanilla/props/prop_crate_c/prop_crate_c_01" unload="true"/>
+		<model				path="units/vanilla/props/prop_crate_c/prop_crate_c_01" unload="true"/>
+		<cooked_physics		path="units/vanilla/props/prop_crate_c/prop_crate_c_01" unload="true"/>
+		<material_config	path="units/vanilla/props/prop_crate_c/prop_crate_c_01" unload="true"/>
+		
+		<!--Textures-->
+		<texture			path="units/vanilla/props/prop_crate_c/prop_crate_c_df" unload="true"/>
+		<texture			path="units/vanilla/props/prop_crate_c/prop_crate_c_nm" unload="true"/>
+		<texture			path="units/vanilla/props/prop_crate_c/prop_crate_c_gsma" unload="true"/>
+	</add>
+	
+	<!--Crate D 01-->
+	<add>
+		<unit				path="units/vanilla/props/prop_crate_d/prop_crate_d_01" unload="true"/>
+		<object				path="units/vanilla/props/prop_crate_d/prop_crate_d_01" unload="true"/>
+		<model				path="units/vanilla/props/prop_crate_d/prop_crate_d_01" unload="true"/>
+		<cooked_physics		path="units/vanilla/props/prop_crate_d/prop_crate_d_01" unload="true"/>
+		<material_config	path="units/vanilla/props/prop_crate_d/prop_crate_d_01" unload="true"/>
+		
+		<unit				path="units/vanilla/props/prop_crate_d/prop_crate_d_damaged_01" unload="true"/>
+		<object				path="units/vanilla/props/prop_crate_d/prop_crate_d_damaged_01" unload="true"/>
+		<model				path="units/vanilla/props/prop_crate_d/prop_crate_d_damaged_01" unload="true"/>
+		<cooked_physics		path="units/vanilla/props/prop_crate_d/prop_crate_d_damaged_01" unload="true"/>
+		<material_config	path="units/vanilla/props/prop_crate_d/prop_crate_d_damaged_01" unload="true"/>
+		
+		<!--Textures-->
+		<texture			path="units/vanilla/props/prop_crate_d/prop_crate_d_df" unload="true"/>
+		<texture			path="units/vanilla/props/prop_crate_d/prop_crate_d_nm" unload="true"/>
+		<texture			path="units/vanilla/props/prop_crate_d/prop_crate_d_gsma" unload="true"/>
+	</add>
+	
+	<!--Crate E 01-->
+	<add>
+		<unit				path="units/vanilla/props/prop_crate_e/prop_crate_e_01" unload="true"/>
+		<object				path="units/vanilla/props/prop_crate_e/prop_crate_e_01" unload="true"/>
+		<model				path="units/vanilla/props/prop_crate_e/prop_crate_e_01" unload="true"/>
+		<cooked_physics		path="units/vanilla/props/prop_crate_e/prop_crate_e_01" unload="true"/>
+		<material_config	path="units/vanilla/props/prop_crate_e/prop_crate_e_01" unload="true"/>
+		
+		<!--Textures-->
+		<texture			path="units/vanilla/props/prop_crate_e/prop_crate_e_df" unload="true"/>
+		<texture			path="units/vanilla/props/prop_crate_e/prop_crate_e_nm" unload="true"/>
+		<texture			path="units/vanilla/props/prop_crate_e/prop_crate_e_gsma" unload="true"/>
+	</add>
+</table>

@@ -1,0 +1,19 @@
+<materials version="3">
+    <material name="c_box" render_template="generic" version="2"/>
+    <material name="mat_grass" render_template="generic:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP" version="2">
+        <diffuse_texture file="units/vanilla/nature/ground/textures/ground_grass_stones/ground_grass_stones_df"/>
+        <bump_normal_texture file="units/vanilla/nature/ground/textures/ground_grass_stones/ground_grass_stones_nm"/>
+        <material_texture file="units/vanilla/nature/ground/textures/ground_grass_stones/ground_grass_stones_gsm"/>
+    </material>
+    <material name="mat_paving_03" render_template="generic:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP" version="2">
+        <diffuse_texture file="units/vanilla/arhitecture/generic_texture/paving/paving_03_df"/>
+        <bump_normal_texture file="units/vanilla/arhitecture/generic_texture/paving/paving_03_nm"/>
+        <material_texture file="units/vanilla/arhitecture/generic_texture/paving/paving_03_gsm"/>
+    </material>
+    <material name="mat_road_fence_01" render_template="generic:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP" version="2">
+        <diffuse_texture file="units/vanilla/props/props_road_grass_fence_01/textures/props_road_grass_fence_01_df"/>
+        <bump_normal_texture file="units/vanilla/props/props_road_grass_fence_01/textures/props_road_grass_fence_01_nm"/>
+        <material_texture file="units/vanilla/props/props_road_grass_fence_01/textures/props_road_grass_fence_01_gsm"/>
+    </material>
+    <material name="shadow_caster" render_template="shadow_caster_only" version="2"/>
+</materials>

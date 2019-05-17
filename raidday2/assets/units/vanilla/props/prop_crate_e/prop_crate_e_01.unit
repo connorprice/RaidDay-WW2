@@ -1,0 +1,8 @@
+<unit type="props" slot="1">
+	<object file="units/vanilla/props/prop_crate_e/prop_crate_e_01" />
+	<extensions>
+		<extension name="unit_data" class="ScriptUnitData" >
+            <var name="skip_distance_culling" value="true" />
+        </extension>
+	</extensions>
+</unit>

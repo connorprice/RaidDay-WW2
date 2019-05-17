@@ -1,0 +1,21 @@
+<materials version="3">
+    <material name="mat_gun" unique="true" version="2" render_template="generic:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS">
+        <diffuse_texture file="units/vanilla/weapons/wpn_fps_lmg_mg42_pts/textures/wpn_fps_lmg_mg42_receiver_df"/>
+        <bump_normal_texture file="units/vanilla/weapons/wpn_fps_lmg_mg42_pts/textures/wpn_fps_lmg_mg42_receiver_nm"/>
+        <material_texture file="units/vanilla/weapons/wpn_fps_lmg_mg42_pts/textures/wpn_fps_lmg_mg42_receiver_gsm"/>
+    </material>
+    <material name="lambert2" unique="true" version="2" render_template="generic:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS">
+        <diffuse_texture file="units/vanilla/weapons/wpn_fps_lmg_mg42_pts/textures/wpn_fps_lmg_mg42_b_mg42_df"/>
+        <bump_normal_texture file="units/vanilla/weapons/wpn_fps_lmg_mg42_pts/textures/wpn_fps_lmg_mg42_b_mg42_nm"/>
+        <material_texture file="units/vanilla/weapons/wpn_fps_lmg_mg42_pts/textures/wpn_fps_lmg_mg42_b_mg42_gsm"/>
+    </material>
+    <material name="blinn2" unique="true" version="2" render_template="effect:BLEND_ADD:DIFFUSE0_TEXTURE">
+        <variable value="0" type="scalar" name="intensity"/>
+        <diffuse_texture file="units/vanilla/turrets/turret_m2/textures/weapon_mg34_machinegun_barrel_il"/>
+    </material>
+    <material name="lambert1" unique="true" version="2" render_template="generic:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS">
+        <diffuse_texture file="units/vanilla/turrets/turret_m2/textures/weapon_mg34_machinegun_01_df"/>
+        <bump_normal_texture file="units/vanilla/turrets/turret_m2/textures/weapon_mg34_machinegun_01_nm"/>
+        <material_texture file="units/vanilla/turrets/turret_m2/textures/weapon_mg34_machinegun_01_gsm"/>
+    </material>
+</materials>

@@ -1,0 +1,11 @@
+<materials version="3">
+    <material render_template="generic:ALPHA_MASKED:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:DOUBLE_SIDED:EXTERNAL_ALPHA_REF:GSMA_TEXTURE:NORMALMAP:OPACITY_TEXTURE" name="bared_wire_01" version="2">
+        <diffuse_texture file="units/vanilla/props/prop_barbed_wire_01/barbed_wire1_df"/>
+        <variable type="scalar" name="alpha_ref" value="0.47000002861023"/>
+        <bump_normal_texture file="units/vanilla/props/prop_barbed_wire_01/barbed_wire1_nm"/>
+        <opacity_texture file="units/vanilla/props/prop_barbed_wire_01/barbed_wire1_op"/>
+        <material_texture file="units/vanilla/props/prop_barbed_wire_01/barbed_wire1_gsm"/>
+        <reflection_texture file="environments/cubemaps/cubemap_electionday_df" type="cubemap"/>
+    </material>
+    <material render_template="shadow_caster_only" name="shadow_caster" version="2"/>
+</materials>

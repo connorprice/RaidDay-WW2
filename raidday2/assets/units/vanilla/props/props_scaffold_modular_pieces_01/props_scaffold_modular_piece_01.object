@@ -1,0 +1,25 @@
+<dynamic_object>
+    <diesel orientation_object="rp_props_scaffold_modular_piece_01" materials="units/vanilla/props/props_scaffold_modular_pieces_01/props_scaffold_modular_piece_01" />
+    <bodies>
+        <body enabled="true" template="static" name="static_body">
+            <object name="rp_props_scaffold_modular_piece_01" />
+            <object name="c_capsule_00" collision_type="capsule" padding="-2.5" />
+            <object name="c_capsule_01" collision_type="capsule" padding="-2.5" />
+            <object name="c_capsule_02" collision_type="capsule" padding="-2.5" />
+            <object name="c_capsule_03" collision_type="capsule" padding="-2.5" />
+            <object name="c_capsule_04" collision_type="capsule" padding="-2.5" />
+            <object name="c_capsule_05" collision_type="capsule" padding="-2.5" />
+            <object name="c_capsule_06" collision_type="capsule" padding="-2.5" />
+            <object name="c_capsule_07" collision_type="capsule" padding="-2.5" />
+        </body>
+    </bodies>
+    <decal_surfaces>
+        <decal_mesh name="dm_metal" enabled="true" material="metal" />
+    </decal_surfaces>
+    <graphics>
+		<lod_object name="lod_scaffold_grp">
+            <object name="g_props_scaffold_unit_01a" enabled="true"  max_distance="500" />
+            <object name="g_props_scaffold_unit_01a_lod" enabled="true" />
+        </lod_object>
+    </graphics>
+</dynamic_object>

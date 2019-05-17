@@ -1,0 +1,6 @@
+<unit type="props" slot="1">
+    <object file="units/vanilla/props/props_scaffold_modular_pieces_01/props_scaffold_modular_piece_02" />
+    <extensions>
+        <extension class="ScriptUnitData" name="unit_data" />
+    </extensions>
+</unit>

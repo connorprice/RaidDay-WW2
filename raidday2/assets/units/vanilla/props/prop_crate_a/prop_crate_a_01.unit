@@ -1,0 +1,8 @@
+<unit type="props" slot="1">
+	<object file="units/vanilla/props/prop_crate_a/prop_crate_a_01" />
+	<network sync="spawn"/>
+	<extensions>
+		<extension name="unit_data" class="ScriptUnitData" />
+		<extension name="damage" class="UnitDamage" />
+	</extensions>
+</unit>

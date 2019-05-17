@@ -1,0 +1,18 @@
+<dynamic_object>
+	<diesel materials="units/vanilla/props/prop_barbedwire/prop_barbedwire_a" orientation_object="rp_prop_barbedwire_a" />
+	
+	<bodies>
+		<body name="body_static" enabled="true" template="fence">
+			<object name="rp_prop_barbedwire_a" />
+			<object name="c_box_01" collision_type="box" padding="-2.5" />
+		</body>
+	</bodies>
+
+	<graphics>
+		<lod_object name="lod_g">
+			<object name="g_lod0" enabled="true" shadow_caster="true" max_distance="1500" />
+			<object name="g_lod1" enabled="true" shadow_caster="true" max_distance="3000" />
+			<object name="g_lod2" enabled="true" />
+		</lod_object>
+	</graphics>
+</dynamic_object>

@@ -1,0 +1,19 @@
+<dynamic_object>
+    <diesel orientation_object="rp_props_sandbag_02" materials="units/vanilla/props/props_sandbag_02/props_sandbag_02" />
+    <bodies>
+        <body enabled="true" template="static" name="static_body">
+            <object name="rp_props_sandbag_02" />
+            <object name="c_convex" collision_type="convex" padding="-2.5" />
+        </body>
+    </bodies>
+    <decal_surfaces>
+        <decal_mesh name="dm_dirt_2" enabled="true" material="cloth" />
+    </decal_surfaces>
+    <graphics>
+        <lod_object name="lod_sandbag_single_02_3">
+            <object name="g_props_sandbag_single_02_3" enabled="true"  max_distance="100" />
+            <object name="g_props_sandbag_single_02_lod_3" enabled="true" />
+        </lod_object>
+        <object name="s_s_2" enabled="true" shadow_caster="true" />
+    </graphics>
+</dynamic_object>

@@ -1,0 +1,8 @@
+<materials version="3">
+    <material name="barded_wire_reel_01" render_template="generic:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP" version="2">
+        <diffuse_texture file="units/vanilla/props/prop_barbed_wire_reel_01/props_barbed_wire_reel_01_df"/>
+        <bump_normal_texture file="units/vanilla/props/prop_barbed_wire_reel_01/props_barbed_wire_reel_01_nm"/>
+        <material_texture file="units/vanilla/props/prop_barbed_wire_reel_01/props_barbed_wire_reel_01_gsm"/>
+    </material>
+    <material name="shadow_caster" render_template="shadow_caster_only" version="2"/>
+</materials>

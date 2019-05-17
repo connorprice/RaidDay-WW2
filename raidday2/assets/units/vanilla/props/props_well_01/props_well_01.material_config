@@ -1,0 +1,10 @@
+<materials version="3">
+    <material name="Default" render_template="generic" version="2"/>
+    <material name="Neutral" render_template="generic" version="2"/>
+    <material name="Well" render_template="generic:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP" version="2">
+        <diffuse_texture file="units/vanilla/props/props_well_01/props_well_01_df"/>
+        <bump_normal_texture file="units/vanilla/props/props_well_01/props_well_01_nm"/>
+        <material_texture file="units/vanilla/props/props_well_01/props_well_01_gsm"/>
+    </material>
+    <material name="shadow_caster" render_template="shadow_caster_only" version="2"/>
+</materials>

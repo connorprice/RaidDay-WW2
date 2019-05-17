@@ -1,0 +1,23 @@
+{
+	"heist_raidday2_name":"RaidDay:WW2",
+	"heist_raidday2_brief":"RaidDay:WW2",
+	
+	"hud_carry_gold_bar":"Gold Bar",
+	"hud_carry_gold_crate":"Gold Crate",
+	
+	"hud_equipment_pickup_dynamite":"Collected Dynamite",
+	"hud_equipment_fuelcan_empty":"Collected Empty Fuel Can",
+	"hud_equipment_fuelcan_full":"Collected Full Fuel Can",
+	"hud_equipment_safe_key":"Collected Safe Key",
+	
+	"hud_action_take_dynamite":"Hold $BTN_INTERACT to collect Dynamite",
+	"hud_action_plant_dynamite":"Hold $BTN_INTERACT to plant Dynamite",
+	"hud_action_plant_no_dynamite":"Need Dynamite!",
+	"hud_action_plant_no_dynamite_bag":"Need Dynamite Bag!",
+	"hud_action_take_gold_bar":"Hold $BTN_INTERACT to take gold bar",
+	"hud_action_take_gold_crate":"Hold $BTN_INTERACT to take gold crate",
+	"hud_action_take_cache_box":"Press $BTN_INTERACT to loot cache",
+	"hud_action_unlock_safe":"Hold $BTN_INTERACT to unlock the Safe",
+	"hud_action_unlock_safe_no_key":"Safe key required!",
+	"temp":"temp"
+}

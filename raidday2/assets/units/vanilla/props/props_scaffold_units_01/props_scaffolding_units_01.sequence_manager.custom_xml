@@ -1,0 +1,16 @@
+<table>
+	<unit>
+		<sequence editable_state="true" name="'show_plank_and_ladders'" triggable="true">
+			<graphic_group name="'ladder_grp'" visibility="true"/>
+			<body enabled="true" name="'ladder_body'"/>
+			<decal_mesh enabled="true" name="'dm_metal_ladders'"/>
+			<decal_mesh enabled="true" name="'dm_wood_plank'"/>
+		</sequence>
+		<sequence editable_state="true" name="'hide_plank_and_ladders'" triggable="true">
+			<graphic_group name="'ladder_grp'" visibility="false"/>
+			<body enabled="false" name="'ladder_body'"/>
+			<decal_mesh enabled="false" name="'dm_metal_ladders'"/>
+			<decal_mesh enabled="false" name="'dm_wood_plank'"/>
+		</sequence>
+	</unit>
+</table>

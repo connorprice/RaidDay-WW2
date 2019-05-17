@@ -1,0 +1,56 @@
+<dynamic_object>
+    <diesel orientation_object="rp_props_sandbag_03" materials="units/vanilla/props/props_sandbags_03/props_sandbags_03"/>
+    <sequence_manager file="units/vanilla/props/props_sandbags_03/props_sandbags_03"/>
+	<animations>
+	    <animation_group name="anim_break" enabled="false">
+	        <object name="anim_joint_root" />
+	        <object name="anim_joint_01" />
+	        <object name="anim_joint_02" />
+	        <object name="anim_joint_03" />
+	        <object name="anim_joint_04" />
+	        <object name="anim_joint_05" />
+	        <object name="anim_joint_06" />
+	        <object name="anim_joint_07" />
+	        <object name="anim_joint_08" />
+	        <object name="anim_joint_09" />
+	        <object name="anim_joint_010" />
+	        <object name="anim_joint_011" />
+	        <object name="anim_joint_012" />
+	        <object name="anim_joint_013" />
+	        <object name="anim_joint_014" />
+	        <object name="anim_joint_015" />
+	        <object name="anim_joint_016" />
+	    </animation_group>
+        <animation_group name="root" enabled="false">
+            <object name="rp_props_sandbag_03" />
+        </animation_group>
+	</animations>
+    <bodies>
+        <body enabled="false" template="static" name="body_mesh_mopp">
+            <object name="rp_props_sandbag_03" />
+            <object name="c_mesh_mopp" collision_type="mesh_mopp" padding="-2.5" />
+            <object name="c_box_01" collision_type="box" padding="-2.5" />
+        </body>
+        <body enabled="true" template="static" name="static_body">
+            <object name="rp_props_sandbag_03" />
+            <object name="c_convex_2" collision_type="convex" padding="-2.5" />
+        </body>
+    </bodies>
+    <decal_surfaces>
+        <decal_mesh name="dm_cloth" enabled="true" material="cloth" />
+        <decal_mesh name="dm_wood" enabled="true" material="wood" />
+    </decal_surfaces>
+    <graphics>
+        <graphic_group name="g_g" enabled="true" culling_object="bounding_box">
+            <lod_object name="lod_sandbags_03">
+                <object name="g_props_sandbags_03_lod0" enabled="true"  max_distance="100" />
+                <object name="g_props_sandbags_03_lod1" enabled="true" />
+            </lod_object>
+            <object name="s_s" enabled="true" shadow_caster="true" />
+        </graphic_group>
+    </graphics>
+    <effects>
+    	<effect_spawner name="dust_impact" enabled="false" object="align_dust_impact" effect="effects/vanilla/smoke/sandbags_impact_smoke_001" />
+    </effects>
+</dynamic_object>
+

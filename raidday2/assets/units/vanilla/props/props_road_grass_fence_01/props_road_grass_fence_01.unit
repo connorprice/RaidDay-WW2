@@ -1,0 +1,6 @@
+<unit type="props" slot="1">
+    <object file="units/vanilla/props/props_road_grass_fence_01/props_road_grass_fence_01" />
+    <extensions>
+        <extension class="ScriptUnitData" name="unit_data" />
+    </extensions>
+</unit>
