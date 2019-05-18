@@ -1,0 +1,368 @@
+<table>
+	<unit>
+		<sequence editable_state="true" name="'state_collector_edition_skin'" triggable="true">
+			<material_config name="'units/vanilla/vehicles/fps_vehicle_kubelwagen/fps_vehicle_collectors_kubelwagen'"/>
+			<object enabled="true" name="'g_se_ext_body'"/>
+			<object enabled="false" name="'g_ext_body'"/>
+			<object enabled="true" name="'g_se_int_body_lod0'"/>
+			<object enabled="true" name="'g_se_int_body_lod1'"/>
+			<object enabled="true" name="'g_se_int_body_lod2'"/>
+			<object enabled="false" name="'g_int_body_lod0'"/>
+			<object enabled="false" name="'g_int_body_lod1'"/>
+			<object enabled="false" name="'g_int_body_lod2'"/>
+		</sequence>
+		<sequence editable_state="true" name="'state_regular_skin'" triggable="true">
+			<material_config name="'units/vanilla/vehicles/fps_vehicle_kubelwagen/fps_vehicle_kubelwagen'"/>
+			<object enabled="false" name="'g_se_ext_body'"/>
+			<object enabled="true" name="'g_ext_body'"/>
+			<object enabled="false" name="'g_se_int_body_lod0'"/>
+			<object enabled="false" name="'g_se_int_body_lod1'"/>
+			<object enabled="false" name="'g_se_int_body_lod2'"/>
+			<object enabled="true" name="'g_int_body_lod0'"/>
+			<object enabled="true" name="'g_int_body_lod1'"/>
+			<object enabled="true" name="'g_int_body_lod2'"/>
+		</sequence>
+		<sequence editable_state="false" name="'local_driving_enter'" triggable="false">
+			<object enabled="false" name="'g_steering_wheel'"/>
+			<object enabled="true" name="'g_fps_steering_wheel'"/>
+		</sequence>
+		<sequence editable_state="false" name="'local_driving_exit'" triggable="false">
+			<object enabled="true" name="'g_steering_wheel'"/>
+			<object enabled="false" name="'g_fps_steering_wheel'"/>
+		</sequence>
+		<sequence editable_state="false" name="'not_driving'" triggable="false">
+			<interaction enabled="true"/>
+			<body enabled="true" name="'body_static_vehicle'"/>
+			<body enabled="false" name="'body_chassis'"/>
+			<slot slot="39"/>
+		</sequence>
+		<sequence editable_state="false" name="'driving'" triggable="false">
+			<interaction enabled="true"/>
+			<body enabled="false" name="'body_static_vehicle'"/>
+			<body enabled="true" name="'body_chassis'"/>
+			<graphic_group name="'g_light_on'" visibility="true"/>
+			<effect_spawner enabled="true" name="'lamp_glow_front_01'"/>
+			<effect_spawner enabled="true" name="'lamp_glow_front_02'"/>
+			<effect_spawner enabled="true" name="'lamp_glow_back_01'"/>
+			<effect_spawner enabled="true" name="'lamp_glow_back_02'"/>
+			<slot slot="39"/>
+		</sequence>
+		<sequence editable_state="true" name="'state_interaction_enabled'" triggable="true">
+			<interaction enabled="true"/>
+			<run_sequence name="'state_vis_icon_entry_enabled'"/>
+			<run_sequence name="'state_vis_icon_loot_enabled'"/>
+		</sequence>
+		<sequence editable_state="true" name="'state_interaction_disabled'" triggable="true">
+			<interaction enabled="false"/>
+			<run_sequence name="'state_vis_icon_entry_disabled'"/>
+			<run_sequence name="'state_vis_icon_loot_disabled'"/>
+		</sequence>
+		<sequence editable_state="true" name="'show_map_waypoint'" triggable="true">
+			<function extension="'waypoint'" function="'add_waypoint'" param1="'map_waypoint_pov_in'" param2="75" param3="" param4="'map_waypoint_map_kugelwagen'" param5="false"/>
+		</sequence>
+		<sequence editable_state="true" name="'show_waypoint'" triggable="true">
+			<function extension="'waypoint'" function="'add_waypoint'" param1="'map_waypoint_pov_in'" param2="75"/>
+		</sequence>
+		<sequence editable_state="true" name="'show_waypoint_bag'" triggable="true">
+			<function extension="'waypoint'" function="'add_waypoint'" param1="'waypoint_special_loot_drop'" param2="75"/>
+		</sequence>
+		<sequence editable_state="true" name="'hide_waypoint'" triggable="true">
+			<function extension="'waypoint'" function="'remove_waypoint'"/>
+		</sequence>
+		<sequence editable_state="true" name="'state_gas_tank_interaction_enabled'" triggable="true">
+			<function extension="'spawn_manager'" filter="'no_gas_tank_spawned'" function="'spawn_unit'" param1="'gas_tank_1'" param2="'spawn_fuel_tank'" param3="'units/vanilla/equipment/equip_fill_kubelwagen_gasoline/equip_fill_kubelwagen_gasoline'"/>
+			<function extension="'spawn_manager'" filter="'no_gas_tank_spawned'" function="'spawn_run_sequence'" param1="'gas_tank_1'" param2="'state_interaction_enabled'"/>
+			<set_variables var_gas_tank="1"/>
+		</sequence>
+		<sequence editable_state="true" name="'state_gas_tank_interaction_disabled'" triggable="true">
+			<function extension="'spawn_manager'" filter="'is_gas_tank_spawned'" function="'spawn_run_sequence'" param1="'gas_tank_1'" param2="'state_interaction_disabled'"/>
+			<function extension="'spawn_manager'" filter="'is_gas_tank_spawned'" function="'remove_unit'" param1="'gas_tank_1'"/>
+			<set_variables var_gas_tank="0"/>
+		</sequence>
+		<sequence editable_state="false" name="'done_clbk_gas_tank_fill'" triggable="false"/>
+		<sequence editable_state="true" name="'state_vis_icon_entry_enabled'" triggable="true">
+			<graphic_group name="'grp_icon_entry'" visibility="true"/>
+		</sequence>
+		<sequence editable_state="true" name="'state_vis_icon_entry_disabled'" triggable="true">
+			<graphic_group name="'grp_icon_entry'" visibility="false"/>
+		</sequence>
+		<sequence editable_state="true" name="'state_vis_icon_loot_enabled'" triggable="true">
+			<graphic_group name="'grp_icon_loot'" visibility="true"/>
+		</sequence>
+		<sequence editable_state="true" name="'state_vis_icon_loot_disabled'" triggable="true">
+			<graphic_group name="'grp_icon_loot'" visibility="false"/>
+		</sequence>
+		<sequence editable_state="true" name="'state_vis_icon_repair_enabled'" triggable="true">
+			<graphic_group name="'grp_icon_repair'" visibility="true"/>
+		</sequence>
+		<sequence editable_state="true" name="'state_vis_icon_repair_disabled'" triggable="true">
+			<graphic_group name="'grp_icon_repair'" visibility="false"/>
+		</sequence>
+		<variables>
+			<var_gas_tank value="0"/>
+			<var_bag value="0"/>
+			<var_slot0 value="0"/>
+			<var_slot1 value="0"/>
+			<var_slot2 value="0"/>
+			<var_slot3 value="0"/>
+			<var_slot4 value="0"/>
+			<var_slot5 value="0"/>
+			<var_slot6 value="0"/>
+			<var_slot7 value="0"/>
+		</variables>
+		<filter name="'is_gas_tank_spawned'">
+			<check value="vars.var_gas_tank == 1"/>
+		</filter>
+		<filter name="'no_gas_tank_spawned'">
+			<check value="vars.var_gas_tank == 0"/>
+		</filter>
+		<filter name="'filter_slot_0_loot'">
+			<check value="vars.var_slot0 == 0"/>
+		</filter>
+		<filter name="'filter_slot_1_loot'">
+			<check value="vars.var_slot1 == 0"/>
+		</filter>
+		<filter name="'filter_slot_2_loot'">
+			<check value="vars.var_slot2 == 0"/>
+		</filter>
+		<filter name="'filter_slot_3_loot'">
+			<check value="vars.var_slot3 == 0"/>
+		</filter>
+		<filter name="'filter_slot_4_loot'">
+			<check value="vars.var_slot4 == 0"/>
+		</filter>
+		<filter name="'filter_slot_5_loot'">
+			<check value="vars.var_slot5 == 0"/>
+		</filter>
+		<filter name="'filter_slot_6_loot'">
+			<check value="vars.var_slot6 == 0"/>
+		</filter>
+		<filter name="'filter_slot_7_loot'">
+			<check value="vars.var_slot7 == 0"/>
+		</filter>
+		<filter name="'filter_bag_0'">
+			<check value="vars.var_bag == 0"/>
+		</filter>
+		<filter name="'filter_bag_1'">
+			<check value="vars.var_bag == 1"/>
+		</filter>
+		<filter name="'filter_bag_2'">
+			<check value="vars.var_bag == 2"/>
+		</filter>
+		<filter name="'filter_bag_3'">
+			<check value="vars.var_bag == 3"/>
+		</filter>
+		<filter name="'filter_bag_4'">
+			<check value="vars.var_bag == 4"/>
+		</filter>
+		<filter name="'filter_bag_5'">
+			<check value="vars.var_bag == 5"/>
+		</filter>
+		<filter name="'filter_bag_6'">
+			<check value="vars.var_bag == 6"/>
+		</filter>
+		<filter name="'filter_bag_7'">
+			<check value="vars.var_bag == 7"/>
+		</filter>
+		<filter name="'filter_bag_8'">
+			<check value="vars.var_bag == 8"/>
+		</filter>
+		<filter name="'filter_slot_0_gold'">
+			<check value="vars.var_slot0 == 1"/>
+		</filter>
+		<filter name="'filter_slot_1_gold'">
+			<check value="vars.var_slot1 == 1"/>
+		</filter>
+		<filter name="'filter_slot_2_gold'">
+			<check value="vars.var_slot2 == 1"/>
+		</filter>
+		<filter name="'filter_slot_3_gold'">
+			<check value="vars.var_slot3 == 1"/>
+		</filter>
+		<filter name="'filter_slot_4_gold'">
+			<check value="vars.var_slot4 == 1"/>
+		</filter>
+		<filter name="'filter_slot_5_gold'">
+			<check value="vars.var_slot5 == 1"/>
+		</filter>
+		<filter name="'filter_slot_6_gold'">
+			<check value="vars.var_slot6 == 1"/>
+		</filter>
+		<filter name="'filter_slot_7_gold'">
+			<check value="vars.var_slot7 == 1"/>
+		</filter>
+		<sequence editable_state="false" name="'action_add_bag'" triggable="false"/>
+		<sequence editable_state="false" name="'action_remove_bag'" triggable="false"/>
+		<sequence editable_state="false" name="'action_add_bag_gold'" triggable="false">
+			<set_variables filter="'filter_bag_7'" var_slot7="1"/>
+			<run_sequence filter="'filter_bag_7'" name="'int_seq_add_slot7'"/>
+			<set_variables filter="'filter_bag_6'" var_slot6="1"/>
+			<run_sequence filter="'filter_bag_6'" name="'int_seq_add_slot6'"/>
+			<set_variables filter="'filter_bag_5'" var_slot5="1"/>
+			<run_sequence filter="'filter_bag_5'" name="'int_seq_add_slot5'"/>
+			<set_variables filter="'filter_bag_4'" var_slot4="1"/>
+			<run_sequence filter="'filter_bag_4'" name="'int_seq_add_slot4'"/>
+			<set_variables filter="'filter_bag_3'" var_slot3="1"/>
+			<run_sequence filter="'filter_bag_3'" name="'int_seq_add_slot3'"/>
+			<set_variables filter="'filter_bag_2'" var_slot2="1"/>
+			<run_sequence filter="'filter_bag_2'" name="'int_seq_add_slot2'"/>
+			<set_variables filter="'filter_bag_1'" var_slot1="1"/>
+			<run_sequence filter="'filter_bag_1'" name="'int_seq_add_slot1'"/>
+			<set_variables filter="'filter_bag_0'" var_slot0="1"/>
+			<run_sequence filter="'filter_bag_0'" name="'int_seq_add_slot0'"/>
+		</sequence>
+		<sequence editable_state="false" name="'action_remove_bag_gold'" triggable="false">
+			<run_sequence filter="'filter_bag_1'" name="'int_seq_remove_slot0'"/>
+			<run_sequence filter="'filter_bag_2'" name="'int_seq_remove_slot1'"/>
+			<run_sequence filter="'filter_bag_3'" name="'int_seq_remove_slot2'"/>
+			<run_sequence filter="'filter_bag_4'" name="'int_seq_remove_slot3'"/>
+			<run_sequence filter="'filter_bag_5'" name="'int_seq_remove_slot4'"/>
+			<run_sequence filter="'filter_bag_6'" name="'int_seq_remove_slot5'"/>
+			<run_sequence filter="'filter_bag_7'" name="'int_seq_remove_slot6'"/>
+			<run_sequence filter="'filter_bag_8'" name="'int_seq_remove_slot7'"/>
+		</sequence>
+		<sequence editable_state="false" name="'int_seq_add_slot0'" triggable="false">
+			<function extension="'spawn_manager'" filter="'filter_slot_0_loot'" function="'spawn_unit'" param1="'bag_loot_1'" param2="'pos_bag_1'" param3="'units/vanilla/dev/dev_lootbag/dev_lootbag_static'"/>
+			<function extension="'spawn_manager'" filter="'filter_slot_0_gold'" function="'spawn_unit'" param1="'bag_loot_1'" param2="'pos_gold_1'" param3="'units/vanilla/pickups/pku_gold_crate_bag/pku_gold_crate_bag_static'"/>
+			<function extension="'spawn_manager'" function="'spawn_run_sequence'" param1="'bag_loot_1'" param2="'make_static'"/>
+			<set_variables var_bag="1"/>
+			<sound action="'play'" event="'gold_crate_drop'" source="'trunk_snd'"/>
+		</sequence>
+		<sequence editable_state="false" name="'int_seq_add_slot1'" triggable="false">
+			<function extension="'spawn_manager'" filter="'filter_slot_1_loot'" function="'spawn_unit'" param1="'bag_loot_2'" param2="'pos_bag_2'" param3="'units/vanilla/dev/dev_lootbag/dev_lootbag_static'"/>
+			<function extension="'spawn_manager'" filter="'filter_slot_1_gold'" function="'spawn_unit'" param1="'bag_loot_2'" param2="'pos_gold_2'" param3="'units/vanilla/pickups/pku_gold_crate_bag/pku_gold_crate_bag_static'"/>
+			<function extension="'spawn_manager'" function="'spawn_run_sequence'" param1="'bag_loot_2'" param2="'make_static'"/>
+			<set_variables var_bag="2"/>
+			<sound action="'play'" event="'gold_crate_drop'" source="'trunk_snd'"/>
+		</sequence>
+		<sequence editable_state="false" name="'int_seq_add_slot2'" triggable="false">
+			<function extension="'spawn_manager'" filter="'filter_slot_2_loot'" function="'spawn_unit'" param1="'bag_loot_3'" param2="'pos_bag_3'" param3="'units/vanilla/dev/dev_lootbag/dev_lootbag_static'"/>
+			<function extension="'spawn_manager'" filter="'filter_slot_2_gold'" function="'spawn_unit'" param1="'bag_loot_3'" param2="'pos_gold_3'" param3="'units/vanilla/pickups/pku_gold_crate_bag/pku_gold_crate_bag_static'"/>
+			<function extension="'spawn_manager'" function="'spawn_run_sequence'" param1="'bag_loot_3'" param2="'make_static'"/>
+			<set_variables var_bag="3"/>
+			<sound action="'play'" event="'gold_crate_drop'" source="'trunk_snd'"/>
+		</sequence>
+		<sequence editable_state="false" name="'int_seq_add_slot3'" triggable="false">
+			<function extension="'spawn_manager'" filter="'filter_slot_3_loot'" function="'spawn_unit'" param1="'bag_loot_4'" param2="'pos_bag_4'" param3="'units/vanilla/dev/dev_lootbag/dev_lootbag_static'"/>
+			<function extension="'spawn_manager'" filter="'filter_slot_3_gold'" function="'spawn_unit'" param1="'bag_loot_4'" param2="'pos_gold_4'" param3="'units/vanilla/pickups/pku_gold_crate_bag/pku_gold_crate_bag_static'"/>
+			<function extension="'spawn_manager'" function="'spawn_run_sequence'" param1="'bag_loot_4'" param2="'make_static'"/>
+			<set_variables var_bag="4"/>
+			<sound action="'play'" event="'gold_crate_drop'" source="'trunk_snd'"/>
+		</sequence>
+		<sequence editable_state="false" name="'int_seq_add_slot4'" triggable="false">
+			<function extension="'spawn_manager'" filter="'filter_slot_4_loot'" function="'spawn_unit'" param1="'bag_loot_5'" param2="'pos_bag_5'" param3="'units/vanilla/dev/dev_lootbag/dev_lootbag_static'"/>
+			<function extension="'spawn_manager'" filter="'filter_slot_4_gold'" function="'spawn_unit'" param1="'bag_loot_5'" param2="'pos_gold_5'" param3="'units/vanilla/pickups/pku_gold_crate_bag/pku_gold_crate_bag_static'"/>
+			<function extension="'spawn_manager'" function="'spawn_run_sequence'" param1="'bag_loot_5'" param2="'make_static'"/>
+			<set_variables var_bag="5"/>
+			<sound action="'play'" event="'gold_crate_drop'" source="'trunk_snd'"/>
+		</sequence>
+		<sequence editable_state="false" name="'int_seq_add_slot5'" triggable="false">
+			<function extension="'spawn_manager'" filter="'filter_slot_5_loot'" function="'spawn_unit'" param1="'bag_loot_6'" param2="'pos_bag_6'" param3="'units/vanilla/dev/dev_lootbag/dev_lootbag_static'"/>
+			<function extension="'spawn_manager'" filter="'filter_slot_5_gold'" function="'spawn_unit'" param1="'bag_loot_6'" param2="'pos_gold_6'" param3="'units/vanilla/pickups/pku_gold_crate_bag/pku_gold_crate_bag_static'"/>
+			<function extension="'spawn_manager'" function="'spawn_run_sequence'" param1="'bag_loot_6'" param2="'make_static'"/>
+			<set_variables var_bag="6"/>
+			<sound action="'play'" event="'gold_crate_drop'" source="'trunk_snd'"/>
+		</sequence>
+		<sequence editable_state="false" name="'int_seq_add_slot6'" triggable="false">
+			<function extension="'spawn_manager'" filter="'filter_slot_6_loot'" function="'spawn_unit'" param1="'bag_loot_7'" param2="'pos_bag_7'" param3="'units/vanilla/dev/dev_lootbag/dev_lootbag_static'"/>
+			<function extension="'spawn_manager'" filter="'filter_slot_6_gold'" function="'spawn_unit'" param1="'bag_loot_7'" param2="'pos_gold_7'" param3="'units/vanilla/pickups/pku_gold_crate_bag/pku_gold_crate_bag_static'"/>
+			<function extension="'spawn_manager'" function="'spawn_run_sequence'" param1="'bag_loot_7'" param2="'make_static'"/>
+			<set_variables var_bag="7"/>
+			<sound action="'play'" event="'gold_crate_drop'" source="'trunk_snd'"/>
+		</sequence>
+		<sequence editable_state="false" name="'int_seq_add_slot7'" triggable="false">
+			<function extension="'spawn_manager'" filter="'filter_slot_7_loot'" function="'spawn_unit'" param1="'bag_loot_8'" param2="'pos_bag_8'" param3="'units/vanilla/dev/dev_lootbag/dev_lootbag_static'"/>
+			<function extension="'spawn_manager'" filter="'filter_slot_7_gold'" function="'spawn_unit'" param1="'bag_loot_8'" param2="'pos_gold_8'" param3="'units/vanilla/pickups/pku_gold_crate_bag/pku_gold_crate_bag_static'"/>
+			<function extension="'spawn_manager'" function="'spawn_run_sequence'" param1="'bag_loot_8'" param2="'make_static'"/>
+			<set_variables var_bag="8"/>
+			<sound action="'play'" event="'gold_crate_drop'" source="'trunk_snd'"/>
+		</sequence>
+		<sequence editable_state="false" name="'int_seq_remove_slot0'" triggable="false">
+			<function extension="'spawn_manager'" function="'remove_unit'" param1="'bag_loot_1'"/>
+			<set_variables var_bag="0"/>
+			<set_variables var_slot0="0"/>
+			<sound action="'play'" event="'gold_crate_pickup'" source="'trunk_snd'"/>
+		</sequence>
+		<sequence editable_state="false" name="'int_seq_remove_slot1'" triggable="false">
+			<function extension="'spawn_manager'" function="'remove_unit'" param1="'bag_loot_2'"/>
+			<set_variables var_bag="1"/>
+			<set_variables var_slot1="0"/>
+			<sound action="'play'" event="'gold_crate_pickup'" source="'trunk_snd'"/>
+		</sequence>
+		<sequence editable_state="false" name="'int_seq_remove_slot2'" triggable="false">
+			<function extension="'spawn_manager'" function="'remove_unit'" param1="'bag_loot_3'"/>
+			<set_variables var_bag="2"/>
+			<set_variables var_slot2="0"/>
+			<sound action="'play'" event="'gold_crate_pickup'" source="'trunk_snd'"/>
+		</sequence>
+		<sequence editable_state="false" name="'int_seq_remove_slot3'" triggable="false">
+			<function extension="'spawn_manager'" function="'remove_unit'" param1="'bag_loot_4'"/>
+			<set_variables var_bag="3"/>
+			<set_variables var_slot3="0"/>
+			<sound action="'play'" event="'gold_crate_pickup'" source="'trunk_snd'"/>
+		</sequence>
+		<sequence editable_state="false" name="'int_seq_remove_slot4'" triggable="false">
+			<function extension="'spawn_manager'" function="'remove_unit'" param1="'bag_loot_5'"/>
+			<set_variables var_bag="4"/>
+			<set_variables var_slot4="0"/>
+			<sound action="'play'" event="'gold_crate_pickup'" source="'trunk_snd'"/>
+		</sequence>
+		<sequence editable_state="false" name="'int_seq_remove_slot5'" triggable="false">
+			<function extension="'spawn_manager'" function="'remove_unit'" param1="'bag_loot_6'"/>
+			<set_variables var_bag="5"/>
+			<set_variables var_slot5="0"/>
+			<sound action="'play'" event="'gold_crate_pickup'" source="'trunk_snd'"/>
+		</sequence>
+		<sequence editable_state="false" name="'int_seq_remove_slot6'" triggable="false">
+			<function extension="'spawn_manager'" function="'remove_unit'" param1="'bag_loot_7'"/>
+			<set_variables var_bag="6"/>
+			<set_variables var_slot6="0"/>
+			<sound action="'play'" event="'gold_crate_pickup'" source="'trunk_snd'"/>
+		</sequence>
+		<sequence editable_state="false" name="'int_seq_remove_slot7'" triggable="false">
+			<function extension="'spawn_manager'" function="'remove_unit'" param1="'bag_loot_8'"/>
+			<set_variables var_bag="7"/>
+			<set_variables var_slot7="0"/>
+			<sound action="'play'" event="'gold_crate_pickup'" source="'trunk_snd'"/>
+		</sequence>
+		<sequence editable_state="false" name="'int_seq_sync_slot_1'" triggable="false"/>
+		<sequence editable_state="false" name="'int_seq_sync_slot_2'" triggable="false"/>
+		<sequence editable_state="false" name="'int_seq_sync_slot_3'" triggable="false"/>
+		<sequence editable_state="false" name="'int_seq_sync_slot_4'" triggable="false"/>
+		<sequence editable_state="false" name="'int_seq_sync_slot_5'" triggable="false"/>
+		<sequence editable_state="false" name="'int_seq_sync_slot_6'" triggable="false"/>
+		<sequence editable_state="false" name="'int_seq_sync_slot_7'" triggable="false"/>
+		<sequence editable_state="false" name="'int_seq_sync_slot_8'" triggable="false"/>
+		<sequence editable_state="false" name="'int_seq_sync_slot_1_gold'" triggable="false"/>
+		<sequence editable_state="false" name="'int_seq_sync_slot_2_gold'" triggable="false"/>
+		<sequence editable_state="false" name="'int_seq_sync_slot_3_gold'" triggable="false"/>
+		<sequence editable_state="false" name="'int_seq_sync_slot_4_gold'" triggable="false"/>
+		<sequence editable_state="false" name="'int_seq_sync_slot_5_gold'" triggable="false"/>
+		<sequence editable_state="false" name="'int_seq_sync_slot_6_gold'" triggable="false"/>
+		<sequence editable_state="false" name="'int_seq_sync_slot_7_gold'" triggable="false"/>
+		<sequence editable_state="false" name="'int_seq_sync_slot_8_gold'" triggable="false"/>
+		<sequence editable_state="false" name="'int_seq_repaired'" triggable="false">
+			<effect_spawner enabled="false" name="'es_smoke_full'"/>
+			<effect_spawner enabled="false" name="'es_smoke_med'"/>
+		</sequence>
+		<sequence editable_state="false" name="'int_seq_med_damaged'" triggable="false">
+			<effect_spawner enabled="true" name="'es_smoke_med'"/>
+			<effect_spawner enabled="false" name="'es_smoke_full'"/>
+		</sequence>
+		<sequence editable_state="false" name="'int_seq_full_damaged'" triggable="false">
+			<effect_spawner enabled="false" name="'es_smoke_med'"/>
+			<effect_spawner enabled="true" name="'es_smoke_full'"/>
+		</sequence>
+		<sequence editable_state="true" name="'action_add_bag_german_spy'" triggable="true">
+			<function extension="'spawn_manager'" function="'spawn_unit'" param1="'german_spy'" param2="'rp_fps_vehicle_kubelwagen'" param3="'units/vanilla/characters/npc/models/raid_npc_spy/raid_npc_spy_static'"/>
+			<function extension="'spawn_manager'" function="'spawn_run_sequence'" param1="'german_spy'" param2="'spy_in_car'"/>
+			<sound action="'play'" event="'spy_banter_drive_start'" source="'spy'"/>
+		</sequence>
+		<sequence editable_state="true" name="'action_remove_bag_german_spy'" triggable="true">
+			<function extension="'spawn_manager'" function="'remove_unit'" param1="'german_spy'"/>
+		</sequence>
+		<sequence editable_state="true" name="'action_spawn_radio_finder'" triggable="true">
+			<function extension="'spawn_manager'" function="'spawn_unit'" param1="'radio_finder'" param2="'pos_r_finder'" param3="'units/vanilla/vehicles/attach_kubelwagen_radio_finder/attach_kubelwagen_radio_finder'"/>
+		</sequence>
+	</unit>
+</table>

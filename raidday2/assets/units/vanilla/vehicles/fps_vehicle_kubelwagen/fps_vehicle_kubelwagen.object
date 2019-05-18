@@ -1,0 +1,142 @@
+<dynamic_object>
+	<diesel materials="units/vanilla/vehicles/fps_vehicle_kubelwagen/fps_vehicle_kubelwagen" orientation_object="rp_fps_vehicle_kubelwagen" />
+	<sequence_manager file="units/vanilla/vehicles/fps_vehicle_kubelwagen/fps_vehicle_kubelwagen" />
+	<animations>
+		<animation_group name="ag_speedometer" enabled="false">
+				<object name="a_speedometer" />
+		</animation_group>
+		<animation_group name="ag_rpm_meter" enabled="false">
+				<object name="a_rpm_meter" />
+		</animation_group>
+		<animation_group name="anim_steering_wheel_left" enabled="false">
+				<object name="anim_steering_wheel_left" />
+		</animation_group>
+		<animation_group name="anim_steering_wheel_right" enabled="false">
+				<object name="anim_steering_wheel_right" />
+		</animation_group>
+	</animations>
+	<bodies>
+		<body name="body_static_vehicle" enabled="true" template="static" >
+			<object name="anim_body" />
+			<object name="c_body" collision_type="convex" padding="-2.5"/>
+		</body>
+		<body name="body_chassis" enabled="false" template="vehicle" collision_script_filter="1" collision_script_quiet_time="0.5" collision_script_tag="vehicle_collision" give_standing_velocity="false" >
+			<object name="anim_body" />
+			<object name="c_body" collision_type="convex" padding="-2.5"/>
+			<object name="c_convex_01" collision_type="convex" padding="-2.5"/>
+		</body>
+	 </bodies>
+
+	<effects>
+		<effect_spawner
+			name="es_smoke_med"
+			enabled="false"
+			object="snd_engine"
+			effect="effects/vanilla/smoke/smoke_damage_001"
+		/>
+		<effect_spawner
+			name="es_smoke_full"
+			enabled="false"
+			object="snd_engine"
+			effect="effects/vanilla/smoke/smoke_damage_large_001"
+		/>
+		<effect_spawner name="lamp_glow_front_01" object="e_glow_01" effect="effects/vanilla/flares/fla_indoor_lamp_002" enabled="false" />
+		<effect_spawner name="lamp_glow_front_02" object="e_glow_02" effect="effects/vanilla/flares/fla_indoor_lamp_002" enabled="false" />
+		<effect_spawner name="lamp_glow_back_01" object="e_glow_03" effect="effects/vanilla/flares/fla_vehicle_stop_light" enabled="false" />
+		<effect_spawner name="lamp_glow_back_02" object="e_glow_04" effect="effects/vanilla/flares/fla_vehicle_stop_light" enabled="false" />
+	</effects>
+
+	<decal_surfaces default_material="metal_chassis">
+		<decal_mesh name="dm_chassis" enabled="true" material="metal_chassis"/>
+		<decal_mesh name="dm_cloth" enabled="true" material="cloth"/>
+		<decal_mesh name="dm_glass" enabled="true" material="glass_unbreakable"/>
+		<decal_mesh name="dm_rubber" enabled="true" material="rubber"/>
+		<decal_mesh name="dm_steel" enabled="true" material="steel"/>
+	</decal_surfaces>
+	<graphics>
+		<graphic_group name="grp_vehicle" enabled="true">
+			<object	name="g_steering_wheel"			enabled="true"	shadow_caster="false" />
+			<object	name="g_fps_steering_wheel"		enabled="false"	shadow_caster="false" />
+
+			<lod_object name="lod_interior">
+				<object name="g_int_body_lod0" enabled="true"  max_distance="1000" />
+				<object name="g_int_body_lod1" enabled="true"  max_distance="2300" />
+				<object name="g_int_body_lod2" enabled="true" />
+			</lod_object>
+			<lod_object name="lod_se_interior">
+				<object name="g_se_int_body_lod0" enabled="false"  max_distance="1000" />
+				<object name="g_se_int_body_lod1" enabled="false"  max_distance="2300" />
+				<object name="g_se_int_body_lod2" enabled="false" />
+			</lod_object>
+
+			<object	name="g_ext_body"				enabled="true" />
+			<object	name="s_kubelwagen"				enabled="true"	shadow_caster="true" />
+			<object name="g_se_ext_body" 			enabled="false" />
+		</graphic_group>
+
+		<graphic_group name="grp_icon_entry" enabled="true">
+			<object name="g_icon_door_drive"		enabled="true" />
+			<object name="g_icon_door_front_r_pass"	enabled="true" />
+			<object name="g_icon_door_rear_l_pass"	enabled="true" />
+			<object name="g_icon_door_rear_r_pass"	enabled="true" />
+		</graphic_group>
+
+		<graphic_group name="grp_icon_loot" enabled="true">
+			<object name="g_icon_loot" enabled="true" />
+		</graphic_group>
+
+		<graphic_group name="grp_icon_repair" enabled="true">
+			<object name="g_icon_repair" enabled="true" />
+		</graphic_group>
+
+		<graphic_group name="g_light_on" enabled="false">
+			<object name="g_light_il" enabled="true" />
+		</graphic_group>
+
+	</graphics>
+
+	<vehicle name="vhc_vehicle">
+		<!-- IMPORTANT: suspension supported_mass must be 1/4 of chassis mass, if not vehicle behavior is undefined -->
+		<chassis body="body_chassis" mass="800" center_of_mass_offset="0.0 0.2 0.2" inertia_multiplier="2.2 1.1 1.1" downforce_strength="2.0" drag_strength="14.0" />
+		<wheels>
+			<wheel spin_object="anim_tire_front_left"	turn_object="anim_tire_axel_front_left"		radius="0.35" width="0.15" mass="20" transmission_ratio="1.1" is_steering="true" max_steering="30" braking_torque="1200" handbrake_torque="800" />
+			<wheel spin_object="anim_tire_front_right"	turn_object="anim_tire_axel_front_right"	radius="0.35" width="0.15" mass="20" transmission_ratio="1.1" is_steering="true" max_steering="30" braking_torque="1200" handbrake_torque="800" />
+			<wheel spin_object="anim_tire_rear_left"	turn_object=""								radius="0.35" width="0.15" mass="30" transmission_ratio="0.7" is_steering="false" max_steering="0" braking_torque="1200" handbrake_torque="2000" />
+			<wheel spin_object="anim_tire_rear_right"	turn_object=""								radius="0.35" width="0.15" mass="30" transmission_ratio="0.7" is_steering="false" max_steering="0" braking_torque="1200" handbrake_torque="2000" />
+		</wheels>
+		<suspension max_compression="0.08" max_extension="0.13" spring_strength="55000" damper_rate="4500" supported_mass="200" />
+		<gearbox switch_time="0.1" ratio_multiplier="4.0">
+			<ratios>
+				<ratio value="-3.0" />
+				<ratio value="0.0" />
+				<ratio value="4.0" />
+				<ratio value="2.0" />
+				<ratio value="1.6" />
+				<ratio value="1.2" />
+			</ratios>
+		</gearbox>
+		<engine max_torque="400" max_rpm="4500"/>
+	</vehicle>
+
+	<align_objects>
+		<align_object	name="pos_bag_1"	parent="anim_body"	position="-35 -100 80"		rotation="0.5 0 1 -90" />
+		<align_object	name="pos_bag_2"	parent="anim_body"	position="-15 -100 80"		rotation="0.5 0 1 -90" />
+		<align_object	name="pos_bag_3"	parent="anim_body"	position="10 -100 80"		rotation="0.5 0 1 -90" />
+		<align_object	name="pos_bag_4"	parent="anim_body"	position="35 -100 80"		rotation="0.5 0 1 -90" />
+
+		<align_object	name="pos_gold_1"	parent="anim_body"	position="-31 -143 91   "	rotation="0 0 1 0" />
+		<align_object	name="pos_gold_2"	parent="anim_body"	position=" 33 -143 91.5 "	rotation="0 0 1 0" />
+		<align_object	name="pos_gold_3"	parent="anim_body"	position="-31 -143 110.5"	rotation="0 0 1 0" />
+		<align_object	name="pos_gold_4"	parent="anim_body"	position=" 33 -143 111  "	rotation="0 0 1 0" />
+		<align_object	name="pos_gold_5"	parent="anim_body"	position="-34 -124.2 112.3"	rotation="1 0 0 -90" />
+		<align_object	name="pos_gold_6"	parent="anim_body"	position=" 34 -124.2 112.3"	rotation="1 0 0 -90" />
+		<align_object	name="pos_gold_7"	parent="anim_body"	position="-34   30   9.6"	rotation="0 0 1 90" />
+		<align_object	name="pos_gold_8"	parent="anim_body"	position=" 34   30   9.6"	rotation="0 0 1 90" />
+
+		<align_object	name="pos_r_finder"	parent="anim_body"	position="30 65 70"	rotation="1 0 0 -29" />
+	</align_objects>
+	<!-- <lights>
+		<light name="light_right" enabled="false" editable="true" type="spot|falloff|specular" multiplier="1.2" far_range="1200" falloff_exponent="1" linear_attenuation_factor="2" />
+		<light name="light_left" enabled="false" editable="true" type="spot|falloff|specular" multiplier="1.2" far_range="1200" falloff_exponent="1" linear_attenuation_factor="2" />
+	</lights> -->
+</dynamic_object>

@@ -782,4 +782,47 @@
 		<texture			path="units/vanilla/props/prop_crate_e/prop_crate_e_nm" unload="true"/>
 		<texture			path="units/vanilla/props/prop_crate_e/prop_crate_e_gsma" unload="true"/>
 	</add>
+	
+	<!--Kubelwagen-->
+	<add>
+		<unit				path="units/vanilla/vehicles/fps_vehicle_kubelwagen/fps_vehicle_kubelwagen" unload="true"/>
+		<object				path="units/vanilla/vehicles/fps_vehicle_kubelwagen/fps_vehicle_kubelwagen" unload="true"/>
+		<model				path="units/vanilla/vehicles/fps_vehicle_kubelwagen/fps_vehicle_kubelwagen" unload="true"/>
+		<cooked_physics		path="units/vanilla/vehicles/fps_vehicle_kubelwagen/fps_vehicle_kubelwagen" unload="true"/>
+		<material_config	path="units/vanilla/vehicles/fps_vehicle_kubelwagen/fps_vehicle_kubelwagen" unload="true"/>
+		<sequence_manager	path="units/vanilla/vehicles/fps_vehicle_kubelwagen/fps_vehicle_kubelwagen" unload="true"/>
+		
+		<!--Textures-->
+		<texture			path="units/vanilla/vehicles/fps_vehicle_kubelwagen/textures/kubel_wheel_df" unload="true"/>
+		<texture			path="units/vanilla/vehicles/fps_vehicle_kubelwagen/textures/kubel_wheel_nm" unload="true"/>
+		<texture			path="units/vanilla/vehicles/fps_vehicle_kubelwagen/textures/kubel_wheel_gsm" unload="true"/>
+		<texture			path="units/vanilla/vehicles/fps_vehicle_kubelwagen/textures/kubel_wheel_op" unload="true"/>
+		<texture			path="units/vanilla/vehicles/fps_vehicle_kubelwagen/textures/props_vehicle_collectors_kubelwagen_01_df" unload="true"/>
+		<texture			path="units/vanilla/vehicles/fps_vehicle_kubelwagen/textures/props_vehicle_collectors_kubelwagen_01_nm" unload="true"/>
+		<texture			path="units/vanilla/vehicles/fps_vehicle_kubelwagen/textures/props_vehicle_collectors_kubelwagen_01_gsma" unload="true"/>
+		<texture			path="units/vanilla/vehicles/fps_vehicle_kubelwagen/textures/props_vehicle_collectors_kubelwagen_01_op" unload="true"/>
+		<texture			path="units/vanilla/vehicles/fps_vehicle_kubelwagen/textures/props_vehicle_collectors_kubelwagen_interior_01_df" unload="true"/>
+		<texture			path="units/vanilla/vehicles/fps_vehicle_kubelwagen/textures/props_vehicle_collectors_kubelwagen_interior_01_nm" unload="true"/>
+		<texture			path="units/vanilla/vehicles/fps_vehicle_kubelwagen/textures/props_vehicle_collectors_kubelwagen_interior_01_gsma" unload="true"/>
+		<texture			path="units/vanilla/vehicles/fps_vehicle_kubelwagen/textures/props_vehicle_collectors_kubelwagen_interior_01_op" unload="true"/>
+		<texture			path="units/vanilla/vehicles/fps_vehicle_kubelwagen/textures/props_vehicle_kubelwagen_01_df" unload="true"/>
+		<texture			path="units/vanilla/vehicles/fps_vehicle_kubelwagen/textures/props_vehicle_kubelwagen_01_nm" unload="true"/>
+		<texture			path="units/vanilla/vehicles/fps_vehicle_kubelwagen/textures/props_vehicle_kubelwagen_01_gsma" unload="true"/>
+		<texture			path="units/vanilla/vehicles/fps_vehicle_kubelwagen/textures/props_vehicle_kubelwagen_01_spring_df" unload="true"/>
+		<texture			path="units/vanilla/vehicles/fps_vehicle_kubelwagen/textures/props_vehicle_kubelwagen_01_spring_nm" unload="true"/>
+		<texture			path="units/vanilla/vehicles/fps_vehicle_kubelwagen/textures/props_vehicle_kubelwagen_01_spring_gsma" unload="true"/>
+		<texture			path="units/vanilla/vehicles/fps_vehicle_kubelwagen/textures/props_vehicle_kubelwagen_01_spring_op" unload="true"/>
+		<texture			path="units/vanilla/vehicles/fps_vehicle_kubelwagen/textures/props_vehicle_kubelwagen_interior_01_df" unload="true"/>
+		<texture			path="units/vanilla/vehicles/fps_vehicle_kubelwagen/textures/props_vehicle_kubelwagen_interior_01_nm" unload="true"/>
+		<texture			path="units/vanilla/vehicles/fps_vehicle_kubelwagen/textures/props_vehicle_kubelwagen_interior_01_gsma" unload="true"/>
+		
+		<texture			path="ui/interactions/gui_brackets_df" unload="true"/>
+		<texture			path="ui/interactions/gui_drive_driver_df" unload="true"/>
+		<texture			path="ui/interactions/gui_drive_passenger_df" unload="true"/>
+		<texture			path="ui/interactions/gui_drive_repair_df" unload="true"/>
+		<texture			path="ui/interactions/gui_drive_trunk_df" unload="true"/>
+		
+		<texture			path="units/vanilla/textures/generic/small/white_df" unload="true"/>
+		<texture			path="units/vanilla/textures/generic/small/transparent_op" unload="true"/>
+	</add>
 </table>

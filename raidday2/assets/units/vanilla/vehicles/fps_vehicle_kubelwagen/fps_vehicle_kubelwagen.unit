@@ -1,0 +1,65 @@
+<unit type="vhc" slot="39" >
+	<object file="units/vanilla/vehicles/fps_vehicle_kubelwagen/fps_vehicle_kubelwagen" />
+	<network sync="bodies" />
+<!-- 	<dependencies>
+		<depends_on unit="units/vanilla/equipment/equip_fill_kubelwagen_gasoline/equip_fill_kubelwagen_gasoline" />
+		<depends_on unit="units/vanilla/dev/dev_lootbag/dev_lootbag_static" />
+		<depends_on unit="units/vanilla/pickups/pku_gold_crate_bag/pku_gold_crate_bag_static" />
+		<depends_on effect="effects/vanilla/smoke/smoke_damage_001" />
+		<depends_on effect="effects/vanilla/smoke/smoke_damage_large_001" />
+		<depends_on unit="units/vanilla/characters/npc/models/raid_npc_spy/raid_npc_spy_static" />
+		<depends_on unit="units/vanilla/vehicles/attach_kubelwagen_radio_finder/attach_kubelwagen_radio_finder" />
+		<depends_on bnk="soundbanks/car_kubelwagen" />
+		<depends_on effect="effects/vanilla/flares/fla_indoor_lamp_002" />
+		<depends_on effect="effects/vanilla/flares/fla_vehicle_stop_light" />
+	</dependencies> -->
+	<extensions>
+		<extension name="unit_data" class="ScriptUnitData" />
+		<extension name="spawn_manager" class="ManageSpawnedUnits" />
+		<extension name="sync_unit_data" class="SyncUnitData" />
+		<extension name="network" class="NetworkBaseExtension" />
+		<extension name="damage" class="UnitDamage" />
+		<extension name="interaction" class="DrivingInteractionExt">
+			<var name="tweak_data" value="driving_drive" />
+			<var name="_interact_object" value="anim_body"/>
+			<var name="_ray_object_names" type="table" >
+				<var value="interact_driver"/>
+				<var value="interact_passenger_front"/>
+				<var value="interact_passenger_back_left"/>
+				<var value="interact_passenger_back_right"/>
+				<var value="interact_loot"/>
+				<var value="v_repair_engine"/>
+			</var>
+		</extension>
+
+        <extension name="character_damage" class="VehicleDamage" />
+		<extension name="attention" class="AIAttentionObject">
+			<var name="_attention_obj_name" value="attention" />
+		</extension>
+		<extension class="VehicleDrivingExt" name="vehicle_driving" >
+			<!--
+				Dino: Not used for now, this parameter has no effect - for future use
+				Inertia modifier determines feel of drive on bumps and curves
+				Reasonable vaules are from 0.5 - 20
+				0.5 - Tractor with really bad seating
+				20  - Ferrari
+			-->
+			<var name="inertia_modifier" value="7.0"/>
+			<!-- <var name="tweak_data" value="kubelwagen"/> -->
+			<var name="tweak_data" value="muscle"/>
+		</extension>
+		<extension name="camera" class="VehicleCamera" >
+			<var name="_camera_object_names" type="table" >
+				<var value="a_front_camera_1"/>
+			</var>
+ 			<var name="_back_camera_object_name" value="a_back_camera_1"/>
+		</extension>
+		<extension name="waypoint" class="WaypointExt" />
+	</extensions>
+	<sounds>
+		<default_soundsource source="snd_engine"/>
+		<soundsource name="engine" source="snd_engine" />
+		<soundsource name="spy" source="g_ext_body" />
+		<soundsource name="trunk_snd" source="pos_gold_1" />
+	</sounds>
+</unit>

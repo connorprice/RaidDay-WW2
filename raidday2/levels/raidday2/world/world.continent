@@ -405,13 +405,43 @@
 			<unit_data _prev_pos="350 -750 0" _prev_rot="0 0 0 -1" continent="world" local_pos="-150 -25 0" local_rot="0 0 0 1" mesh_variation="" name="units/vanilla/props/prop_crate_c/prop_crate_c_01" name_id="prop_crate_c_01_001" position="375 -750 0" rotation="0 0 0 -1" unit_id="100133"/>
 		</table>
 		<table>
-			<unit_data _prev_pos="275 -725 0" _prev_rot="0 0 0 -1" continent="world" editable_gui="false" local_pos="0 0 0" local_rot="0 0 0 1" mesh_variation="" name="units/vanilla/props/prop_crate_d/prop_crate_d_01" name_id="prop_crate_d_01_001" position="275 -750 0" rotation="0 0 0 -1" unit_id="100134"/>
+			<unit_data _prev_pos="275 -725 0" _prev_rot="0 0 0 -1" continent="world" local_pos="0 0 0" local_rot="0 0 0 1" mesh_variation="" name="units/vanilla/props/prop_crate_d/prop_crate_d_01" name_id="prop_crate_d_01_001" position="275 -750 0" rotation="0 0 0 -1" unit_id="100134"/>
 		</table>
 		<table>
-			<unit_data _prev_pos="225 -750 0" _prev_rot="0 0 0 -1" continent="world" editable_gui="false" local_pos="0 0 0" local_rot="0 0 0 1" mesh_variation="" name="units/vanilla/props/prop_crate_d/prop_crate_d_damaged_01" name_id="prop_crate_d_damaged_01_001" position="225 -750 0" rotation="0 0 0 -1" unit_id="100135"/>
+			<unit_data _prev_pos="225 -750 0" _prev_rot="0 0 0 -1" continent="world" local_pos="0 0 0" local_rot="0 0 0 1" mesh_variation="" name="units/vanilla/props/prop_crate_d/prop_crate_d_damaged_01" name_id="prop_crate_d_damaged_01_001" position="225 -750 0" rotation="0 0 0 -1" unit_id="100135"/>
 		</table>
 		<table>
-			<unit_data _prev_pos="175 -750 0" _prev_rot="0 0 0 -1" continent="world" editable_gui="false" local_pos="0 0 0" local_rot="0 0 0 1" mesh_variation="" name="units/vanilla/props/prop_crate_e/prop_crate_e_01" name_id="prop_crate_e_01_001" position="150 -725 0" rotation="0 0 0 -1" skip_distance_culling="true" unit_id="100136"/>
+			<unit_data _prev_pos="175 -750 0" _prev_rot="0 0 0 -1" continent="world" local_pos="0 0 0" local_rot="0 0 0 1" mesh_variation="" name="units/vanilla/props/prop_crate_e/prop_crate_e_01" name_id="prop_crate_e_01_001" position="150 -725 0" rotation="0 0 0 -1" skip_distance_culling="true" unit_id="100136"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="2400 -400 0" _prev_rot="0 0 0 -1" continent="world" local_pos="0 0 0" local_rot="0 0 0 1" name="units/payday2/architecture/mkp/mkp_int_floor_4x4m_a" name_id="mkp_int_floor_4x4m_a_059" position="2400 -800 0" rotation="0 0 0 -1" unit_id="100137"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="2800 -800 0" _prev_rot="0 0 0 -1" continent="world" local_pos="0 0 0" local_rot="0 0 0 1" name="units/payday2/architecture/mkp/mkp_int_floor_4x4m_a" name_id="mkp_int_floor_4x4m_a_060" position="2800 -800 0" rotation="0 0 0 -1" unit_id="100138"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="3200 -400 0" _prev_rot="0 0 0 -1" continent="world" local_pos="800 0 0" local_rot="0 0 0 1" name="units/payday2/architecture/mkp/mkp_int_floor_4x4m_a" name_id="mkp_int_floor_4x4m_a_061" position="3200 -800 0" rotation="0 0 0 -1" unit_id="100139"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="3600 -400 0" _prev_rot="0 0 0 -1" continent="world" local_pos="1200 0 0" local_rot="0 0 0 1" name="units/payday2/architecture/mkp/mkp_int_floor_4x4m_a" name_id="mkp_int_floor_4x4m_a_062" position="3600 -800 0" rotation="0 0 0 -1" unit_id="100140"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="2400 -800 0" _prev_rot="0 0 0 -1" continent="world" local_pos="0 0 0" local_rot="0 0 0 1" name="units/payday2/architecture/mkp/mkp_int_floor_4x4m_a" name_id="mkp_int_floor_4x4m_a_063" position="2400 -1200 0" rotation="0 0 0 -1" unit_id="100141"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="2800 -800 0" _prev_rot="0 0 0 -1" continent="world" local_pos="400 0 0" local_rot="0 0 0 1" name="units/payday2/architecture/mkp/mkp_int_floor_4x4m_a" name_id="mkp_int_floor_4x4m_a_064" position="2800 -1200 0" rotation="0 0 0 -1" unit_id="100142"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="3200 -800 0" _prev_rot="0 0 0 -1" continent="world" local_pos="800 0 0" local_rot="0 0 0 1" name="units/payday2/architecture/mkp/mkp_int_floor_4x4m_a" name_id="mkp_int_floor_4x4m_a_065" position="3200 -1200 0" rotation="0 0 0 -1" unit_id="100143"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="3600 -800 0" _prev_rot="0 0 0 -1" continent="world" local_pos="1200 0 0" local_rot="0 0 0 1" name="units/payday2/architecture/mkp/mkp_int_floor_4x4m_a" name_id="mkp_int_floor_4x4m_a_066" position="3600 -1200 0" rotation="0 0 0 -1" unit_id="100144"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="2800 -800 0" _prev_rot="0 0 0 -1" continent="world" local_pos="0 0 0" local_rot="0 0 0 1" mesh_variation="state_regular_skin" name="units/vanilla/vehicles/fps_vehicle_kubelwagen/fps_vehicle_kubelwagen" name_id="fps_vehicle_kubelwagen_001" position="2600 -800 0" rotation="-0 0 -0 -1" unit_id="100145"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="2600 -800 0" _prev_rot="0 0 0 -1" continent="world" local_pos="0 0 0" local_rot="0 0 0 1" mesh_variation="state_collector_edition_skin" name="units/vanilla/vehicles/fps_vehicle_kubelwagen/fps_vehicle_kubelwagen" name_id="fps_vehicle_kubelwagen_002" position="2900 -800 0" rotation="-0 0 -0 -1" unit_id="100146"/>
 		</table>
 	</statics>
 	<values>

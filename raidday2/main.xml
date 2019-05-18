@@ -15,6 +15,7 @@
 			<hook file="moneytweakdata.lua" source_file="lib/tweak_data/moneytweakdata"/>
 			<hook file="equipmentstweakdata.lua" source_file="lib/tweak_data/equipmentstweakdata"/>
 			<hook file="hudiconstweakdata.lua" source_file="lib/tweak_data/hudiconstweakdata"/>
+			<hook file="vehicletweakdata.lua" source_file="lib/tweak_data/vehicletweakdata"/>
 			<hook file="elementareatrigger.lua" source_file="lib/managers/mission/elementareatrigger"/>
 		</hooks>
 		<include directory="levels/raidday2">
@@ -33,6 +34,7 @@
 		</include>
 		<packages>
 			<value_node value="levels/narratives/elephant/chew/collision/collision"/>
+			<value_node value="levels/narratives/vlad/peta/stage2/world/world"/>
 		</packages>
 		<script_data_mods directory="scriptdata">
 			<mod replacement="objectives.objective" replacement_type="custom_xml" target_ext="objective" target_path="gamedata/objectives">

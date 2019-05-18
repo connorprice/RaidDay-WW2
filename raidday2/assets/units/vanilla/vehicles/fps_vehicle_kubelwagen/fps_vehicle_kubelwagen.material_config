@@ -1,0 +1,125 @@
+<materials version="3" group="fps_vehicle_kubelwagen">
+    <material render_template="effect:DIFFUSE0_TEXTURE:VIEW_ANGLE_FALLOFF_OP" name="hud_brackets" version="2">
+        <diffuse_texture file="ui/interactions/gui_brackets_df"/>
+        <variable type="scalar" name="intensity" value="identity"/>
+        <variable type="scalar" name="falloff_exp" value="1"/>
+    </material>
+    <material render_template="effect:DIFFUSE0_TEXTURE:VIEW_ANGLE_FALLOFF_OP" name="mat_indicator_driver" version="2">
+        <diffuse_texture file="ui/interactions/gui_drive_driver_df"/>
+        <variable type="scalar" name="intensity" value="identity"/>
+        <variable type="scalar" name="falloff_exp" value="1"/>
+    </material>
+    <material render_template="effect:DIFFUSE0_TEXTURE:VIEW_ANGLE_FALLOFF_OP" name="mat_indicator_passenger" version="2">
+        <diffuse_texture file="ui/interactions/gui_drive_passenger_df"/>
+        <variable type="scalar" name="intensity" value="identity"/>
+        <variable type="scalar" name="falloff_exp" value="1"/>
+    </material>
+    <material render_template="effect:DIFFUSE0_TEXTURE:VIEW_ANGLE_FALLOFF_OP" name="mat_indicator_repair" version="2">
+        <diffuse_texture file="ui/interactions/gui_drive_repair_df"/>
+        <variable type="scalar" name="intensity" value="identity"/>
+        <variable type="scalar" name="falloff_exp" value="1"/>
+    </material>
+    <material render_template="effect:DIFFUSE0_TEXTURE:VIEW_ANGLE_FALLOFF_OP" name="mat_indicator_trunk" version="2">
+        <diffuse_texture file="ui/interactions/gui_drive_trunk_df"/>
+        <variable type="scalar" name="intensity" value="identity"/>
+        <variable type="scalar" name="falloff_exp" value="1"/>
+    </material>
+    <material unique="true" render_template="generic:ALPHA_MASKED:CONTOUR:DIFFUSE_TEXTURE:OPACITY_TEXTURE" name="mat_contour" version="2">
+        <diffuse_texture file="units/vanilla/textures/generic/small/white_df"/>
+        <opacity_texture file="units/vanilla/textures/generic/small/transparent_op"/>
+        <variable type="vector3" name="contour_color" value="1 1 1"/>
+        <variable type="scalar" name="contour_opacity" value="0"/>
+        <variable type="scalar" name="contour_distance" value="200000"/>
+    </material>
+    <material render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP" name="mat_fps_steering_wheel" version="2">
+        <diffuse_texture file="units/vanilla/vehicles/fps_vehicle_kubelwagen/textures/props_vehicle_kubelwagen_interior_01_df"/>
+        <bump_normal_texture file="units/vanilla/vehicles/fps_vehicle_kubelwagen/textures/props_vehicle_kubelwagen_interior_01_nm"/>
+        <material_texture file="units/vanilla/vehicles/fps_vehicle_kubelwagen/textures/props_vehicle_kubelwagen_interior_01_gsma"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP" name="mat_interior" version="2">
+        <diffuse_texture file="units/vanilla/vehicles/fps_vehicle_kubelwagen/textures/props_vehicle_kubelwagen_interior_01_df"/>
+        <bump_normal_texture file="units/vanilla/vehicles/fps_vehicle_kubelwagen/textures/props_vehicle_kubelwagen_interior_01_nm"/>
+        <material_texture file="units/vanilla/vehicles/fps_vehicle_kubelwagen/textures/props_vehicle_kubelwagen_interior_01_gsma"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP:SKINNED_1WEIGHT" name="mat_kubelwagen" version="2">
+        <diffuse_texture file="units/vanilla/vehicles/fps_vehicle_kubelwagen/textures/props_vehicle_kubelwagen_01_df"/>
+        <bump_normal_texture file="units/vanilla/vehicles/fps_vehicle_kubelwagen/textures/props_vehicle_kubelwagen_01_nm"/>
+        <material_texture file="units/vanilla/vehicles/fps_vehicle_kubelwagen/textures/props_vehicle_kubelwagen_01_gsma"/>
+    </material>
+    <material render_template="opacity:CUBE_ENVIRONMENT_MAPPING:CUBE_FRESNEL:DIFFUSE_TEXTURE:NORMALMAP:OPACITY_FADE" name="mat_glass" version="2">
+        <opacity_texture file="units/vanilla/vehicles/fps_vehicle_kubelwagen/textures/props_vehicle_kubelwagen_01_gsma"/>        
+        <diffuse_texture file="units/vanilla/vehicles/fps_vehicle_kubelwagen/textures/props_vehicle_kubelwagen_01_df"/>
+        <bump_normal_texture file="units/vanilla/vehicles/fps_vehicle_kubelwagen/textures/props_vehicle_kubelwagen_01_nm"/>
+        <reflection_texture type="cubemap" file="environments/cubemaps/cubemap_street_01"/>
+        <variable type="vector3" name="fresnel_settings" value="1.1399999856949 0.029999999329448 0.11999999731779"/>
+        <variable type="vector3" name="opacity_fade" value="2500 496 0"/>
+        <variable type="vector3" name="material_settings" value="0.5 0.037200000137091 1"/>
+    </material>
+    <material render_template="effect:BLEND_ADD:DIFFUSE0_TEXTURE" name="mat_light_il" version="2">
+        <diffuse_texture file="units/vanilla/props/gen_prop_glow/shared_textures/gen_prop_glow_01_df"/>
+        <variable type="scalar" name="intensity" value="dimlight"/>
+    </material>
+    
+    
+    
+    <material render_template="generic:ALPHA_MASKED:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:EXTERNAL_ALPHA_REF:GSMA_TEXTURE:NORMALMAP:OPACITY_TEXTURE:SKINNED_1WEIGHT" name="kw_wheels" version="2">
+        <diffuse_texture file="units/vanilla/vehicles/fps_vehicle_kubelwagen/textures/kubel_wheel_df"/>
+        <bump_normal_texture file="units/vanilla/vehicles/fps_vehicle_kubelwagen/textures/kubel_wheel_nm"/>
+        <material_texture file="units/vanilla/vehicles/fps_vehicle_kubelwagen/textures/kubel_wheel_gsm"/>
+        <opacity_texture file="units/vanilla/vehicles/fps_vehicle_kubelwagen/textures/kubel_wheel_op"/>
+        <variable type="scalar" name="alpha_ref" value="0.5"/>
+        <reflection_texture file="environments/cubemaps/cubemap_steel" type="cubemap"/>
+    </material>
+    <material render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP" name="kw_interior" version="2">
+        <diffuse_texture file="units/vanilla/vehicles/fps_vehicle_kubelwagen/textures/props_vehicle_collectors_kubelwagen_interior_01_df"/>
+        <bump_normal_texture file="units/vanilla/vehicles/fps_vehicle_kubelwagen/textures/props_vehicle_kubelwagen_interior_01_nm"/>
+        <material_texture file="units/vanilla/vehicles/fps_vehicle_kubelwagen/textures/props_vehicle_kubelwagen_interior_01_gsma"/>
+        <reflection_texture file="environments/cubemaps/cubemap_steel" type="cubemap"/>
+        <reflection_texture type="cubemap" file="environments/cubemaps/cubemap_street_01"/>
+    </material>
+    <material render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP:SKINNED_1WEIGHT" name="kw_se_chrome" version="2">
+        <diffuse_texture file="units/vanilla/vehicles/fps_vehicle_kubelwagen/textures/props_vehicle_collectors_kubelwagen_01_df"/>
+        <bump_normal_texture file="units/vanilla/vehicles/fps_vehicle_kubelwagen/textures/props_vehicle_collectors_kubelwagen_01_nm"/>
+        <material_texture file="units/vanilla/vehicles/fps_vehicle_kubelwagen/textures/props_vehicle_collectors_kubelwagen_01_gsma"/>
+        <reflection_texture file="environments/cubemaps/cubemap_steel" type="cubemap"/>
+    </material>
+    <material render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP" name="kw_se_chrome_inner" version="2">
+        <diffuse_texture file="units/vanilla/vehicles/fps_vehicle_kubelwagen/textures/props_vehicle_collectors_kubelwagen_interior_01_df"/>
+        <bump_normal_texture file="units/vanilla/vehicles/fps_vehicle_kubelwagen/textures/props_vehicle_collectors_kubelwagen_interior_01_nm"/>
+        <material_texture file="units/vanilla/vehicles/fps_vehicle_kubelwagen/textures/props_vehicle_collectors_kubelwagen_interior_01_gsma"/>
+        <reflection_texture file="environments/cubemaps/cubemap_steel" type="cubemap"/>
+    </material>
+    <material render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP:SKINNED_1WEIGHT" name="kw_body" version="2">
+        <diffuse_texture file="units/vanilla/vehicles/fps_vehicle_kubelwagen/textures/props_vehicle_collectors_kubelwagen_01_df"/>
+        <bump_normal_texture file="units/vanilla/vehicles/fps_vehicle_kubelwagen/textures/props_vehicle_collectors_kubelwagen_01_nm"/>
+        <material_texture file="units/vanilla/vehicles/fps_vehicle_kubelwagen/textures/props_vehicle_collectors_kubelwagen_01_gsma"/>
+        <reflection_texture file="environments/cubemaps/cubemap_steel" type="cubemap"/>
+    </material>
+    <material render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP:SKINNED_1WEIGHT" name="kw_mirror" version="2">
+        <diffuse_texture file="units/vanilla/vehicles/fps_vehicle_kubelwagen/textures/props_vehicle_collectors_kubelwagen_01_df"/>
+        <bump_normal_texture file="units/vanilla/vehicles/fps_vehicle_kubelwagen/textures/props_vehicle_collectors_kubelwagen_01_nm"/>
+        <material_texture file="units/vanilla/vehicles/fps_vehicle_kubelwagen/textures/props_vehicle_collectors_kubelwagen_01_gsma"/>
+        <reflection_texture file="environments/cubemaps/cubemap_steel" type="cubemap"/>
+    </material>
+    <material render_template="opacity:CUBE_ENVIRONMENT_MAPPING:CUBE_FRESNEL:DIFFUSE_TEXTURE:NORMALMAP:OPACITY_FADE" name="kw_glass" version="2">
+        <opacity_texture file="units/vanilla/vehicles/fps_vehicle_kubelwagen/textures/props_vehicle_kubelwagen_01_gsma"/>
+        <diffuse_texture file="units/vanilla/vehicles/fps_vehicle_kubelwagen/textures/props_vehicle_kubelwagen_01_df"/>
+        <bump_normal_texture file="units/vanilla/vehicles/fps_vehicle_kubelwagen/textures/props_vehicle_kubelwagen_01_nm"/>
+        <reflection_texture type="cubemap" file="environments/cubemaps/cubemap_street_01"/>
+        <variable type="vector3" name="fresnel_settings" value="1.1399999856949 0.029999999329448 0.11999999731779"/>
+        <variable type="vector3" name="opacity_fade" value="2500 496 0"/>
+    </material>
+    <material render_template="opacity:CUBE_ENVIRONMENT_MAPPING:CUBE_FRESNEL:DIFFUSE_TEXTURE:NORMALMAP:OPACITY_FADE" name="kw_se_glass_inner" version="2">
+        <opacity_texture file="units/vanilla/vehicles/fps_vehicle_kubelwagen/textures/props_vehicle_collectors_kubelwagen_interior_01_df"/>
+        <diffuse_texture file="units/vanilla/vehicles/fps_vehicle_kubelwagen/textures/props_vehicle_collectors_kubelwagen_interior_01_df"/>
+        <bump_normal_texture file="units/vanilla/vehicles/fps_vehicle_kubelwagen/textures/props_vehicle_collectors_kubelwagen_interior_01_nm"/>
+        <reflection_texture type="cubemap" file="environments/cubemaps/cubemap_street_01"/>
+        <variable type="vector3" name="fresnel_settings" value="1.1399999856949 0.029999999329448 0.11999999731779"/>
+        <variable type="vector3" name="opacity_fade" value="2500 496 0"/>
+        <variable type="vector3" name="material_settings" value="0.5 0.037200000137091 1"/>
+    </material>
+    
+    <material render_template="shadow_caster_only:SKINNED_3WEIGHTS" name="shadow_caster" version="2"/>
+    
+    
+</materials>
